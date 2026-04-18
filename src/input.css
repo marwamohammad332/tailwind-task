@@ -20,15 +20,31 @@
         font-family: var(--font-inter);
         
     }
+    h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-serif);
+    color: var(--color-primary)
+}
     .container{
         @apply mx-auto;
-        @apply px-[10px];
+        @apply px-[24px];
         @apply md:px-2;
+        @apply lg:px-0
     }
 }
 @utility row{
     @apply flex items-center;
 }
 @utility nav-link{
-    @apply font-Garamond text-lg text-primary;
+    @apply font-Garamond text-lg text-primary italic;
+}
+@utility col{
+    @apply flex flex-col items-start justify-normal;
+}
+@utility footer-nav{
+    @apply text-base leading-7;
 }
