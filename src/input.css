@@ -1,50 +1,75 @@
 @import "tailwindcss";
 
-@theme{
-    --color-primary:#77525C;
-    --color-secondary:#685C58;
-    --color-tertiary:#D3C2C5;
-    --color-neutral:#FBF9F8;
-    --color-background:#F5F3F2;
-    --color-forground:#EDDCD7;
-    --color-grayground:#E4E2E1;
-    --color-roseground:#926A74;
-    --font-serif:"Noto Serif", serif;
-    --font-inter:"Inter", sans-serif; 
-    --font-Garamond:"Cormorant Garamond", serif;
+@theme {
+    --color-primary: #77525C;
+    --color-secondary: #685C58;
+    --color-tertiary: #D3C2C5;
+    --color-neutral: #FBF9F8;
+    --color-background: #F5F3F2;
+    --color-forground: #EDDCD7;
+    --color-grayground: #E4E2E1;
+    --color-roseground: #926A74;
+    --font-serif: "Noto Serif", serif;
+    --font-inter: "Inter", sans-serif;
+    --font-Garamond: "Cormorant Garamond", serif;
 }
-@layer base{
-    body{
+
+@layer base {
+    body {
         background-color: white;
         color: var(--color-secondary);
         font-family: var(--font-inter);
+
+    }
+
+    h1 {
+        font-family: var(--font-serif);
+        color: var(--color-primary);
+    }
+    h2 {
+        font-family: var(--font-serif);
+        color: var(--color-primary);
+    }
+    h3 {
+        font-family: var(--font-serif);
+        color: var(--color-primary);
         
     }
-    h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--font-serif);
-    color: var(--color-primary)
-}
-    .container{
+    h4 {
+        font-family: var(--font-serif);
+        color: var(--color-primary);
+        font-size: 1rem ;
+        @apply md:text-lg lg:text-xl;
+    }
+    h5 {
+        font-family: var(--font-serif);
+        color: var(--color-primary);
+    }
+    h6 {
+        font-family: var(--font-serif);
+        color: var(--color-primary);
+    }
+
+    .container {
         @apply mx-auto;
         @apply px-[24px];
         @apply md:px-2;
         @apply lg:px-0
     }
 }
-@utility row{
+
+@utility row {
     @apply flex items-center;
 }
-@utility nav-link{
+
+@utility nav-link {
     @apply font-Garamond text-lg text-primary italic;
 }
-@utility col{
+
+@utility col {
     @apply flex flex-col items-start justify-normal;
 }
-@utility footer-nav{
-    @apply text-base leading-7;
+
+@utility footer-nav {
+    @apply text-xs sm:text-sm md:text-base;
 }
