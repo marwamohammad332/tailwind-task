@@ -22,6 +22,8 @@
     }
     .container{
         @apply mx-auto;
+        @apply px-[10px];
+        @apply md:px-2;
     }
 }
 @utility row{
