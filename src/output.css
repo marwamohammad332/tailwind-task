@@ -32,6 +32,7 @@
     --color-neutral: #FBF9F8;
     --color-placeholder: #6B7280;
     --color-border: #b9bcc1;
+    --color-background: #F5F3F2;
     --color-roseground: #926A74;
     --font-inter: "Inter", sans-serif;
     --font-Garamond: "Cormorant Garamond", serif;
@@ -231,9 +232,6 @@
     display: flex;
     align-items: center;
   }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
   }
@@ -257,15 +255,6 @@
   }
   .w-\[50\%\] {
     width: 50%;
-  }
-  .w-\[50\] {
-    width: 50;
-  }
-  .max-w-\[100\%\] {
-    max-width: 100%;
-  }
-  .max-w-full {
-    max-width: 100%;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -348,8 +337,11 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
-  .gap-9 {
-    gap: calc(var(--spacing) * 9);
+  .gap-13 {
+    gap: calc(var(--spacing) * 13);
+  }
+  .gap-13\.25 {
+    gap: calc(var(--spacing) * 13.25);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
@@ -371,6 +363,9 @@
   .border-b-border {
     border-bottom-color: var(--color-border);
   }
+  .bg-background {
+    background-color: var(--color-background);
+  }
   .bg-neutral {
     background-color: var(--color-neutral);
   }
@@ -382,9 +377,6 @@
   }
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
-  }
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
   }
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
@@ -510,6 +502,10 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .duration-100 {
+    --tw-duration: 100ms;
+    transition-duration: 100ms;
+  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
@@ -529,16 +525,54 @@
       color: var(--color-placeholder);
     }
   }
-  .focus-within\:shadow {
-    &:focus-within {
-      --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  .hover\:scale-1 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 1%;
+        --tw-scale-y: 1%;
+        --tw-scale-z: 1%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
     }
   }
-  .focus-within\:shadow-md {
-    &:focus-within {
-      --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  .hover\:scale-20 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 20%;
+        --tw-scale-y: 20%;
+        --tw-scale-z: 20%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-100 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 100%;
+        --tw-scale-y: 100%;
+        --tw-scale-z: 100%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-110 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 110%;
+        --tw-scale-y: 110%;
+        --tw-scale-z: 110%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-200 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 200%;
+        --tw-scale-y: 200%;
+        --tw-scale-z: 200%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
     }
   }
   .hover\:underline {
@@ -552,6 +586,13 @@
     &:hover {
       @media (hover: hover) {
         text-underline-offset: 8px;
+      }
+    }
+  }
+  .hover\:opacity-15 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 15%;
       }
     }
   }
@@ -623,12 +664,6 @@
   .sm\:gap-4 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 4);
-    }
-  }
-  .sm\:border {
-    @media (width >= 40rem) {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
     }
   }
   .sm\:px-3 {
