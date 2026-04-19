@@ -5,6 +5,8 @@
     --color-secondary: #685C58;
     --color-tertiary: #D3C2C5;
     --color-neutral: #FBF9F8;
+    --color-placeholder:#6B7280;
+    --color-border:#b9bcc1;
     --color-background: #F5F3F2;
     --color-forground: #EDDCD7;
     --color-grayground: #E4E2E1;
@@ -21,33 +23,31 @@
         font-family: var(--font-inter);
 
     }
-
-    h1 {
+    h1,h2,h3{
         font-family: var(--font-serif);
         color: var(--color-primary);
+    }
+    h1 {
     }
     h2 {
-        font-family: var(--font-serif);
-        color: var(--color-primary);
     }
     h3 {
-        font-family: var(--font-serif);
-        color: var(--color-primary);
-        
     }
     h4 {
-        font-family: var(--font-serif);
-        color: var(--color-primary);
-        font-size: 1rem ;
-        @apply md:text-lg lg:text-xl;
     }
     h5 {
-        font-family: var(--font-serif);
+        font-family: var(--font-Garamond);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
         color: var(--color-primary);
     }
     h6 {
-        font-family: var(--font-serif);
-        color: var(--color-primary);
+       font-family: var(--font-Garamond);
+       font-size: 18px;
+       font-style: italic;
+       color: var(--color-primary);
+       line-height: 28px;
     }
 
     .container {
@@ -63,13 +63,16 @@
 }
 
 @utility nav-link {
-    @apply font-Garamond text-lg text-primary italic;
+    @apply font-Garamond text-lg text-primary italic
+    hover:opacity-50 hover:underline hover:underline-offset-8 
+    transition-all duration-500;
 }
 
 @utility col {
-    @apply flex flex-col items-start justify-normal;
+    @apply flex flex-col items-start ;
 }
 
 @utility footer-nav {
-    @apply text-xs sm:text-sm md:text-base;
+    @apply text-xs sm:text-sm md:text-base hover:opacity-50 hover:underline hover:underline-offset-8 
+    transition-all duration-500 cursor-pointer ;
 }

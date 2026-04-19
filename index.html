@@ -22,95 +22,109 @@
 </head>
 
 <body>
-    <header class="navbar py-6 shadow-lg bg-neutral ">
+    <header class="navbar sticky top-0 py-6 shadow-lg bg-neutral ">
         <div class="container row justify-between ">
             <div class="row gap-8">
                 <a class="barand_name uppercase font-bold font-Garamond text-xl 
             sm:text-2xl leading-\[32px\] tracking-widest text-primary" href="./index.html">LUMERA SKIN</a>
                 <ul class="list gap-3 md:gap-4 lg:gap-8 hidden sm:row">
-                    <li><a class="nav-link hover:opacity-50 hover:underline hover:underline-offset-8 transition-all duration-500"
-                            href="#">Shop</a> </li>
-                    <li><a class="nav-link hover:opacity-50 hover:underline hover:underline-offset-8 transition-all duration-500"
-                            href="#">Rituals</a> </li>
-                    <li><a class="nav-link hover:opacity-50 hover:underline hover:underline-offset-8 transition-all duration-500"
-                            href="#">Ingredients</a> </li>
-                    <li><a class="nav-link hover:opacity-50 hover:underline hover:underline-offset-8 transition-all duration-500"
-                            href="#">About</a> </li>
+                    <li><a class="nav-link " href="#">Shop</a> </li>
+                    <li><a class="nav-link " href="#">Rituals</a> </li>
+                    <li><a class="nav-link " href="#">Ingredients</a> </li>
+                    <li><a class="nav-link" href="#">About</a> </li>
                 </ul>
             </div>
             <div class="icons">
                 <ul class="icons_nav row gap-5 md:gap-[23.99px]">
                     <li><a href="#">
-                            <img class="hover:opacity-50 transition-all duration-500" src="./src/imgs/search.svg"
+                            <img class="hover:opacity-50 transition-all duration-500" src="./src/imgs/icons/search.svg"
                                 alt="serch icon" /> </a>
                     </li>
                     <li class=" relative inline-block hover:opacity-50 transition-all duration-500"><a
-                            href="./cart"><img class="" src="./src/imgs/cart.svg" alt="cart icon" />
-                            <span
-                                class=" absolute opacity-80 -top-2 -right-2 bg-roseground text-neutral text-xs w-4 h-4 row justify-center rounded-full">3</span>
+                            href="./cart"><img class="" src="./src/imgs/icons/cart.svg" alt="cart icon" />
+                            <span class=" absolute opacity-80 -top-2 -right-2 bg-roseground text-neutral text-xs w-4 h-4
+                            row justify-center rounded-full">3</span>
                         </a>
                     </li>
                     <li class="hidden sm:block"><a href="#"><img class="hover:opacity-50 transition-all duration-500"
-                                src="./src/imgs/profile.svg" alt="user profile icon" /> </a>
+                                src="./src/imgs/icons/profile.svg" alt="user profile icon" /> </a>
                     </li>
                     <li class="sm:hidden"><button><img class="hover:opacity-50 transition-all duration-500"
-                                src="./src/imgs/list icon.svg" alt="icon list img" /></button>
+                                src="./src/imgs/icons/list icon.svg" alt="icon list img" /></button>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
     <main>
-       
+        <section class="hero">
+        </section>
     </main>
     <footer class=" footer py-20 bg-neutral ">
-        <div class="px-12 md:px-2 container 
-            grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-9 md:gap-10 lg:gap-12">
-            <div class="col gap-8">
-                <h4 class="font-bold">
-                    LUMERA SKIN
-                </h4>
-                <p class="text-sm md:text-base leading-5 sm:leading-6.5">
-                    Crafting skincare as a meditative art
-                    form since 2024. Sustainably
-                    formulated, ethically curated.
-                </p>
+        <div class="container flex flex-col gap-20 px-12 md:px-2 ">
+            <div class=" grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-9 md:gap-10 lg:gap-12">
+                <div class="col gap-6">
+                    <h5 class="font-bold">
+                        LUMERA SKIN
+                    </h5>
+                    <p class="text-sm md:text-base leading-5 sm:leading-6.5">
+                        Crafting ethereal rituals for the
+                        conscious skin enthusiast.
+                    </p>
+                    <div class="row gap-3 sm:gap-4">
+                        <a href="#"><img class="hover:opacity-50 transition-all duration-500"
+                                src="./src/imgs/icons/language.webp" width="19px" alt="select your language" />
+                        </a>
+                        <a href="#"><img class="hover:opacity-50 transition-all duration-500"
+                                src="./src/imgs/icons/reviews.webp" width="19px" alt="customers ratings" />
+                        </a>
+                        <a href="#"><img class="hover:opacity-50 transition-all duration-500"
+                                src="./src/imgs/icons/live chat.webp" width="19px" alt="live chat with us" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col gap-4">
+                    <h6>
+                        Navigation
+                    </h6>
+                    <ul class="col gap-2">
+                        <li><a class="footer-nav href=" #">Privacy Policy</a> </li>
+                        <li><a class="footer-nav href=" #"> Shipping & Returns</a></li>
+                        <li><a class="footer-nav href=" #">Contact</a> </li>
+                        <li><a class="footer-nav href=" #"> Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col gap-4">
+                    <h6>
+                        Studio
+                    </h6>
+                    <p class="text-xs sm:text-sm leading-6 sm:leading-7">
+                        22 Rue de la Paix
+                        75002 Paris, France
+                        <span class="cursor-pointer hover:opacity-60 hover:underline hover:underline-offset-8
+                         transition-all duration-500">contact@lumeraskin.com</span>
+                    </p>
+                </div>
+                <div class="col gap-4">
+                    <h6>
+                        Newsletter
+                    </h6>
+                    <p class="text-xs sm:text-sm leading-5.5 sm:leading-5">
+                        Join our inner circle for exclusive
+                        rituals.
+                    </p>
+                    <form class="flex">
+                        <input class="w-[50%] sm:w-full border border-border px-1 sm:px-3 py-2.5 placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm" type="email" name="u_name" placeholder="Email Address">
+                        <button class="hover:opacity-70 active:scale-90 transition-all duration-300 shadow-md shrink-0 p-3 border-b border-b-border" type="submit"><img src="./src/imgs/icons/arrow.webp" width="15px" alt="arrow icon submit your email"/></button>
+                    </form>
+                </div>
             </div>
-            <div class="col gap-8">
-                <span class="text-[10px] uppercase font-bold text-primary leading-4">
-                    DISCOVER
-                </span>
-                <ul class="col gap-4">
-                    <li class="footer-nav">Ritual Guide</li>
-                    <li class="footer-nav">Skin Quiz</li>
-                    <li class="footer-nav">The Archive</li>
-                    <li class="footer-nav">Store Locator</li>
-                </ul>
-            </div>
-            <div class="col gap-8">
-                <span class="text-[10px] uppercase font-bold text-primary leading-4">
-                    INQUIRY
-                </span>
-                <ul class="col gap-4">
-                    <li class="footer-nav">Privacy Policy</li>
-                    <li class="footer-nav">Shipping & Returns</li>
-                    <li class="footer-nav">Contact</li>
-                    <li class="footer-nav">Sustainability</li>
-                </ul>
-            </div>
-            <div class="col gap-8">
-                <span class="text-[10px] uppercase font-bold text-primary leading-4">
-                    FOLLOW
-                </span>
-                <ul class="row gap-6">
-                    <li><a href="#"><img src="./src/imgs/instagram.svg" alt="our instagram profile" /> </a></li>
-                    <li><a href="#"><img src="./src/imgs/youtube.svg" alt="our youtube channel" /> </a></li>
-                    <li><a href="#"><img src="./src/imgs/podcast.svg" alt="our podcast" /> </a></li>
-                </ul>
-                <p class="text-[10px] leading-5 ">
-                    © 2024 LUMERA SKIN. THE ETHEREAL
-                    CURATOR.
-                </p>
+            <div class="flex flex-col gap-5 justify-center sm:flex-row sm:justify-between">
+                <p class="text-[10px] leading-3.5 tracking-[.188rem]">© 2024 LUMERA SKIN. THE ETHEREAL CURATOR.</p>
+                <div class="row gap-8">
+                    <a href="#"><img src="./src/imgs/icons/location.webp" width="16px" alt="our navigation" /> </a>
+                    <a href="#"><img src="./src/imgs/icons/website.webp" width="16px" alt="website" /> </a>
+                </div>
             </div>
         </div>
     </footer>
