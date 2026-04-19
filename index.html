@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header class="navbar sticky top-0 py-6 shadow-lg bg-neutral ">
+    <header class="navbar sticky z-50 top-0 py-6 shadow-lg bg-neutral ">
         <div class="container row justify-between ">
             <div class="row gap-8">
                 <a class="barand_name uppercase font-bold font-Garamond text-xl 
@@ -57,7 +57,42 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="container hero flex flex-col gap-12 sm:flex-row py-24 sm:py-3.75 lg:pb-12">
+            <div class="hero_text flex flex-col justify-center sm:flex-1 ">
+                <p class="mb-6 text-xs font-semibold tracking-[0.15rem] text-primary">
+                    THE 2026 GLOW RITUAL
+                </p>
+                <h1 class="mb-8">
+                    Skincare that
+                    feels like a
+                    daily ceremony
+                </h1>
+                <p class="mb-10 text-sm sm:text-base leading-5.5 sm:leading-6.5 max-w-md">
+                    Experience a curated collection of high-potency botanicals
+                    and scientific precision, designed to elevate your morning
+                    transition into a meditative ritual of radiance.
+                </p>
+                <div class="row gap-6">
+                    <a class="hero-link bg-primary text-white" href="#">DISCOVER RITUALS</a>
+                    <a class="hero-link bg-white text-primary border border-tertiary" href="#">SHOP ALL</a>
+                </div>
+            </div>
+            <div class="hero_img relative w-fit">
+                <img class="h-[75%] md:h-fit " src="./src/imgs/hero/hero img.webp"
+                    alt="Gold serum bottle on a marble display stand with warm shadow aesthetics" />
+                <div class="absolute -bottom-10 left-30  sm:bottom-20 sm:left-10  md:left-20 lg:-bottom-10 lg:-left-20 
+                w-60 sm:w-40 md:w-60 col gap-[7.5px] justify-center p-4 sm:p-4 md:p-8 bg-neutral">
+                    <h4 class="italic">
+                        Rare Peptides
+                    </h4>
+                    <p class="text-[0.625rem] leading-3.75 tracking-[0.063rem] uppercase">
+                        SUSTAINABLY SOURCED
+                        FROM HIGH-ALTITUDE FLORA
+                        TO ENHANCE CELLULAR
+                        LONGEVITY.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
     <footer class=" footer py-20 bg-background ">
@@ -114,16 +149,23 @@
                         rituals.
                     </p>
                     <form class="flex">
-                        <input class="w-[50%] sm:w-full border border-border px-1 sm:px-3 py-2.5 placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm" type="email" name="u_name" placeholder="Email Address">
-                        <button class="hover:opacity-70 active:scale-90 transition-all duration-300 shadow-md shrink-0 p-3 border-b border-b-border" type="submit"><img src="./src/imgs/icons/arrow.webp" width="15px" alt="arrow icon submit your email"/></button>
+                        <input
+                            class="w-[50%] sm:w-full border border-border px-1 sm:px-3 py-2.5 placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm"
+                            type="email" name="u_name" placeholder="Email Address">
+                        <button
+                            class="hover:opacity-70 active:scale-90 transition-all duration-300 shadow-md shrink-0 p-3 border-b border-b-border"
+                            type="submit"><img src="./src/imgs/icons/arrow.webp" width="15px"
+                                alt="arrow icon submit your email" /></button>
                     </form>
                 </div>
             </div>
             <div class="flex flex-col gap-5 justify-center sm:flex-row sm:justify-between">
                 <p class="text-[10px] leading-3.5 tracking-[.188rem]">© 2024 LUMERA SKIN. THE ETHEREAL CURATOR.</p>
                 <div class="row gap-8">
-                    <a href="#"><img class="hover:scale-110 transition-all duration-100" src="./src/imgs/icons/location.webp" width="16px" alt="our navigation" /> </a>
-                    <a href="#"><img class="hover:scale-110 transition-all duration-100" src="./src/imgs/icons/website.webp" width="16px" alt="website" /> </a>
+                    <a href="#"><img class="hover:scale-110 transition-all duration-100"
+                            src="./src/imgs/icons/location.webp" width="16px" alt="our navigation" /> </a>
+                    <a href="#"><img class="hover:scale-110 transition-all duration-100"
+                            src="./src/imgs/icons/website.webp" width="16px" alt="website" /> </a>
                 </div>
             </div>
         </div>
