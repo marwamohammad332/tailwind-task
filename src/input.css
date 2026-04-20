@@ -31,7 +31,7 @@
     h1 {
         font-size: 3rem;
         line-height: 3.5rem;
-        @apply md:text-[3.5rem] md:leading-18 lg:leading-24;
+        @apply md:text-[4rem]  lg:text-[5rem] md:leading-18 lg:leading-24;
     }
     h2 {
     }
@@ -40,7 +40,7 @@
     h4 {
         font-size: 0.875rem;
         line-height: 1.5rem;
-        @apply sm:text-base md:text-xl sm:leading-7;
+        @apply sm:text-base lg:text-xl sm:leading-7;
     }
     h5 {
         font-family: var(--font-Garamond);
@@ -59,9 +59,9 @@
 
     .container {
         @apply mx-auto;
-        @apply px-[24px];
+        @apply px-6;
         @apply md:px-10;
-        @apply lg:px-0;
+        @apply lg:px-3;
     }
 }
 
