@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-   
     --color-primary: #77525C;
     --color-secondary: #685C58;
     --color-tertiary: #D3C2C5;
@@ -31,7 +30,7 @@
     h1 {
         font-size: 3rem;
         line-height: 3.5rem;
-        @apply md:text-[4rem]  lg:text-[5rem] md:leading-18 lg:leading-24;
+        @apply md:text-[4rem]  lg:text-[75px] md:leading-18 lg:leading-24;
     }
     h2 {
     }
