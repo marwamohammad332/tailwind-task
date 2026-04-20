@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+   
     --color-primary: #77525C;
     --color-secondary: #685C58;
     --color-tertiary: #D3C2C5;
@@ -60,7 +61,7 @@
         @apply mx-auto;
         @apply px-[24px];
         @apply md:px-10;
-        @apply lg:px-0
+        @apply lg:px-0;
     }
 }
 
@@ -78,7 +79,9 @@
     @apply flex flex-col items-start ;
 }
 @utility hero-link{
-    @apply px-10 py-4 text-sm sm:text-xs leading-4 sm:leading-5 tracking-[0.088rem] uppercase;
+    @apply px-6 lg:px-10 py-3 lg:py-4 text-xs md:text-sm leading-4 md:leading-5
+    tracking-[0.05rem] md:tracking-[0.088rem] uppercase
+    hover:opacity-70 hover:scale-97 transition-all duration-300;
 }
 
 @utility footer-nav {
