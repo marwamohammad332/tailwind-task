@@ -97,9 +97,12 @@
         </section>
         <section class="brand_authority container py-24 flex flex-col gap-24 md:flex-row md:gap-11 lg:gap-20">
             <div class="b_ground w-fit mx-auto relative px-2 lg:px-0">
-                <img class=" max-w-full object-cover sm:max-w-85 lg:min-w-95 h-full" src="./src/imgs/brand authority/Background.webp"
+                <img class=" max-w-full object-cover sm:max-w-85 lg:min-w-95 h-full"
+                    src="./src/imgs/brand authority/Background.webp"
                     alt="side profile of woman applying skincare cream to her face in warm, natural sunlight." />
-                <div class="bg-roseground absolute -z-1 -top-12 md:-top-10 lg:-top-12 -right-4 sm:-right-12 md:-right-9 lg:-right-12 opacity-20 w-48 h-64"></div>
+                <div
+                    class="bg-roseground absolute -z-1 -top-12 md:-top-10 lg:-top-12 -right-4 sm:-right-12 md:-right-9 lg:-right-12 opacity-20 w-48 h-64">
+                </div>
             </div>
             <div class="authority_text flex order-first md:order-last justify-end px-2 lg:px-0">
                 <div class=" md:max-w-full lg:max-w-[95%] col gap-6 lg:gap-8 md:my-8 lg:my-11">
@@ -134,9 +137,78 @@
                 </div>
             </div>
         </section>
+        <section class="shop bg-background py-24">
+            <div class="container px-12 lg:px-3 ">
+                <div class="flex flex-col gap-2.5 sm:gap-0 sm:flex-row sm:items-center sm:justify-between mb-16">
+                    <h3 class="italic text-xl md:text-3xl lg:text-4xl leading-7 md:leading-9 lg:leading-10">
+                        Shop by Skin Concern
+                    </h3>
+                    <a class="hover:scale-105 transition-all duration-150 text-xs leading-4 tracking-[2.4px] underline underline-offset-4"
+                        href="#">
+                        VIEW ALL GUIDE
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-8">
+                    <div class="card group ">
+                        <div class="overflow-hidden relative">
+                            <img class=" group-hover:scale-105 transition-all 
+                                 duration-700" src="./src/imgs/shop/women with green eyes.webp"
+                            alt="half face for white women with green eyes" />
+                            <div class="absolute inset-0 w-full h-full bg-primary/0 hover:bg-primary/10
+                                 transition-all duration-700">
+                            </div>
+                        </div>
+                        <h4 class="mt-5 text-sm sm:text-base lg:text-lg leading-5 sm:leading-6 lg:leading-7">
+                            Deep Hydration
+                        </h4>
+                        <p class="uppercase text-[0.625rem] leading-3.75 tracking-[0.063rem]">
+                            THE QUENCH COLLECTION
+                        </p>
+                    </div>
+                    <div class="card group">
+                        <div class="overflow-hidden">
+                            <img class="group-hover:scale-105 transition-all duration-700" 
+                            src="./src/imgs/shop/gold color.webp"
+                            alt="gold liquid" />
+                        </div>
+                        <h4 class=" mt-5 text-sm sm:text-base lg:text-lg leading-5 sm:leading-6 lg:leading-7">
+                            Anti-Aging
+                        </h4>
+                        <p class="uppercase text-[0.625rem] leading-3.75 tracking-[0.063rem]">
+                            THE AGELESS RITUAL
+                        </p>
+                    </div>
+                    <div class="card group">
+                        <div class="overflow-hidden">
+                           <img class="group-hover:scale-105 transition-all duration-700" src="./src/imgs/shop/white bottel.webp" alt="brightening illumination kit product set" /> 
+                        </div>
+                        <h4 class="mt-5 text-sm sm:text-base lg:text-lg leading-5 sm:leading-6 lg:leading-7">
+                            Brightening
+                        </h4>
+                        <p class="uppercase text-[0.625rem] leading-3.75 tracking-[0.063rem]">
+                            THE ILLUMINATION KIT
+                        </p>
+                    </div>
+                    <div class="card group">
+                        <div class="overflow-hidden">
+                            <img class="group-hover:scale-105 transition-all duration-700"
+                         src="./src/imgs/shop/woman.webp"
+                            alt="illustrated women applying white cream to her cheeks,symbolizing a skin recovery and repair routine" />
+                        </div>
+                         <h4 class="mt-5 text-sm sm:text-base lg:text-lg leading-5 sm:leading-6 lg:leading-7">
+                            Calm & Repair
+                        </h4>
+                        <p class="uppercase text-[0.625rem] leading-3.75 tracking-[0.063rem]">
+                            THE RECOVERY SYSTEM
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
     <footer class=" footer py-20 bg-background ">
-        <div class="container flex flex-col gap-20 px-12 lg:px-3 ">
+        <div class="container px-12 lg:px-3 flex flex-col gap-20  ">
             <div class=" grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-13.25 md:gap-10 lg:gap-12">
                 <div class="col gap-6">
                     <h5 class="font-bold">
@@ -189,13 +261,13 @@
                         rituals.
                     </p>
                     <form class="flex">
-                        <input
-                            class="w-[50%] sm:w-full border border-border px-1 sm:px-3 py-2.5 placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm"
-                            type="email" name="u_name" placeholder="Email Address">
-                        <button
-                            class="hover:opacity-70 active:scale-90 transition-all duration-300 shadow-md shrink-0 p-3 border-b border-b-border"
-                            type="submit"><img src="./src/imgs/icons/arrow.webp" width="15px"
-                                alt="arrow icon submit your email" /></button>
+                        <input class="w-[50%] sm:w-full border border-border px-1 sm:px-3 py-2.5
+                            placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm" type="email"
+                            name="u_name" placeholder="Email Address">
+                        <button class="hover:opacity-70 active:scale-90 transition-all duration-300
+                             shadow-md shrink-0 p-3 border-b border-b-border" type="submit"><img
+                                class="hover:translate-x-1 transition-all duration-75" src="./src/imgs/icons/arrow.webp"
+                                width="15px" alt="arrow icon submit your email" /></button>
                     </form>
                 </div>
             </div>
