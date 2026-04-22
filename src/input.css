@@ -98,3 +98,6 @@
     @apply flex flex-col gap-1 items-start 
     mx-auto;
 }
+@utility small-text{
+    @apply text-[0.625rem] leading-3.75 tracking-[0.063rem];
+}
