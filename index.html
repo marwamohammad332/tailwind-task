@@ -49,7 +49,7 @@
                     <li class="hidden sm:block"><a href="#"><img class="hover:opacity-50 transition-all duration-500"
                                 src="./src/imgs/icons/profile.svg" alt="user profile icon" /> </a>
                     </li>
-                    <li class="sm:hidden"><button><img class="hover:opacity-50 transition-all duration-500"
+                    <li class="sm:hidden"><button><img class="hover:opacity-50 hover:scale-97 transition-all duration-500"
                                 src="./src/imgs/icons/list icon.svg" alt="icon list img" /></button>
                     </li>
                 </ul>
@@ -330,7 +330,8 @@
             <div class="container grid grid-cols-1 sm:grid-cols-3 gap-16 sm:gap-8 lg:gap-16">
                 <div class="card items-center text-center justify-center gap-8">
                     <img class="mx-auto" src="./src/imgs/icons/fontnote.svg" alt="fontnote icon" />
-                    <p class="flex-1 italic font-serif text-base md:text-lg lg:text-xl leading-7 md:leading-9 font-light">
+                    <p
+                        class="flex-1 italic font-serif text-base md:text-lg lg:text-xl leading-7 md:leading-9 font-light">
                         "LUMERA has transformed my
                         morning from a chore into a
                         moment of pure serenity. My skin
@@ -340,9 +341,11 @@
                         ELENA R. — FASHION DIRECTOR
                     </p>
                 </div>
-                <div class="card items-center text-center justify-center gap-8 sm:border-x border-whitetext/20 px-4 lg:px-7">
+                <div
+                    class="card items-center text-center justify-center gap-8 sm:border-x border-whitetext/20 px-4 lg:px-7">
                     <img class="mx-auto" src="./src/imgs/icons/fontnote.svg" alt="fontnote icon" />
-                    <p class="flex-1 italic font-serif text-base md:text-lg lg:text-xl leading-7 md:leading-9 font-light">
+                    <p
+                        class="flex-1 italic font-serif text-base md:text-lg lg:text-xl leading-7 md:leading-9 font-light">
                         "The molecular precision is
                         evident from the first
                         application. It’s the high-end
@@ -355,7 +358,8 @@
                 </div>
                 <div class="card items-center text-center justify-center gap-8">
                     <img class="mx-auto" src="./src/imgs/icons/fontnote.svg" alt="fontnote icon" />
-                    <p class="flex-1 italic font-serif text-base md:text-lg lg:text-xl leading-7 md:leading-9 font-light">
+                    <p
+                        class="flex-1 italic font-serif text-base md:text-lg lg:text-xl leading-7 md:leading-9 font-light">
                         "Finally, a brand that respects the
                         ritual of skincare as much as the
                         results. The textures are simply
@@ -365,6 +369,29 @@
                         SOPHIE L. — WELLNESS CURATOR
                     </p>
                 </div>
+            </div>
+        </section>
+        <section class="join_us py-24">
+            <div class="max-w-2xs sm:max-w-xl md:max-w-4xl mx-auto py-20 col items-center gap-6 
+               border border-tertiary/30">
+                <h2 class="italic text-base sm:text-lg md:text-xl lg:text-3xl leading-5 md:leading-7 lg:leading-10">
+                    Join the Lumera Circle
+                </h2>
+                <p class="max-w-[70%] sm:max-w-[50%] text-center text-xs sm:text-sm md:text-base leading-6">
+                    Receive seasonal ritual guides, early access to limited
+                    editions, and invitations to our virtual skin consultations.
+                </p>
+                <form class="flex flex-col items-center sm:flex-row gap-4 max-w-[80%] sm:max-w-[70%] mt-6 justify-center">
+                    <input class="min-w-[75%] border border-tertiary px-2 sm:px-4 py-2 sm:py-4.5
+                    placeholder:uppercase placeholder:text-xs md:text-sm tracking-[1.4px] text-placeholder
+                    focus:border-sky-500 focus:outline focus:outline-sky-500" 
+                    type="email" name="useremail" placeholder="YOUR EMAIL ADDRESS">
+                    <button class="bg-primary text-whitetext w-fit px-6 sm:px-12 py-2 sm:py-4.5
+                    uppercase text-xs leading-4 tracking-[1.2px] 
+                    hover:opacity-70 hover:scale-97 transition-all duration-700">
+                    SUBSCRIBE
+                     </button>
+                </form>
             </div>
         </section>
     </main>
@@ -423,10 +450,12 @@
                     </p>
                     <form class="flex">
                         <input class="w-[50%] sm:w-full border border-border px-1 sm:px-3 py-2.5
-                            placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm" type="email"
-                            name="u_name" placeholder="Email Address">
-                        <button class="hover:opacity-70 active:scale-90 transition-all duration-300
-                             shadow-md shrink-0 p-3 border-b border-b-border" type="submit"><img
+                            placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm
+                             focus:border-sky-500 focus:outline focus:outline-sky-500" type="email"
+                            name="u_email" placeholder="Email Address">
+                        <button class="hover:opacity-70 hover:scale-90 transition-all duration-700
+                             shadow-md shrink-0 p-3 border-b border-b-border" type="submit">
+                             <img
                                 class="hover:translate-x-1 transition-all duration-75" src="./src/imgs/icons/arrow.webp"
                                 width="15px" alt="arrow icon submit your email" /></button>
                     </form>
