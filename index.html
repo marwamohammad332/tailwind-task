@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="./src/imgs/logo.svg" />
+    <link rel="icon" href="./src/imgs/icons/lumera-skin-favicon.svg" />
     <link href="./src/output.css" rel="stylesheet">
 </head>
 
@@ -25,8 +25,9 @@
     <header class="navbar sticky z-50 top-0 py-6 shadow-lg bg-neutral ">
         <div class="container row justify-between ">
             <div class="row gap-8">
-                <a class="barand_name uppercase font-bold font-Garamond text-xl 
-            sm:text-2xl leading-8 tracking-widest text-primary" href="./index.html">LUMERA SKIN</a>
+                <img class="sm:hidden" src="./src/imgs/icons/Screenshot_24-4-2026_21578_.svg" width="41.83px"/>
+                <a class="barand_name hidden sm:block uppercase font-bold font-Garamond text-xl 
+                  sm:text-2xl leading-8 tracking-widest text-primary" href="./index.html">LUMERA SKIN</a>
                 <ul class="list gap-3 md:gap-4 lg:gap-8 hidden sm:row">
                     <li><a class="nav-link " href="#">Shop</a> </li>
                     <li><a class="nav-link " href="#">Rituals</a> </li>
@@ -72,7 +73,7 @@
                     and scientific precision, designed to elevate your morning
                     transition into a meditative ritual of radiance.
                 </p>
-                <div class="row gap-6 ">
+                <div class="col sm:row  gap-6 ">
                     <a class="hero-link bg-primary text-white" href="#">DISCOVER RITUALS</a>
                     <a class="hero-link bg-white text-primary border border-tertiary" href="#">SHOP ALL</a>
                 </div>
@@ -143,7 +144,7 @@
                     <h3 class="italic text-xl md:text-3xl lg:text-4xl leading-7 md:leading-9 lg:leading-10">
                         Shop by Skin Concern
                     </h3>
-                    <a class="hover:scale-105 transition-all duration-150 text-xs leading-4 tracking-[2.4px] underline underline-offset-4"
+                    <a class="hover:scale-105 transition-all duration-150 text-xs leading-4 tracking-[0.15rem] underline underline-offset-4"
                         href="#">
                         VIEW ALL GUIDE
                     </a>
@@ -240,10 +241,10 @@
                 </div>
                 <div class="rightbar max-w-75 col gap-12 mx-auto ">
                     <div class="bg-forground/30 p-10 col">
-                        <h4 class="mb-2.5 lg:mb-[14.87px] italic txt-base md:text-lg leading-5 md:leading-8">
+                        <h4 class="mb-2.5 lg:mb-[0.929rem] italic txt-base md:text-lg leading-5 md:leading-8">
                             The Morning Calm
                         </h4>
-                        <p class="text-xs leading-4 md:leading-[22.8px]">
+                        <p class="text-xs leading-4 md:leading-[1.425rem]">
                             Start your day with gentle lymphatic drainage and hydration.
                         </p>
                         <a class="row gap-2 font-bold small-text hover:scale-105 transition-all duration-150"
@@ -268,7 +269,7 @@
                     <h2 class="italic text-lg md:text-2xl lg:text-3xl leading-6 md:leading-8 lg:leading-10">
                         Pure Ingredients, Proven Potency
                     </h2>
-                    <p class="mt-4 text-xs md:text-sm leading-4 md:leading-5 tracking-[4.2px]">
+                    <p class="mt-4 text-xs md:text-sm leading-4 md:leading-5 tracking-[0.263rem]">
                         THE BOTANICAL ARCHIVE
                     </p>
                 </div>
@@ -337,7 +338,7 @@
                         moment of pure serenity. My skin
                         has never looked so alive."
                     </p>
-                    <p class="small-text text-center font-medium md:tracking-[3px]">
+                    <p class="small-text text-center font-medium md:tracking-[0.188rem]">
                         ELENA R. — FASHION DIRECTOR
                     </p>
                 </div>
@@ -352,7 +353,7 @@
                         science my skin was
                         craving."
                     </p>
-                    <p class="small-text text-center font-medium md:tracking-[3px]">
+                    <p class="small-text text-center font-medium md:tracking-[0.188rem]">
                         DR. MARCUS W. — DERMATOLOGIST
                     </p>
                 </div>
@@ -365,15 +366,15 @@
                         results. The textures are simply
                         ethereal."
                     </p>
-                    <p class="small-text text-center font-medium md:tracking-[3px]">
+                    <p class="small-text text-center font-medium md:tracking-[0.188rem]">
                         SOPHIE L. — WELLNESS CURATOR
                     </p>
                 </div>
             </div>
         </section>
         <section class="join_us py-24">
-            <div class="max-w-2xs sm:max-w-xl md:max-w-4xl mx-auto py-20 col items-center gap-6 
-               border border-tertiary/30">
+            <div class="max-w-[85%] sm:max-w-xl md:max-w-4xl mx-auto py-20 col items-center gap-6 
+               border border-tertiary">
                 <h2 class="italic text-base sm:text-lg md:text-xl lg:text-3xl leading-5 md:leading-7 lg:leading-10">
                     Join the Lumera Circle
                 </h2>
@@ -381,13 +382,13 @@
                     Receive seasonal ritual guides, early access to limited
                     editions, and invitations to our virtual skin consultations.
                 </p>
-                <form class="flex flex-col items-center sm:flex-row gap-4 max-w-[80%] sm:max-w-[70%] mt-6 justify-center">
-                    <input class="min-w-[75%] border border-tertiary px-2 sm:px-4 py-2 sm:py-4.5
-                    placeholder:uppercase placeholder:text-xs md:text-sm tracking-[1.4px] text-placeholder
+                <form class="flex flex-col sm:items-center sm:flex-row gap-4 w-full max-w-[90%] sm:max-w-[70%] mt-6 justify-center">
+                    <input class="flex-1 border border-tertiary px-2 sm:px-4 py-2 sm:py-4.5
+                    placeholder:uppercase placeholder:text-xs md:text-sm tracking-tight sm:tracking-[0.088rem] text-placeholder
                     focus:border-sky-500 focus:outline focus:outline-sky-500" 
                     type="email" name="useremail" placeholder="YOUR EMAIL ADDRESS">
-                    <button class="bg-primary text-whitetext w-fit px-6 sm:px-12 py-2 sm:py-4.5
-                    uppercase text-xs leading-4 tracking-[1.2px] 
+                    <button class="bg-primary text-whitetext flex-none mx-auto w-fit px-6 sm:px-12 py-2 sm:py-4.5
+                    uppercase text-xs leading-4 tracking-[0.075rem] 
                     hover:opacity-70 hover:scale-97 transition-all duration-700">
                     SUBSCRIBE
                      </button>

@@ -72,7 +72,7 @@
 }
 
 @utility row {
-    @apply flex items-center;
+    @apply flex flex-row items-center;
 }
 
 @utility nav-link {
