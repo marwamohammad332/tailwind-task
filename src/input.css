@@ -87,7 +87,10 @@
 @utility hero-link{
     @apply px-6 lg:px-10 py-3 lg:py-4 text-xs md:text-sm leading-4 md:leading-5
     tracking-[0.05rem] md:tracking-[0.088rem] uppercase
-    hover:opacity-70 hover:scale-97 transition-all duration-300;
+    button-hover;
+}
+@utility button-hover{
+    @apply hover:opacity-70 hover:scale-97 transition-all duration-700;
 }
 
 @utility footer-nav {
