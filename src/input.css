@@ -19,6 +19,9 @@
 }
 
 @layer base {
+    html{
+        scroll-behavior: smooth;
+    }
     body {
         background-color: white;
         color: var(--color-secondary);
@@ -77,21 +80,23 @@
 }
 
 @utility nav-link {
-    @apply font-Garamond text-lg text-primary italic
-    hover:opacity-50 hover:underline hover:underline-offset-8 
-    transition-all duration-500;
+    @apply inline-block font-Garamond text-lg text-primary italic nav-hover;
+}
+@utility nav-hover{
+    @apply hover:opacity-90 hover:scale-93 hover:underline hover:underline-offset-8 
+    transition-all duration-300;
 }
 
 @utility col {
     @apply flex flex-col items-start ;
 }
 @utility hero-link{
-    @apply bg-primary text-whitetext
+    @apply bg-primary text-whitetext rounded-lg
     px-6 lg:px-10 py-3 lg:py-4 text-xs md:text-sm leading-4 md:leading-5
     tracking-[0.05rem] md:tracking-[0.088rem] uppercase button-hover;
 }
 @utility button-hover{
-    @apply hover:opacity-70 hover:scale-97 transition-all duration-700;
+    @apply hover:opacity-70 hover:scale-97 transition-all duration-700 rounded-lg;
 }
 
 @utility footer-nav {

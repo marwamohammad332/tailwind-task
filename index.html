@@ -29,28 +29,36 @@
                 <a class="barand_name hidden sm:block uppercase font-bold font-Garamond text-xl 
                   sm:text-2xl leading-8 tracking-widest text-primary" href="./index.html">LUMERA SKIN</a>
                 <ul class="list gap-3 md:gap-4 lg:gap-8 hidden sm:row">
-                    <li><a class="nav-link " href="./shop.html">Shop</a> </li>
-                    <li><a class="nav-link " href="#">Rituals</a> </li>
-                    <li><a class="nav-link " href="#">Ingredients</a> </li>
-                    <li><a class="nav-link" href="#">About</a> </li>
+                    <li><a class="nav-link " href="#shop">Shop</a> </li>
+                    <li><a class="nav-link " href="#rituals">Rituals</a> </li>
+                    <li><a class="nav-link " href="#ingredient">Ingredients</a> </li>
+                    <li><a class="nav-link" href="#about">About</a> </li>
                 </ul>
             </div>
             <div class="icons">
                 <ul class="icons_nav row gap-5 md:gap-[1.499rem]">
-                    <li><a href="#">
-                            <img class="hover:opacity-50 transition-all duration-500" src="./src/imgs/icons/search.svg"
+                    <li class="py-1.5 nav-hover hover:border-b hover:border-primary"><a href="#">
+                            <img  src="./src/imgs/icons/search.svg"
                                 alt="serch icon" /> </a>
                     </li>
-                    <li class=" relative inline-block hover:opacity-50 transition-all duration-500"><a
-                            href="./cart"><img class="" src="./src/imgs/icons/cart.svg" alt="cart icon" />
-                            <span class=" absolute opacity-80 -top-2 -right-2 bg-roseground text-neutral text-xs w-4 h-4
+                    <li class="py-1.5 nav-hover hover:border-b hover:border-primary">
+                        <a href="#./wishlist">
+                            <img src="./src/imgs/icons/heart.svg" alt="heart icon"/>
+                        </a>
+                    </li>
+                    <li class=" relative inline-block py-1.5 nav-hover hover:border-b hover:border-primary">
+                        <a
+                            href="./cart.html"><img class="" src="./src/imgs/icons/cart.svg" alt="cart icon" />
+                            <span class=" absolute opacity-80 -top-1 -right-2 bg-roseground text-neutral text-xs w-4 h-4
                             row justify-center rounded-full">3</span>
                         </a>
                     </li>
-                    <li class="hidden sm:block"><a href="#"><img class="hover:opacity-50 transition-all duration-500"
+                    <li class="hidden nav-hover py-1.5 hover:border-b hover:border-primary sm:block">
+                        <a href="./useraccaount.html">
+                        <img class=""
                                 src="./src/imgs/icons/profile.svg" alt="user profile icon" /> </a>
                     </li>
-                    <li class="sm:hidden"><button><img class="hover:opacity-50 hover:scale-97 transition-all duration-500"
+                    <li class="sm:hidden"><button><img class="nav-hover"
                                 src="./src/imgs/icons/list icon.svg" alt="icon list img" /></button>
                     </li>
                 </ul>
@@ -75,14 +83,14 @@
                 </p>
                 <div class="col sm:row  gap-6 ">
                     <a class="hero-link" href="#">DISCOVER RITUALS</a>
-                    <a class="hero-link bg-white text-primary border border-tertiary" href="#">SHOP ALL</a>
+                    <a class="hero-link bg-whitetext text-primary border border-tertiary" href="#">SHOP ALL</a>
                 </div>
             </div>
             <div class="hero_img relative mx-auto">
-                <img class="lg:w-87.5 sm:h-[88%] aspect-square sm:aspect-auto object-cover "
+                <img class="rounded-3xl lg:w-87.5 sm:h-[88%] aspect-square sm:aspect-auto object-cover "
                     src="./src/imgs/hero/hero img.webp"
                     alt="Gold serum bottle on a marble display stand with warm shadow aesthetics" />
-                <div class="absolute -bottom-15 right-0  sm:-bottom-3 sm:left-0 lg:-bottom-10 lg:-left-20 
+                <div class="rounded-3xl absolute -bottom-15 right-0  sm:-bottom-3 sm:left-0 lg:-bottom-10 lg:-left-20 
                  w-40  lg:w-60 col gap-[0.469rem] justify-center p-3.5 sm:p-4 lg:p-8 bg-neutral">
                     <h4 class="italic">
                         Rare Peptides
@@ -96,13 +104,13 @@
                 </div>
             </div>
         </section>
-        <section class="brand_authority container py-24 flex flex-col gap-24 md:flex-row md:gap-11 lg:gap-20">
+        <section id="about" class="brand_authority container py-24 flex flex-col gap-24 md:flex-row md:gap-11 lg:gap-20">
             <div class="b_ground w-fit mx-auto relative px-2 lg:px-0">
-                <img class=" max-w-full object-cover sm:max-w-85 lg:min-w-95 h-full"
+                <img class="rounded-3xl max-w-full object-cover sm:max-w-85 lg:min-w-95 h-full"
                     src="./src/imgs/brand authority/Background.webp"
                     alt="side profile of woman applying skincare cream to her face in warm, natural sunlight." />
                 <div
-                    class="bg-roseground absolute -z-1 -top-12 md:-top-10 lg:-top-12 -right-4 sm:-right-12 md:-right-9 lg:-right-12 opacity-20 w-48 h-64">
+                    class="bg-roseground rounded-3xl absolute -z-1 -top-12 md:-top-10 lg:-top-12 -right-4 sm:-right-12 md:-right-9 lg:-right-12 opacity-20 w-48 h-64">
                 </div>
             </div>
             <div class="authority_text flex order-first md:order-last justify-end px-2 lg:px-0">
@@ -138,7 +146,7 @@
                 </div>
             </div>
         </section>
-        <section class="shop bg-background py-24">
+        <section id="shop" class="shop bg-background py-24">
             <div class="container px-12 lg:px-3 ">
                 <div class="flex flex-col gap-2.5 sm:gap-0 sm:flex-row sm:items-center sm:justify-between mb-16">
                     <h3 class="italic text-xl md:text-3xl lg:text-4xl leading-7 md:leading-9 lg:leading-10">
@@ -152,8 +160,8 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-8">
                     <div class="card group ">
                         <a href="#">
-                            <div class="overflow-hidden relative">
-                                <img class=" group-hover:scale-105 transition-all 
+                            <div class="rounded-2xl overflow-hidden relative">
+                                <img class="rounded-2xl group-hover:scale-105 transition-all 
                                  duration-700" src="./src/imgs/shop/women with green eyes.webp"
                                     alt="half face for white women with green eyes" />
                                 <div class="absolute inset-0 w-full h-full bg-primary/0 hover:bg-primary/10
@@ -170,8 +178,8 @@
                     </div>
                     <div class="card group">
                         <a href="#">
-                            <div class="overflow-hidden">
-                                <img class="group-hover:scale-105 transition-all duration-700"
+                            <div class="rounded-2xl overflow-hidden">
+                                <img class="rounded-2xl group-hover:scale-105 transition-all duration-700"
                                     src="./src/imgs/shop/gold color.webp" alt="gold liquid" />
                             </div>
                             <h4 class=" mt-5 text-sm sm:text-base lg:text-lg leading-5 sm:leading-6 lg:leading-7">
@@ -184,8 +192,8 @@
                     </div>
                     <div class="card group">
                         <a href="#">
-                            <div class="overflow-hidden">
-                                <img class="group-hover:scale-105 transition-all duration-700"
+                            <div class="rounded-2xl overflow-hidden">
+                                <img class="rounded-2xl group-hover:scale-105 transition-all duration-700"
                                     src="./src/imgs/shop/white bottel.webp"
                                     alt="brightening illumination kit product set" />
                             </div>
@@ -199,8 +207,8 @@
                     </div>
                     <div class="card group">
                         <a href="#">
-                            <div class="overflow-hidden">
-                                <img class="group-hover:scale-105 transition-all duration-700"
+                            <div class="rounded-2xl overflow-hidden">
+                                <img class="rounded-2xl group-hover:scale-105 transition-all duration-700"
                                     src="./src/imgs/shop/woman.webp"
                                     alt="illustrated women applying white cream to her cheeks,symbolizing a skin recovery and repair routine" />
                             </div>
@@ -215,14 +223,14 @@
                 </div>
             </div>
         </section>
-        <section class="featured_rituals py-24">
+        <section id="rituals" class="featured_rituals py-24">
             <div class="container w-full px-12 lg:px-3 flex flex-col  sm:flex-row gap-12">
-                <div class="leftbar group relative sm:max-w-[75%]  self-stretch overflow-hidden">
+                <div class="leftbar rounded-3xl group relative sm:max-w-[75%]  self-stretch overflow-hidden">
                     <img class="object-cover h-150 
                     group-hover:scale-110 group-hover:blur-xs transition-all duration-2000"
                         src="./src/imgs/featured rituals/cream sit.webp"
                         alt="selection of lumera skin products on a ston tray under warm sunlight" />
-                    <div class="  min-w-[5%] max-w-[70%]  absolute left-16 bottom-16 col gap-4">
+                    <div class="rounded-2xl  min-w-[5%] max-w-[70%]  absolute left-16 bottom-16 col gap-4">
                         <p class="small-text font-bold text-primary
                         group-hover:bg-neutral/10 transition-all duration-700">
                             SEASONAL EDIT
@@ -240,7 +248,7 @@
                     </div>
                 </div>
                 <div class="rightbar max-w-75 col gap-12 mx-auto ">
-                    <div class="bg-forground/30 p-10 col">
+                    <div class="bg-forground/30 rounded-2xl p-10 col">
                         <h4 class="mb-2.5 lg:mb-[0.929rem] italic txt-base md:text-lg leading-5 md:leading-8">
                             The Morning Calm
                         </h4>
@@ -251,8 +259,8 @@
                             href="#">READ JOURNAL <img src="./src/imgs/featured rituals/arrow icon.svg"
                                 alt="arrow icon" /></a>
                     </div>
-                    <div class="bg-grayground p-10">
-                        <img class="" src="./src/imgs/featured rituals/green crem.webp"
+                    <div class="bg-grayground rounded-2xl p-10">
+                        <img class="rounded-2xl" src="./src/imgs/featured rituals/green crem.webp"
                             alt="top-down close-up of smooth,swirled skincare cream in a glass jar" />
                         <h4 class="italic text-base md:text-lg leading-6 md:leading-8 mt-5 lg:mt-6 mb-3.5 lg:mb-4">
                             Product Layering Guide
@@ -263,7 +271,7 @@
                     </div>
                 </div>
         </section>
-        <section class="ingredient_showcase py-24">
+        <section id="ingredient" class="ingredient_showcase py-24">
             <div class="container px-12 lg:px-3">
                 <div class="text-center mb-14 md:mb-24">
                     <h2 class="italic text-lg md:text-2xl lg:text-3xl leading-6 md:leading-8 lg:leading-10">
@@ -274,9 +282,9 @@
                     </p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 mx-auto">
-                    <div class="card group p-4 lg:p-12 border border-tertiary/20 gap-3.75 
+                    <div class="card rounded-2xl group p-4 lg:p-12 border border-tertiary/20 gap-3.75 
                     hover:bg-tertiary/20 transition-all duration-700">
-                        <img class="mx-auto grayscale group-hover:grayscale-0 transition-all duration-1500"
+                        <img class="rounded-2xl mx-auto grayscale group-hover:grayscale-0 transition-all duration-1500"
                             src="./src/imgs/ingredient showcase/orange.webp" alt="macro orangeslice, glowing texture" />
                         <h5 class="mt-4 sm:mt-8.25 font-medium">
                             Vitamin C (THD Ascorbate)
@@ -290,9 +298,9 @@
                             ORIGINS: AMALFI COAST
                         </p>
                     </div>
-                    <div class="card group border border-tertiary/20 p-4 lg:p-12 gap-3.75
+                    <div class="card rounded-2xl group border border-tertiary/20 p-4 lg:p-12 gap-3.75
                     hover:bg-tertiary/20 transition-all duration-700">
-                        <img class="mx-auto grayscale group-hover:grayscale-0 transition-all duration-1500"
+                        <img class="rounded-2xl mx-auto grayscale group-hover:grayscale-0 transition-all duration-1500"
                             src="./src/imgs/ingredient showcase/water waves.webp"
                             alt="clean water rippl, blue-grey liquid" />
                         <h5 class="mt-4 sm:mt-8.25 font-medium">
@@ -307,9 +315,9 @@
                             ORIGINS: FERMENTATION LAB
                         </p>
                     </div>
-                    <div class="card group border border-tertiary/20 p-4 lg:p-12 gap-3.75
+                    <div class="rounded-2xl card group border border-tertiary/20 p-4 lg:p-12 gap-3.75
                     hover:bg-tertiary/20 transition-all duration-700">
-                        <img class="mx-auto grayscale group-hover:grayscale-0 transition-all duration-1500"
+                        <img class="rounded-2xl mx-auto grayscale group-hover:grayscale-0 transition-all duration-1500"
                             src="./src/imgs/ingredient showcase/withte linen.webp"
                             alt="white silk folds, soft pearlescent eheen" />
                         <h5 class="mt-4 sm:mt-8.25 font-medium">
@@ -327,7 +335,7 @@
                 </div>
             </div>
         </section>
-        <section class="about bg-roseground text-whitetext py-24">
+        <section class="testimonials bg-roseground text-whitetext py-24">
             <div class="container grid grid-cols-1 sm:grid-cols-3 gap-16 sm:gap-8 lg:gap-16">
                 <div class="card items-center text-center justify-center gap-8">
                     <img class="mx-auto" src="./src/imgs/icons/fontnote.svg" alt="fontnote icon" />
@@ -374,7 +382,7 @@
         </section>
         <section class="join_us py-24">
             <div class="max-w-[85%] sm:max-w-xl md:max-w-4xl mx-auto py-20 col items-center gap-6 
-               border border-tertiary">
+               border border-tertiary bg-tertiary/10 rounded-3xl">
                 <h2 class="italic text-base sm:text-lg md:text-xl lg:text-3xl leading-5 md:leading-7 lg:leading-10">
                     Join the Lumera Circle
                 </h2>
@@ -383,7 +391,7 @@
                     editions, and invitations to our virtual skin consultations.
                 </p>
                 <form class="flex flex-col sm:items-center sm:flex-row gap-4 w-full max-w-[90%] sm:max-w-[70%] mt-6 justify-center">
-                    <input class="flex-1 border border-tertiary px-2 sm:px-4 py-2 sm:py-4.5
+                    <input class="flex-1 bg-whitetext border border-tertiary rounded-lg px-2 sm:px-4 py-2 sm:py-4.5
                     placeholder:uppercase placeholder:text-xs md:text-sm tracking-tight sm:tracking-[0.088rem] text-placeholder
                     focus:border-sky-500 focus:outline focus:outline-sky-500" 
                     type="email" name="useremail" placeholder="YOUR EMAIL ADDRESS">
@@ -450,7 +458,7 @@
                         rituals.
                     </p>
                     <form class="flex">
-                        <input class="w-[50%] sm:w-full border border-border px-1 sm:px-3 py-2.5
+                        <input class="w-[50%] sm:w-full border border-border rounded-lg px-1 sm:px-3 py-2.5
                             placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm
                              focus:border-sky-500 focus:outline focus:outline-sky-500" type="email"
                             name="u_email" placeholder="Email Address">
