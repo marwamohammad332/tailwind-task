@@ -22,10 +22,10 @@
 </head>
 
 <body>
-    <header class="navbar sticky z-50 top-0 py-6 shadow-lg bg-neutral ">
+    <header class="navbar sticky z-50 top-0 py-6 shadow-lg bg-neutral/80 backdrop-blur-xs">
         <div class="container row justify-between ">
             <div class="row gap-8">
-                <img class="sm:hidden" src="./src/imgs/icons/LS.svg" width="41.83px"/>
+                <img class="sm:hidden" src="./src/imgs/icons/LS.svg" width="41.83px" />
                 <a class="barand_name hidden sm:block uppercase font-bold font-Garamond text-xl 
                   sm:text-2xl leading-8 tracking-widest text-primary" href="./index.html">LUMERA SKIN</a>
                 <ul class="list gap-3 md:gap-4 lg:gap-8 hidden sm:row">
@@ -38,28 +38,25 @@
             <div class="icons">
                 <ul class="icons_nav row gap-5 md:gap-[1.499rem]">
                     <li class="py-1.5 nav-hover hover:border-b hover:border-primary"><a href="#">
-                            <img  src="./src/imgs/icons/search.svg"
-                                alt="serch icon" /> </a>
+                            <img src="./src/imgs/icons/search.svg" alt="serch icon" /> </a>
                     </li>
                     <li class="py-1.5 nav-hover hover:border-b hover:border-primary">
                         <a href="#./wishlist">
-                            <img src="./src/imgs/icons/heart.svg" alt="heart icon"/>
+                            <img src="./src/imgs/icons/heart.svg" alt="heart icon" />
                         </a>
                     </li>
                     <li class=" relative inline-block py-1.5 nav-hover hover:border-b hover:border-primary">
-                        <a
-                            href="./cart.html"><img class="" src="./src/imgs/icons/cart.svg" alt="cart icon" />
+                        <a href="./cart.html"><img class="" src="./src/imgs/icons/cart.svg" alt="cart icon" />
                             <span class=" absolute opacity-80 -top-1 -right-2 bg-roseground text-neutral text-xs w-4 h-4
                             row justify-center rounded-full">3</span>
                         </a>
                     </li>
                     <li class="hidden nav-hover py-1.5 hover:border-b hover:border-primary sm:block">
                         <a href="./useraccaount.html">
-                        <img class=""
-                                src="./src/imgs/icons/profile.svg" alt="user profile icon" /> </a>
+                            <img class="" src="./src/imgs/icons/profile.svg" alt="user profile icon" /> </a>
                     </li>
-                    <li class="sm:hidden"><button><img class="nav-hover"
-                                src="./src/imgs/icons/list icon.svg" alt="icon list img" /></button>
+                    <li class="sm:hidden"><button><img class="nav-hover" src="./src/imgs/icons/list icon.svg"
+                                alt="icon list img" /></button>
                     </li>
                 </ul>
             </div>
@@ -68,9 +65,10 @@
     <main>
         <section class="shop_hero pt-4 pb-16 ">
             <div class="container  md:h-screen row items-stretch">
-                <div class="relative rounded-l-3xl flex-1 min-w-full sm:min-w-[50%] sm:max-w-[50%] overflow-hidden group">
+                <div
+                    class="relative z-40 rounded-l-3xl flex-1 min-w-full sm:min-w-[50%] sm:max-w-[50%] overflow-hidden group">
                     <img class="aspect-3/2 object-cover sm:aspect-auto sm:object-fill md:object-cover lg:object-fill w-full sm:h-full group-hover:scale-110 transition-all duration-2000"
-                        src="./src/imgs/shop/hero shop.webp" alt="dropper bottle on a stone plantform." />
+                        src="./src/imgs/shoppart/hero shop.webp" alt="dropper bottle on a stone plantform." />
                     <div class="absolute pl-5 pb-5 sm:pl-8 sm:pb-8 lg:p-0 inset-s-0 bottom-0 lg:left-12 lg:bottom-12 w-[70%]  lg:w-[50%]
                     col gap-2.5 sm:gap-4 ">
                         <p class="text-whitetext text-[10px] lg:text-sm leading-2 lg:leading-6 tracking-[.8px] md:tracking-[3px]
@@ -105,9 +103,10 @@
                             pressed petal oils to deliver deep hydration without weight.
                         </p>
                         <a class="group row gap-4 text-primary text-xs md:text-sm leading-4 md:leading-6 font-medium"
-                         href="#">
+                            href="#">
                             Discover Ingredients
-                            <img class="group-hover:translate-x-2 transition-all duration-75" src="./src/imgs/icons/arrow.webp" width="11.3px" />
+                            <img class="group-hover:translate-x-2 transition-all duration-75"
+                                src="./src/imgs/icons/arrow.webp" width="11.3px" />
                         </a>
                     </div>
                 </div>
@@ -115,7 +114,7 @@
 
         </section>
         <section class="collection container grid grid-cols-[1fr_3fr] gap-6 lg:gap-12">
-            <div class="sidebar h-fit sticky top-40 flex flex-col gap-12">
+            <div class="sidebar h-fit sticky top-40 flex flex-col gap-12 pb-32">
                 <div>
                     <h3 class="mb-6 font-Garamond italic text-base lg:text-[20px] leading-5 lg:leading-7">
                         Collections
@@ -125,7 +124,8 @@
                             <input class="hidden peer" type="radio" id="Suite" name="products" value="Suite">
                             <label class="cursor-pointer text-xs lg:text-sm leading-3 lg:leading-5 tracking-[0.35px]
                              group-hover:text-primary transition-all duration-700
-                           peer-checked:underline peer-checked:underline-offset-4 " for="Suite">The Hydration Suite</label>
+                           peer-checked:underline peer-checked:underline-offset-4 " for="Suite">The Hydration
+                                Suite</label>
                             <span class="opacity-40 text-xs leading-4 tracking-[0.35px] 
                             peer-checked:text-primary peer-checked:opacity-70">12</span>
                         </li>
@@ -133,7 +133,8 @@
                             <input class="hidden peer" type="radio" id="Series" name="products" value="Series">
                             <label class="cursor-pointer  text-xs lg:text-sm leading-3 lg:leading-5 tracking-[0.35px]
                              group-hover:text-primary transition-all duration-700
-                           peer-checked:underline peer-checked:underline-offset-4 " for="Series">Luminous Series</label>
+                           peer-checked:underline peer-checked:underline-offset-4 " for="Series">Luminous
+                                Series</label>
                             <span class="opacity-40 text-xs leading-4 tracking-[0.35px] 
                             peer-checked:text-primary peer-checked:opacity-70">08</span>
                         </li>
@@ -141,7 +142,8 @@
                             <input class="hidden peer" type="radio" id="Rituals" name="products" value="Rituals">
                             <label class="cursor-pointer  text-xs lg:text-sm leading-3 lg:leading-5 tracking-[0.35px]
                              group-hover:text-primary transition-all duration-700
-                           peer-checked:underline peer-checked:underline-offset-4 " for="Rituals">Evening Rituals</label>
+                           peer-checked:underline peer-checked:underline-offset-4 " for="Rituals">Evening
+                                Rituals</label>
                             <span class="opacity-40 text-xs leading-4 tracking-[0.35px] 
                             peer-checked:text-primary peer-checked:opacity-70">05</span>
                         </li>
@@ -163,54 +165,388 @@
                         <li class="py-1">
                             <input class="hidden peer" type="checkbox" id="FineLines" name="skin" value="Fine Lines">
                             <label class="text-xs leading-4 text-secondary
-                            border border-tertiary/30 px-4 py-2
+                            border border-tertiary/30 rounded-lg px-4 py-2
                              peer-checked:border-primary peer-checked:border-2 peer-checked:text-primary
-                            hover:border-primary hover:text-primary transition-all duration-700" 
-                            for="FineLines">Fine Lines</label>
+                            hover:border-primary hover:text-primary transition-all duration-700" for="FineLines">Fine
+                                Lines</label>
                         </li>
-                         <li  class="py-1">
+                        <li class="py-1">
                             <input class="hidden peer" type="checkbox" id="Dullness" name="skin" value="Dullness">
                             <label class="text-xs leading-4
-                            border border-tertiary/30 px-4 py-2
+                            border border-tertiary/30 rounded-lg px-4 py-2
                              peer-checked:border-primary peer-checked:border-2 peer-checked:text-primary
                             hover:border-primary hover:text-primary transition-all duration-700"
-                             for="Dullness">Dullness</label>
+                                for="Dullness">Dullness</label>
                         </li>
-                         <li  class="py-1">
+                        <li class="py-1">
                             <input class="hidden peer" type="checkbox" id="Hydration" name="skin" value="Hydration">
                             <label class="text-xs leading-4
-                            border border-tertiary/30 px-4 py-2
+                            border border-tertiary/30 rounded-lg px-4 py-2
                              peer-checked:border-primary peer-checked:border-2 peer-checked:text-primary 
-                            hover:border-primary hover:text-primary transition-all duration-700" 
-                            for="Hydration">Hydration</label>
+                            hover:border-primary hover:text-primary transition-all duration-700"
+                                for="Hydration">Hydration</label>
                         </li>
-                         <li  class="py-1">
+                        <li class="py-1">
                             <input class="hidden peer" type="checkbox" id="Sensitivity" name="skin" value="Sensitivity">
                             <label class="text-xs leading-4
-                            border border-tertiary/30 px-4 py-2
+                            border border-tertiary/30 rounded-lg px-4 py-2
                              peer-checked:border-primary peer-checked:border-2 peer-checked:text-primary
                             hover:border-primary hover:text-primary transition-all duration-700"
-                             for="Sensitivity">Sensitivity</label>
+                                for="Sensitivity">Sensitivity</label>
                         </li>
-                         <li  class="py-1">
+                        <li class="py-1">
                             <input class="hidden peer" type="checkbox" id="Texture" name="skin" value="Texture">
                             <label class="text-xs leading-4 
-                            border border-tertiary/30 px-4 py-2
+                            border border-tertiary/30 rounded-lg px-4 py-2
                              peer-checked:border-primary peer-checked:border-2 peer-checked:text-primary
                             hover:border-primary hover:text-primary transition-all duration-700"
-                            for="Texture">Texture</label>
+                                for="Texture">Texture</label>
                         </li>
                     </ul>
                 </div>
                 <div class="row gap-2 pt-8 border-t border-t-tertiary/30">
-                    <img src="./src/imgs/icons/leaf.svg" alt="leaf icon"/>
+                    <img src="./src/imgs/icons/leaf.svg" alt="leaf icon" />
                     <p class="text-xs leading-4 tracking-[2px] md:tracking-[2.4px]">
                         CRUELTY FREE & VEGAN
                     </p>
                 </div>
             </div>
-            <div class="product ">
-                
+            <div class="product flex flex-col gap-12">
+                <div class="top flex items-start justify-between">
+                    <div class="col gap-2">
+                        <h2 class="font-Garamond italic text-3xl leading-9">
+                            Luminous Series
+                        </h2>
+                        <p class="text-sm leading-5">
+                            Displaying 18 of 54 curated formulations
+                        </p>
+                    </div>
+                    <div class="row gap-8">
+                        <div class="sort flex items-center text-xs md:text-sm leading-3 md:leading-5 tracking-[0.35px]">
+                            <select class="cursor-pointer">
+                                <option>Sort by</option>
+                                <option>name</option>
+                                <option>newest</option>
+                                <option>price</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <button
+                                class="flex cursor-pointer items-center gap-2 text-xs md:text-sm leading-3 md:leading-5 tracking-[0.35px]">
+                                View
+                                <img src="./src/imgs/shop page/viwe.svg" alt="grid icon" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom grid grid-cols-3 gap-12">
+                    <div class="card group items-stretch gap-6">
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
+                                src="./src/imgs/shop page/black bottle.webp" alt="" />
+                            <p class="absolute z-20 small-text top-3.5 left-4 rounded-sm
+                            bg-secondary/70 text-whitetext py-0.75 px-3">
+                                BESTSELLER
+                            </p>
+                            <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            button-hover hover:opacity-60 duration-1000 transition-all
+                            bg-primary text-whitetext  small-text py-2 px-3">
+                                QUICK SHOP
+                            </button>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p class="uppercase small-text tracking-[2px]">
+                                CONCENTRATE RITUAL
+                            </p>
+                            <h3 class="font-Garamond italic text-lg leading-7">
+                                Botanical Night Nectar
+                            </h3>
+                            <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                $84.00 <img src="./src/imgs/shop page/bestseller icon.svg" />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card group items-stretch gap-6">
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
+                                src="./src/imgs/shop page/white bottle.webp" alt="" />
+                            <p class="absolute z-20 small-text top-3.5 left-4 rounded-sm
+                            bg-secondary/70 text-whitetext py-0.75 px-3">
+                                Limited
+                            </p>
+                            <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            button-hover hover:opacity-60 duration-1000 transition-all
+                            bg-primary text-whitetext  small-text py-2 px-3">
+                                QUICK SHOP
+                            </button>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p class="uppercase small-text tracking-[2px]">
+                                CLEANSING THERAPY
+                            </p>
+                            <h3 class="font-Garamond italic text-lg leading-7">
+                                Petal Infused Balm
+                            </h3>
+                            <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                $62.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card group items-stretch gap-6">
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
+                                src="./src/imgs/shop page/white serum.webp" alt="" />
+                            <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            button-hover hover:opacity-60 duration-1000 transition-all
+                            bg-primary text-whitetext  small-text py-2 px-3">
+                                QUICK SHOP
+                            </button>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p class="uppercase small-text tracking-[2px]">
+                                DAILY SHIELD
+                            </p>
+                            <h3 class="font-Garamond italic text-lg leading-7">
+                                Opaline Silk Veil SPF
+                            </h3>
+                            <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                $56.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card group items-stretch gap-6 mt-12">
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
+                                src="./src/imgs/shop page/white cream.webp" alt="" />
+                            <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            button-hover hover:opacity-60 duration-1000 transition-all
+                            bg-primary text-whitetext  small-text py-2 px-3">
+                                QUICK SHOP
+                            </button>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p class="uppercase small-text tracking-[2px]">
+                                INTENSIVE CARE
+                            </p>
+                            <h3 class="font-Garamond italic text-lg leading-7">
+                                Rose Hip Recovery Mask
+                            </h3>
+                            <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                $72.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card group items-stretch gap-6 mt-12">
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
+                                src="./src/imgs/shop page/tow bottles.webp" alt="" />
+                            <p class="absolute z-20 small-text top-3.5 left-4 rounded-sm
+                            bg-secondary/70 text-whitetext py-0.75 px-3">
+                                New
+                            </p>
+                            <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            button-hover hover:opacity-60 duration-1000 transition-all
+                            bg-primary text-whitetext  small-text py-2 px-3">
+                                QUICK SHOP
+                            </button>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p class="uppercase small-text tracking-[2px]">
+                                SETS & KITS
+                            </p>
+                            <h3 class="font-Garamond italic text-lg leading-7">
+                                The Ritual Starter Trio
+                            </h3>
+                            <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                $145.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card group items-stretch gap-6 mt-12">
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
+                                src="./src/imgs/shop page/serum sunset.webp" alt="" />
+                            <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            button-hover hover:opacity-60 duration-1000 transition-all
+                            bg-primary text-whitetext  small-text py-2 px-3">
+                                QUICK SHOP
+                            </button>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p class="uppercase small-text tracking-[2px]">
+                                Hydrating Mist
+                            </p>
+                            <h3 class="font-Garamond italic text-lg leading-7">
+                                Aura Glow Toning Mist
+                            </h3>
+                            <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                $48.00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more flex flex-col items-center pt-12 pb-32">
+                    <input id="loadmore" class="peer hidden" type="checkbox" name="check" value="laod">
+                    <label for="loadmore" class="flex group gap-4 pt-8 border-t border-t-tertiary/50 
+                    hover:translate-y-2 transition-all duration-300
+                    peer-checked:hidden text-sm leading-5 tracking-[4.2px] cursor-pointer">
+                    LOAD MORE 
+                        <img class="group-hover:translate-y-2 transition-all duration-300" src="./src/imgs/icons/arrow down.svg" width="11.3px"/> 
+                    </label>
+                   
+                    <div class="peer-checked:grid grid-cols-3 gap-12 hidden">
+                        <div class="card group items-stretch gap-6">
+                            <div class="relative rounded-xl overflow-hidden">
+                                <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
+                                    src="./src/imgs/shop page/black bottle.webp" alt="" />
+                                <p class="absolute z-20 small-text top-3.5 left-4 rounded-sm
+                            bg-secondary/70 text-whitetext py-0.75 px-3">
+                                    BESTSELLER
+                                </p>
+                                <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            button-hover hover:opacity-60 duration-1000 transition-all
+                            bg-primary text-whitetext  small-text py-2 px-3">
+                                    QUICK SHOP
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <p class="uppercase small-text tracking-[2px]">
+                                    CONCENTRATE RITUAL
+                                </p>
+                                <h3 class="font-Garamond italic text-lg leading-7">
+                                    Botanical Night Nectar
+                                </h3>
+                                <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                    $84.00 <img src="./src/imgs/shop page/bestseller icon.svg" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card group items-stretch gap-6">
+                            <div class="relative rounded-xl overflow-hidden">
+                                <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
+                                    src="./src/imgs/shop page/white bottle.webp" alt="" />
+                                <p class="absolute z-20 small-text top-3.5 left-4 rounded-sm
+                            bg-secondary/70 text-whitetext py-0.75 px-3">
+                                    Limited
+                                </p>
+                                <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            button-hover hover:opacity-60 duration-1000 transition-all
+                            bg-primary text-whitetext  small-text py-2 px-3">
+                                    QUICK SHOP
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <p class="uppercase small-text tracking-[2px]">
+                                    CLEANSING THERAPY
+                                </p>
+                                <h3 class="font-Garamond italic text-lg leading-7">
+                                    Petal Infused Balm
+                                </h3>
+                                <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                    $62.00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card group items-stretch gap-6">
+                            <div class="relative rounded-xl overflow-hidden">
+                                <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
+                                    src="./src/imgs/shop page/white serum.webp" alt="" />
+                                <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            button-hover hover:opacity-60 duration-1000 transition-all
+                            bg-primary text-whitetext  small-text py-2 px-3">
+                                    QUICK SHOP
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <p class="uppercase small-text tracking-[2px]">
+                                    DAILY SHIELD
+                                </p>
+                                <h3 class="font-Garamond italic text-lg leading-7">
+                                    Opaline Silk Veil SPF
+                                </h3>
+                                <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                    $56.00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card group items-stretch gap-6 mt-12">
+                            <div class="relative rounded-xl overflow-hidden">
+                                <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
+                                    src="./src/imgs/shop page/white cream.webp" alt="" />
+                                <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            button-hover hover:opacity-60 duration-1000 transition-all
+                            bg-primary text-whitetext  small-text py-2 px-3">
+                                    QUICK SHOP
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <p class="uppercase small-text tracking-[2px]">
+                                    INTENSIVE CARE
+                                </p>
+                                <h3 class="font-Garamond italic text-lg leading-7">
+                                    Rose Hip Recovery Mask
+                                </h3>
+                                <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                    $72.00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card group items-stretch gap-6 mt-12">
+                            <div class="relative rounded-xl overflow-hidden">
+                                <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
+                                    src="./src/imgs/shop page/tow bottles.webp" alt="" />
+                                <p class="absolute z-20 small-text top-3.5 left-4 rounded-sm
+                            bg-secondary/70 text-whitetext py-0.75 px-3">
+                                    New
+                                </p>
+                                <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            button-hover hover:opacity-60 duration-1000 transition-all
+                            bg-primary text-whitetext  small-text py-2 px-3">
+                                    QUICK SHOP
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <p class="uppercase small-text tracking-[2px]">
+                                    SETS & KITS
+                                </p>
+                                <h3 class="font-Garamond italic text-lg leading-7">
+                                    The Ritual Starter Trio
+                                </h3>
+                                <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                    $145.00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card group items-stretch gap-6 mt-12">
+                            <div class="relative rounded-xl overflow-hidden">
+                                <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
+                                    src="./src/imgs/shop page/serum sunset.webp" alt="" />
+                                <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            button-hover hover:opacity-60 duration-1000 transition-all
+                            bg-primary text-whitetext  small-text py-2 px-3">
+                                    QUICK SHOP
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <p class="uppercase small-text tracking-[2px]">
+                                    Hydrating Mist
+                                </p>
+                                <h3 class="font-Garamond italic text-lg leading-7">
+                                    Aura Glow Toning Mist
+                                </h3>
+                                <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                    $48.00
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                    <label for="loadmore" class="hidden peer-checked:flex group hover:-translate-y-2 transition-all duration-300 gap-4 pt-8 mt-12 border-t border-t-tertiary/50 
+                     text-sm leading-5 tracking-[4.2px] cursor-pointer">
+                    SHOW LESS 
+                        <img class="rotate-180 group-hover:-translate-y-2 transition-all duration-300" 
+                        src="./src/imgs/icons/arrow down.svg" width="11.3px"/> 
+                    </label>
+                </div>
             </div>
         </section>
     </main>
@@ -270,13 +606,13 @@
                     <form class="flex">
                         <input class="w-[50%] sm:w-full border border-border rounded-lg px-1 sm:px-3 py-2.5
                             placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm
-                             focus:border-sky-500 focus:outline focus:outline-sky-500" type="email"
-                            name="u_email" placeholder="Email Address">
+                             focus:border-sky-500 focus:outline focus:outline-sky-500" type="email" name="u_email"
+                            placeholder="Email Address">
                         <button class="group button-hover
                              shadow-md shrink-0 p-3 border-b border-b-border" type="submit">
-                             <img
-                                class="group-hover:translate-x-1 transition-all duration-75" src="./src/imgs/icons/arrow.webp"
-                                width="15px" alt="arrow icon submit your email" /></button>
+                            <img class="group-hover:translate-x-1 transition-all duration-75"
+                                src="./src/imgs/icons/arrow.webp" width="15px"
+                                alt="arrow icon submit your email" /></button>
                     </form>
                 </div>
             </div>
