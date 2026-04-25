@@ -25,33 +25,40 @@
     <header class="navbar sticky z-50 top-0 py-6 shadow-lg bg-neutral ">
         <div class="container row justify-between ">
             <div class="row gap-8">
-                <img class="sm:hidden" src="./src/imgs/icons/LS.svg" width="41.83px" />
+                <img class="sm:hidden" src="./src/imgs/icons/LS.svg" width="41.83px"/>
                 <a class="barand_name hidden sm:block uppercase font-bold font-Garamond text-xl 
                   sm:text-2xl leading-8 tracking-widest text-primary" href="./index.html">LUMERA SKIN</a>
                 <ul class="list gap-3 md:gap-4 lg:gap-8 hidden sm:row">
-                    <li><a class="nav-link " href="#">Shop</a> </li>
-                    <li><a class="nav-link " href="#">Rituals</a> </li>
-                    <li><a class="nav-link " href="#">Ingredients</a> </li>
-                    <li><a class="nav-link" href="#">About</a> </li>
+                    <li><a class="nav-link " href="#shop">Shop</a> </li>
+                    <li><a class="nav-link " href="#rituals">Rituals</a> </li>
+                    <li><a class="nav-link " href="#ingredient">Ingredients</a> </li>
+                    <li><a class="nav-link" href="#about">About</a> </li>
                 </ul>
             </div>
             <div class="icons">
                 <ul class="icons_nav row gap-5 md:gap-[1.499rem]">
-                    <li><a href="#">
-                            <img class="hover:opacity-50 transition-all duration-500" src="./src/imgs/icons/search.svg"
+                    <li class="py-1.5 nav-hover hover:border-b hover:border-primary"><a href="#">
+                            <img  src="./src/imgs/icons/search.svg"
                                 alt="serch icon" /> </a>
                     </li>
-                    <li class=" relative inline-block hover:opacity-50 transition-all duration-500"><a
-                            href="./cart"><img class="" src="./src/imgs/icons/cart.svg" alt="cart icon" />
-                            <span class=" absolute opacity-80 -top-2 -right-2 bg-roseground text-neutral text-xs w-4 h-4
+                    <li class="py-1.5 nav-hover hover:border-b hover:border-primary">
+                        <a href="#./wishlist">
+                            <img src="./src/imgs/icons/heart.svg" alt="heart icon"/>
+                        </a>
+                    </li>
+                    <li class=" relative inline-block py-1.5 nav-hover hover:border-b hover:border-primary">
+                        <a
+                            href="./cart.html"><img class="" src="./src/imgs/icons/cart.svg" alt="cart icon" />
+                            <span class=" absolute opacity-80 -top-1 -right-2 bg-roseground text-neutral text-xs w-4 h-4
                             row justify-center rounded-full">3</span>
                         </a>
                     </li>
-                    <li class="hidden sm:block"><a href="#"><img class="hover:opacity-50 transition-all duration-500"
+                    <li class="hidden nav-hover py-1.5 hover:border-b hover:border-primary sm:block">
+                        <a href="./useraccaount.html">
+                        <img class=""
                                 src="./src/imgs/icons/profile.svg" alt="user profile icon" /> </a>
                     </li>
-                    <li class="sm:hidden"><button><img
-                                class="hover:opacity-50 hover:scale-97 transition-all duration-500"
+                    <li class="sm:hidden"><button><img class="nav-hover"
                                 src="./src/imgs/icons/list icon.svg" alt="icon list img" /></button>
                     </li>
                 </ul>
@@ -59,9 +66,9 @@
         </div>
     </header>
     <main>
-        <section class="shop_hero pt-4 ">
-            <div class="container md:h-screen row items-stretch">
-                <div class="relative flex-1 min-w-full sm:min-w-[50%] sm:max-w-[50%] overflow-hidden group">
+        <section class="shop_hero pt-4 pb-16 ">
+            <div class="container  md:h-screen row items-stretch">
+                <div class="relative rounded-l-3xl flex-1 min-w-full sm:min-w-[50%] sm:max-w-[50%] overflow-hidden group">
                     <img class="aspect-3/2 object-cover sm:aspect-auto sm:object-fill md:object-cover lg:object-fill w-full sm:h-full group-hover:scale-110 transition-all duration-2000"
                         src="./src/imgs/shop/hero shop.webp" alt="dropper bottle on a stone plantform." />
                     <div class="absolute pl-5 pb-5 sm:pl-8 sm:pb-8 lg:p-0 inset-s-0 bottom-0 lg:left-12 lg:bottom-12 w-[70%]  lg:w-[50%]
@@ -106,6 +113,105 @@
                 </div>
             </div>
 
+        </section>
+        <section class="collection container grid grid-cols-[1fr_3fr] gap-6 lg:gap-12">
+            <div class="sidebar h-fit sticky top-40 flex flex-col gap-12">
+                <div>
+                    <h3 class="mb-6 font-Garamond italic text-base lg:text-[20px] leading-5 lg:leading-7">
+                        Collections
+                    </h3>
+                    <ul class="flex flex-col gap-4">
+                        <li class="row group justify-between cursor-pointer">
+                            <input class="hidden peer" type="radio" id="Suite" name="products" value="Suite">
+                            <label class="cursor-pointer text-xs lg:text-sm leading-3 lg:leading-5 tracking-[0.35px]
+                             group-hover:text-primary transition-all duration-700
+                           peer-checked:underline peer-checked:underline-offset-4 " for="Suite">The Hydration Suite</label>
+                            <span class="opacity-40 text-xs leading-4 tracking-[0.35px] 
+                            peer-checked:text-primary peer-checked:opacity-70">12</span>
+                        </li>
+                        <li class="row group justify-between cursor-pointer">
+                            <input class="hidden peer" type="radio" id="Series" name="products" value="Series">
+                            <label class="cursor-pointer  text-xs lg:text-sm leading-3 lg:leading-5 tracking-[0.35px]
+                             group-hover:text-primary transition-all duration-700
+                           peer-checked:underline peer-checked:underline-offset-4 " for="Series">Luminous Series</label>
+                            <span class="opacity-40 text-xs leading-4 tracking-[0.35px] 
+                            peer-checked:text-primary peer-checked:opacity-70">08</span>
+                        </li>
+                        <li class="row group justify-between cursor-pointer">
+                            <input class="hidden peer" type="radio" id="Rituals" name="products" value="Rituals">
+                            <label class="cursor-pointer  text-xs lg:text-sm leading-3 lg:leading-5 tracking-[0.35px]
+                             group-hover:text-primary transition-all duration-700
+                           peer-checked:underline peer-checked:underline-offset-4 " for="Rituals">Evening Rituals</label>
+                            <span class="opacity-40 text-xs leading-4 tracking-[0.35px] 
+                            peer-checked:text-primary peer-checked:opacity-70">05</span>
+                        </li>
+                        <li class="row group justify-between cursor-pointer">
+                            <input class="hidden peer" type="radio" id="Defiance" name="products" value="Defiance">
+                            <label class="cursor-pointer  text-xs lg:text-sm leading-3 lg:leading-5 tracking-[0.35px]
+                             group-hover:text-primary transition-all duration-700
+                           peer-checked:underline peer-checked:underline-offset-4 " for="Defiance">Sun Defiance</label>
+                            <span class="opacity-40 text-xs leading-4 tracking-[0.35px] 
+                            peer-checked:text-primary peer-checked:opacity-70">04</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-6 font-Garamond italic text-base lg:text-[20px] leading-5 lg:leading-7">
+                        Skin Concern
+                    </h3>
+                    <ul class="flex flex-row gap-[7.65px] flex-wrap">
+                        <li class="py-1">
+                            <input class="hidden peer" type="checkbox" id="FineLines" name="skin" value="Fine Lines">
+                            <label class="text-xs leading-4 text-secondary
+                            border border-tertiary/30 px-4 py-2
+                             peer-checked:border-primary peer-checked:border-2 peer-checked:text-primary
+                            hover:border-primary hover:text-primary transition-all duration-700" 
+                            for="FineLines">Fine Lines</label>
+                        </li>
+                         <li  class="py-1">
+                            <input class="hidden peer" type="checkbox" id="Dullness" name="skin" value="Dullness">
+                            <label class="text-xs leading-4
+                            border border-tertiary/30 px-4 py-2
+                             peer-checked:border-primary peer-checked:border-2 peer-checked:text-primary
+                            hover:border-primary hover:text-primary transition-all duration-700"
+                             for="Dullness">Dullness</label>
+                        </li>
+                         <li  class="py-1">
+                            <input class="hidden peer" type="checkbox" id="Hydration" name="skin" value="Hydration">
+                            <label class="text-xs leading-4
+                            border border-tertiary/30 px-4 py-2
+                             peer-checked:border-primary peer-checked:border-2 peer-checked:text-primary 
+                            hover:border-primary hover:text-primary transition-all duration-700" 
+                            for="Hydration">Hydration</label>
+                        </li>
+                         <li  class="py-1">
+                            <input class="hidden peer" type="checkbox" id="Sensitivity" name="skin" value="Sensitivity">
+                            <label class="text-xs leading-4
+                            border border-tertiary/30 px-4 py-2
+                             peer-checked:border-primary peer-checked:border-2 peer-checked:text-primary
+                            hover:border-primary hover:text-primary transition-all duration-700"
+                             for="Sensitivity">Sensitivity</label>
+                        </li>
+                         <li  class="py-1">
+                            <input class="hidden peer" type="checkbox" id="Texture" name="skin" value="Texture">
+                            <label class="text-xs leading-4 
+                            border border-tertiary/30 px-4 py-2
+                             peer-checked:border-primary peer-checked:border-2 peer-checked:text-primary
+                            hover:border-primary hover:text-primary transition-all duration-700"
+                            for="Texture">Texture</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row gap-2 pt-8 border-t border-t-tertiary/30">
+                    <img src="./src/imgs/icons/leaf.svg" alt="leaf icon"/>
+                    <p class="text-xs leading-4 tracking-[2px] md:tracking-[2.4px]">
+                        CRUELTY FREE & VEGAN
+                    </p>
+                </div>
+            </div>
+            <div class="product ">
+                
+            </div>
         </section>
     </main>
     <footer class=" footer py-20 bg-background">
@@ -162,15 +268,15 @@
                         rituals.
                     </p>
                     <form class="flex">
-                        <input class="w-[50%] sm:w-full border border-border px-1 sm:px-3 py-2.5
+                        <input class="w-[50%] sm:w-full border border-border rounded-lg px-1 sm:px-3 py-2.5
                             placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm
-                             focus:border-sky-500 focus:outline focus:outline-sky-500" type="email" name="u_email"
-                            placeholder="Email Address">
+                             focus:border-sky-500 focus:outline focus:outline-sky-500" type="email"
+                            name="u_email" placeholder="Email Address">
                         <button class="group button-hover
                              shadow-md shrink-0 p-3 border-b border-b-border" type="submit">
-                            <img class="group-hover:translate-x-1 transition-all duration-75"
-                                src="./src/imgs/featured rituals/arrow icon.svg" width="15px"
-                                alt="arrow icon submit your email" /></button>
+                             <img
+                                class="group-hover:translate-x-1 transition-all duration-75" src="./src/imgs/icons/arrow.webp"
+                                width="15px" alt="arrow icon submit your email" /></button>
                     </form>
                 </div>
             </div>
