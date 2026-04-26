@@ -112,6 +112,6 @@
     @apply text-[0.625rem] leading-3.75 tracking-[0.063rem];
 }
 @utility xsmall-text{
-    @apply text-[9px] leading-[13.5px] tracking-[0.45px]
+    @apply text-[9px] leading-[13.5px] tracking-[0.028rem]
     font-semibold;
 }
