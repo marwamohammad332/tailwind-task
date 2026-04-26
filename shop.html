@@ -25,7 +25,10 @@
     <header class="navbar sticky z-50 top-0 py-6 shadow-lg bg-neutral/80 backdrop-blur-xs">
         <div class="container row justify-between ">
             <div class="row gap-8">
-                <img class="sm:hidden" src="./src/imgs/icons/LS.svg" width="41.83px" />
+                <a class="sm:hidden" href="./index.html">
+                    <img class=" h-7.75" src="./src/imgs/icons/LS.svg" width="55px" />
+                </a>
+                
                 <a class="barand_name hidden sm:block uppercase font-bold font-Garamond text-xl 
                   sm:text-2xl leading-8 tracking-widest text-primary" href="./index.html">LUMERA SKIN</a>
                 <ul class="list gap-3 md:gap-4 lg:gap-8 hidden sm:row">
@@ -37,10 +40,10 @@
             </div>
             <div class="icons">
                 <ul class="icons_nav row gap-5 md:gap-[1.499rem]">
-                    <li class="py-1.5 nav-hover hover:border-b hover:border-primary"><a href="#">
+                    <li class="hidden sm:block py-1.5 nav-hover hover:border-b hover:border-primary"><a href="#">
                             <img src="./src/imgs/icons/search.svg" alt="serch icon" /> </a>
                     </li>
-                    <li class="py-1.5 nav-hover hover:border-b hover:border-primary">
+                    <li class="hidden sm:block py-1.5 nav-hover hover:border-b hover:border-primary">
                         <a href="#./wishlist">
                             <img src="./src/imgs/icons/heart.svg" alt="heart icon" />
                         </a>
@@ -111,10 +114,9 @@
                     </div>
                 </div>
             </div>
-
         </section>
-        <section class="collection container grid grid-cols-[1fr_3fr] gap-6 lg:gap-12">
-            <div class="sidebar h-fit sticky top-40 flex flex-col gap-12 pb-32">
+        <section class="collection container grid grid-cols-1 sm:grid-cols-[1fr_2fr] lg:grid-cols-[1fr_3fr] gap-8 md:gap-10 lg:gap-12">
+            <div class="sidebar h-fit sm:sticky top-40 flex flex-col gap-12 pb-12 sm:pb-32">
                 <div>
                     <h3 class="mb-6 font-Garamond italic text-base lg:text-[20px] leading-5 lg:leading-7">
                         Collections
@@ -161,7 +163,7 @@
                     <h3 class="mb-6 font-Garamond italic text-base lg:text-[20px] leading-5 lg:leading-7">
                         Skin Concern
                     </h3>
-                    <ul class="flex flex-row gap-[7.65px] flex-wrap">
+                    <ul class="flex flex-row gap-1.5 lg:gap-[7.65px] flex-wrap">
                         <li class="py-1">
                             <input class="hidden peer" type="checkbox" id="FineLines" name="skin" value="Fine Lines">
                             <label class="text-xs leading-4 text-secondary
@@ -206,18 +208,18 @@
                 </div>
                 <div class="row gap-2 pt-8 border-t border-t-tertiary/30">
                     <img src="./src/imgs/icons/leaf.svg" alt="leaf icon" />
-                    <p class="text-xs leading-4 tracking-[2px] md:tracking-[2.4px]">
+                    <p class="small-text lg:text-xs leading-4 tracking-[1.5px] md:tracking-[2px]">
                         CRUELTY FREE & VEGAN
                     </p>
                 </div>
             </div>
             <div class="product flex flex-col gap-12">
-                <div class="top flex items-start justify-between">
+                <div class="top flex flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
                     <div class="col gap-2">
-                        <h2 class="font-Garamond italic text-3xl leading-9">
+                        <h2 class="font-Garamond italic text-xl sm:text-2xl lg:text-3xl leading-6 md:leading-9">
                             Luminous Series
                         </h2>
-                        <p class="text-sm leading-5">
+                        <p class="text-xs md:text-sm leading-4 md:leading-5">
                             Displaying 18 of 54 curated formulations
                         </p>
                     </div>
@@ -239,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bottom grid grid-cols-3 gap-12">
+                <div class="bottom grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
                     <div class="card group items-stretch gap-6">
                         <div class="relative rounded-xl overflow-hidden">
                             <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
@@ -258,10 +260,10 @@
                             <p class="uppercase small-text tracking-[2px]">
                                 CONCENTRATE RITUAL
                             </p>
-                            <h3 class="font-Garamond italic text-lg leading-7">
+                            <h3 class="font-Garamond italic text-base md:text-lg leading-6 md:leading-7">
                                 Botanical Night Nectar
                             </h3>
-                            <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                            <p class="text-primary row justify-between mt-2 font-medium text-sm md:text-base leading-5 md:leading-6">
                                 $84.00 <img src="./src/imgs/shop page/bestseller icon.svg" />
                             </p>
                         </div>
@@ -274,7 +276,8 @@
                             bg-secondary/70 text-whitetext py-0.75 px-3">
                                 Limited
                             </p>
-                            <button class="absolute cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
+                            <button class="absolute cursor-pointer top-1/2 left-1/2 
+                            -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 
                             button-hover hover:opacity-60 duration-1000 transition-all
                             bg-primary text-whitetext  small-text py-2 px-3">
                                 QUICK SHOP
@@ -284,10 +287,10 @@
                             <p class="uppercase small-text tracking-[2px]">
                                 CLEANSING THERAPY
                             </p>
-                            <h3 class="font-Garamond italic text-lg leading-7">
+                            <h3 class="font-Garamond italic text-base md:text-lg leading-6 md:leading-7">
                                 Petal Infused Balm
                             </h3>
-                            <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                            <p class="text-primary row justify-between mt-2 font-medium text-sm md:text-base leading-5 md:leading-6">
                                 $62.00
                             </p>
                         </div>
@@ -306,15 +309,15 @@
                             <p class="uppercase small-text tracking-[2px]">
                                 DAILY SHIELD
                             </p>
-                            <h3 class="font-Garamond italic text-lg leading-7">
+                            <h3 class="font-Garamond italic text-base md:text-lg leading-6 md:leading-7">
                                 Opaline Silk Veil SPF
                             </h3>
-                            <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                            <p class="text-primary row justify-between mt-2 font-medium text-sm md:text-base leading-5 md:leading-6">
                                 $56.00
                             </p>
                         </div>
                     </div>
-                    <div class="card group items-stretch gap-6 mt-12">
+                    <div class="card group items-stretch gap-6 lg:mt-12">
                         <div class="relative rounded-xl overflow-hidden">
                             <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
                                 src="./src/imgs/shop page/white cream.webp" alt="" />
@@ -328,15 +331,15 @@
                             <p class="uppercase small-text tracking-[2px]">
                                 INTENSIVE CARE
                             </p>
-                            <h3 class="font-Garamond italic text-lg leading-7">
+                            <h3 class="font-Garamond italic text-base md:text-lg leading-6 md:leading-7">
                                 Rose Hip Recovery Mask
                             </h3>
-                            <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                            <p class="text-primary row justify-between mt-2 font-medium text-sm md:text-base leading-5 md:leading-6">
                                 $72.00
                             </p>
                         </div>
                     </div>
-                    <div class="card group items-stretch gap-6 mt-12">
+                    <div class="card group items-stretch gap-6 lg:mt-12">
                         <div class="relative rounded-xl overflow-hidden">
                             <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
                                 src="./src/imgs/shop page/tow bottles.webp" alt="" />
@@ -354,15 +357,15 @@
                             <p class="uppercase small-text tracking-[2px]">
                                 SETS & KITS
                             </p>
-                            <h3 class="font-Garamond italic text-lg leading-7">
+                            <h3 class="font-Garamond italic text-base md:text-lg leading-6 md:leading-7">
                                 The Ritual Starter Trio
                             </h3>
-                            <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                            <p class="text-primary row justify-between mt-2 font-medium text-sm md:text-base leading-5 md:leading-6">
                                 $145.00
                             </p>
                         </div>
                     </div>
-                    <div class="card group items-stretch gap-6 mt-12">
+                    <div class="card group items-stretch gap-6 lg:mt-12">
                         <div class="relative rounded-xl overflow-hidden">
                             <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
                                 src="./src/imgs/shop page/serum sunset.webp" alt="" />
@@ -376,7 +379,7 @@
                             <p class="uppercase small-text tracking-[2px]">
                                 Hydrating Mist
                             </p>
-                            <h3 class="font-Garamond italic text-lg leading-7">
+                            <h3 class="font-Garamond italic text-base md:text-lg leading-6 md:leading-7">
                                 Aura Glow Toning Mist
                             </h3>
                             <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
@@ -389,12 +392,12 @@
                     <input id="loadmore" class="peer hidden" type="checkbox" name="check" value="laod">
                     <label for="loadmore" class="flex group gap-4 pt-8 border-t border-t-tertiary/50 
                     hover:translate-y-2 transition-all duration-300
-                    peer-checked:hidden text-sm leading-5 tracking-[4.2px] cursor-pointer">
+                    peer-checked:hidden text-xs md:text-sm leading-5 tracking-[4.2px] cursor-pointer">
                     LOAD MORE 
                         <img class="group-hover:translate-y-2 transition-all duration-300" src="./src/imgs/icons/arrow down.svg" width="11.3px"/> 
                     </label>
                    
-                    <div class="peer-checked:grid grid-cols-3 gap-12 hidden">
+                    <div class="peer-checked:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12 hidden">
                         <div class="card group items-stretch gap-6">
                             <div class="relative rounded-xl overflow-hidden">
                                 <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
@@ -413,10 +416,10 @@
                                 <p class="uppercase small-text tracking-[2px]">
                                     CONCENTRATE RITUAL
                                 </p>
-                                <h3 class="font-Garamond italic text-lg leading-7">
+                                <h3 class="font-Garamond italic text-base md:text-lg leading-6 md:leading-7">
                                     Botanical Night Nectar
                                 </h3>
-                                <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                <p class="text-primary row justify-between mt-2 font-medium text-sm md:text-base leading-5 md:leading-6">
                                     $84.00 <img src="./src/imgs/shop page/bestseller icon.svg" />
                                 </p>
                             </div>
@@ -439,10 +442,10 @@
                                 <p class="uppercase small-text tracking-[2px]">
                                     CLEANSING THERAPY
                                 </p>
-                                <h3 class="font-Garamond italic text-lg leading-7">
+                                <h3 class="font-Garamond italic text-base md:text-lg leading-6 md:leading-7">
                                     Petal Infused Balm
                                 </h3>
-                                <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                <p class="text-primary row justify-between mt-2 font-medium text-sm md:text-base leading-5 md:leading-6">
                                     $62.00
                                 </p>
                             </div>
@@ -461,15 +464,15 @@
                                 <p class="uppercase small-text tracking-[2px]">
                                     DAILY SHIELD
                                 </p>
-                                <h3 class="font-Garamond italic text-lg leading-7">
+                                <h3 class="font-Garamond italic text-base md:text-lg leading-6 md:leading-7">
                                     Opaline Silk Veil SPF
                                 </h3>
-                                <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                <p class="text-primary row justify-between mt-2 font-medium text-sm md:text-base leading-5 md:leading-6">
                                     $56.00
                                 </p>
                             </div>
                         </div>
-                        <div class="card group items-stretch gap-6 mt-12">
+                        <div class="card group items-stretch gap-6 lg:mt-12">
                             <div class="relative rounded-xl overflow-hidden">
                                 <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
                                     src="./src/imgs/shop page/white cream.webp" alt="" />
@@ -483,15 +486,15 @@
                                 <p class="uppercase small-text tracking-[2px]">
                                     INTENSIVE CARE
                                 </p>
-                                <h3 class="font-Garamond italic text-lg leading-7">
+                                <h3 class="font-Garamond italic text-base md:text-lg leading-6 md:leading-7">
                                     Rose Hip Recovery Mask
                                 </h3>
-                                <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                <p class="text-primary row justify-between mt-2 font-medium text-sm md:text-base leading-5 md:leading-6">
                                     $72.00
                                 </p>
                             </div>
                         </div>
-                        <div class="card group items-stretch gap-6 mt-12">
+                        <div class="card group items-stretch gap-6 lg:mt-12">
                             <div class="relative rounded-xl overflow-hidden">
                                 <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
                                     src="./src/imgs/shop page/tow bottles.webp" alt="" />
@@ -509,15 +512,15 @@
                                 <p class="uppercase small-text tracking-[2px]">
                                     SETS & KITS
                                 </p>
-                                <h3 class="font-Garamond italic text-lg leading-7">
+                                <h3 class="font-Garamond italic text-base md:text-lg leading-6 md:leading-7">
                                     The Ritual Starter Trio
                                 </h3>
-                                <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                <p class="text-primary row justify-between mt-2 font-medium text-sm md:text-base leading-5 md:leading-6">
                                     $145.00
                                 </p>
                             </div>
                         </div>
-                        <div class="card group items-stretch gap-6 mt-12">
+                        <div class="card group items-stretch gap-6 lg::mt-12">
                             <div class="relative rounded-xl overflow-hidden">
                                 <img class="rounded-xl group-hover:scale-110 group-hover:blur-xs duration-1000 transition-all"
                                     src="./src/imgs/shop page/serum sunset.webp" alt="" />
@@ -531,17 +534,17 @@
                                 <p class="uppercase small-text tracking-[2px]">
                                     Hydrating Mist
                                 </p>
-                                <h3 class="font-Garamond italic text-lg leading-7">
+                                <h3 class="font-Garamond italic text-base md:text-lg leading-6 md:leading-7">
                                     Aura Glow Toning Mist
                                 </h3>
-                                <p class="text-primary row justify-between mt-2 font-medium text-base leading-6">
+                                <p class="text-primary row justify-between mt-2 font-medium text-sm md:text-base leading-5 md:leading-6">
                                     $48.00
                                 </p>
                             </div>
                         </div>
                     </div> 
                     <label for="loadmore" class="hidden peer-checked:flex group hover:-translate-y-2 transition-all duration-300 gap-4 pt-8 mt-12 border-t border-t-tertiary/50 
-                     text-sm leading-5 tracking-[4.2px] cursor-pointer">
+                    text-xs md:text-sm leading-5 tracking-[4.2px] cursor-pointer">
                     SHOW LESS 
                         <img class="rotate-180 group-hover:-translate-y-2 transition-all duration-300" 
                         src="./src/imgs/icons/arrow down.svg" width="11.3px"/> 
