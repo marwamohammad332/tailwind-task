@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register — LUMERA SKIN</title>
+    <meta name="description"
+        content="Log in to Lumera Skin to access your curated skincare rituals. Join us and discover ethereal beauty products designed to illuminate your natural glow.">
+    <meta name="keywords"
+        content="skincare, luxury skincare, serums, beauty, skincare routine, vitamin c, hyaluronic acid">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./src/imgs/icons/lumera-skin-favicon.svg" />
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="h-screen grid grid-cols-2">
+            <div class="lfet relative h-full">
+                <img class="w-full h-full object-cover" src="./src/imgs/login/login pic.webp" alt="Lumera Ritual" />
+                <img class="absolute z-1 inset-0" src="./src/imgs/login/Background (1).webp" />
+                <div class="w-[70%] absolute z-2 left-20 bottom-20 text-whitetext">
+                    <p class="small-text tracking-[2px]">
+                        THE ETHEREAL CURATOR
+                    </p>
+                    <h1 class="text-whitetext font-Garamond italic text-6xl leading-15 mt-4">
+                        A ritual of light and
+                        skin.
+                    </h1>
+                </div>
+            </div>
+            <div class="right flex justify-center items-center">
+                <div class="w-[70%] flex flex-col gap-12">
+                    <div class="head col gap-4">
+                        <h2>
+                            LUMERA SKIN
+                        </h2>
+                        <div class="col">
+                            <h3>
+                                Welcome back
+                            </h3>
+                            <p>
+                                Enter your details to access your curated ritual.
+                            </p>
+                        </div>
+                    </div>
+                    <form class="col gap-8">
+                        <label class="col gap-2">
+                            <span>EMAIL ADDRESS</span>
+                            <input placeholder="name@example.com" type="email" name="u_email">
+                         </label>
+                        <div class="col gap-2">
+                            <div class="row justify-between">
+                                <label for="pass-w">PASSWORD</label>
+                                <a href="#">FORGOT?</a>
+                            </div>
+                            <input id="pass-w" placeholder="••••••••" type="password"
+                            name="password" required>
+                        </div>
+                        <div class="buttons">
+                            <a class="row" href="#">
+                                SIGN IN
+                                <img src="./src/imgs/icons/arrow.webp"/> 
+                            </a>
+                            <div class="divider row">
+                                <hr> or <hr>
+                            </div>
+                            <a class="row" href="#">
+                                <img src="./src/imgs/login/headset.svg"/>
+                                CONTINUE WITH GOOGLE
+                            </a>
+                        </div>
+                    </form>
+                    <div class="bottom">
+                        <p>
+                            Don't have an account?
+                        </p>
+                        <a href="#">
+                            Create one
+                        </a>
+                    </div>
+                    <div class="footer row justify-between">
+                        <p>
+                            © 2024 LUMERA SKIN
+                        </p>
+                        <div class="row gap-6">
+                            <a href="#">
+                                PRIVACY
+                            </a>
+                            <a href="#">
+                                TERMS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
