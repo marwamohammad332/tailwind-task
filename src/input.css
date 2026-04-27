@@ -13,6 +13,7 @@
     --color-roseground: #926A74;
     --color-whitetext:#FFFBFF;
     --color-shopherobg:#EFEDEC;
+    --color-footerbord:#E7E5E4;
     --font-serif: "Noto Serif", serif;
     --font-inter: "Inter", sans-serif;
     --font-Garamond: "Cormorant Garamond", serif;
@@ -112,6 +113,6 @@
     @apply text-[0.625rem] leading-3.75 tracking-[0.063rem];
 }
 @utility xsmall-text{
-    @apply text-[9px] leading-[13.5px] tracking-[0.028rem]
+    @apply text-[0.563rem] leading-[0.844] tracking-[0.028rem]
     font-semibold;
 }
