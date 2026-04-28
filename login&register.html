@@ -23,10 +23,12 @@
 
 <body>
     <main>
-        <section class="h-screen grid grid-cols-2">
-            <div class="lfet relative h-full">
-                <img class="w-full h-full object-cover" src="./src/imgs/login/login pic.webp" alt="Lumera Ritual" />
-                <img class="absolute z-1 inset-0" src="./src/imgs/login/Background (1).webp" />
+        <section class="h-screen grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <div class="lfet relative sm:h-full">
+                <img class="sm:hidden h-[250px]" src="./src/imgs/login/Skincare routine closeup (1).webp" alt=""/>
+                <img class="sm:hidden absolute z-1 inset-0"
+                <img class="hidden sm:block w-full h-full object-cover" src="./src/imgs/login/login pic.webp" alt="Lumera Ritual" />
+                <img class="hidden sm:block absolute z-1 inset-0" src="./src/imgs/login/Background (1).webp" />
                 <div class="w-[70%] absolute z-2 left-20 bottom-20 text-whitetext">
                     <p class="small-text tracking-[2px]">
                         THE ETHEREAL CURATOR
@@ -38,66 +40,87 @@
                 </div>
             </div>
             <div class="right flex justify-center items-center">
-                <div class="w-[70%] flex flex-col gap-12">
+                <div class="w-[75%] sm:w-90% lg:w-[70%] flex flex-col gap-12">
                     <div class="head col gap-4">
-                        <h2>
+                        <h2 class="font-Garamond font-normal 
+                        text-lg lg:text-2xl leading-6 lg:leading-8 lg:tracking-[0.063rem] tracking-[0.15rem]">
                             LUMERA SKIN
                         </h2>
-                        <div class="col">
-                            <h3>
+                        <div class="col gap-0.75">
+                            <h3 class="font-Garamond font-normal 
+                            text-xl lg:text-4xl leading-6 lg:leading-8">
                                 Welcome back
                             </h3>
-                            <p>
+                            <p class="text-xs lg:text-sm leading-3.5 lg:leading-5.5">
                                 Enter your details to access your curated ritual.
                             </p>
                         </div>
                     </div>
-                    <form class="col gap-8">
-                        <label class="col gap-2">
-                            <span>EMAIL ADDRESS</span>
-                            <input placeholder="name@example.com" type="email" name="u_email">
-                         </label>
-                        <div class="col gap-2">
-                            <div class="row justify-between">
-                                <label for="pass-w">PASSWORD</label>
-                                <a href="#">FORGOT?</a>
+                    <form class="w-full col gap-10">
+                        <div class="w-full col gap-8">
+                            <label class="w-full col gap-2">
+                                <span class="uppercase text-lable small-text">EMAIL ADDRESS</span>
+                                <input class="focus:border-b-[0.094rem] focus:border-b-tertiary focus:outline-0 
+                                w-full py-3.5 border-b border-b-tertiary/40
+                            placeholder:text-placeholderlogin text-sm" placeholder="name@example.com" type="email"
+                                    name="u_email">
+                            </label>
+                            <div class="w-full col items-stretch gap-2">
+                                <div class="row justify-between">
+                                    <label class="uppercase text-lable small-text" for="pass-w">PASSWORD</label>
+                                    <a class="small-text tracking-[0.033rem] button-hover" href="#">FORGOT?</a>
+                                </div>
+                                <input class="focus:border-b-[0.094rem] focus:border-b-tertiary focus:outline-0 
+                                w-full py-3.5 border-b border-b-tertiary/40
+                            placeholder:text-placeholderlogin text-sm" id="pass-w" placeholder="••••••••"
+                                    type="password" name="password" required>
                             </div>
-                            <input id="pass-w" placeholder="••••••••" type="password"
-                            name="password" required>
                         </div>
-                        <div class="buttons">
-                            <a class="row" href="#">
-                                SIGN IN
-                                <img src="./src/imgs/icons/arrow.webp"/> 
+                        <div class="buttons w-full col items-center gap-6">
+                            <a class="bg-primary text-whitetext w-full rounded-[10px] 
+                            row items-center justify-center gap-2 mt-4 py-5
+                            button-hover" href="#">
+                                <span class="text-xs leading-4 tracking-widest font-normal">SIGN IN</span>
+                                <img src="./src/imgs/icons/arrowright.svg" width="8.75px" />
                             </a>
-                            <div class="divider row">
-                                <hr> or <hr>
+                            <div class="divider row w-full justify-between">
+                                <hr class="w-[45%] border border-tertiary/30"> <span
+                                    class="font-Garamond italic text-sm leading-5">or</span>
+                                <hr class="w-[45%] border border-tertiary/30">
                             </div>
-                            <a class="row" href="#">
-                                <img src="./src/imgs/login/headset.svg"/>
-                                CONTINUE WITH GOOGLE
+                            <a class="bg-whitetext text-primary border border-tertiary/50 w-full rounded-[10px] 
+                            row items-center justify-center gap-2 py-5
+                            button-hover" href="#">
+                                <img src="./src/imgs/login/headset.svg" />
+                                <span class="text-xs leading-4 tracking-widest font-normal">
+                                    CONTINUE WITH GOOGLE
+                                </span>
                             </a>
                         </div>
                     </form>
-                    <div class="bottom">
-                        <p>
+                    <div class="bottom w-full row items-end gap-px justify-center">
+                        <p class="mt-4 text-sm leading-5 font-normal">
                             Don't have an account?
                         </p>
-                        <a href="#">
+                        <a class="text-sm leading-5 font-medium underline text-primary
+                        hover:opacity-60  button-hover" href="./register.html">
                             Create one
                         </a>
                     </div>
-                    <div class="footer row justify-between">
-                        <p>
-                            © 2024 LUMERA SKIN
-                        </p>
-                        <div class="row gap-6">
-                            <a href="#">
-                                PRIVACY
-                            </a>
-                            <a href="#">
-                                TERMS
-                            </a>
+                    <div class="footer w-full pt-12">
+                        <div class="row justify-between">
+                            <p class="xsmall-text font-normal leading-3.75 tracking-[0.06rem] text-placeholder">
+                                © 2024 LUMERA SKIN
+                            </p>
+                            <div class="row gap-6
+                            xsmall-text font-normal leading-3.75 tracking-[0.06rem] text-placeholder">
+                                <a class="hover:underline hover:underline-offset-1 button-hover" href="#">
+                                    PRIVACY
+                                </a>
+                                <a class="hover:underline hover:underline-offset-1 button-hover" href="#">
+                                    TERMS
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
