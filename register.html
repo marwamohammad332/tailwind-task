@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register — LUMERA SKIN</title>
+    <meta name="description"
+        content="Join us and discover ethereal beauty products designed to illuminate your natural glow.">
+    <meta name="keywords"
+        content="skincare, luxury skincare, serums, beauty, skincare routine, vitamin c, hyaluronic acid">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./src/imgs/icons/lumera-skin-favicon.svg" />
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="h-screen grid grid-cols-1 sm:grid-cols-2">
+            <div class="lfet relative sm:h-full">
+                <img class="sm:hidden w-full" src="./src/imgs/login/Skincare routine closeup (1).webp" alt="" />
+                <img class="sm:hidden w-full absolute z-1 inset-0 " src="./src/imgs/login/Background (2).webp" />
+                <img class="hidden sm:block w-full h-full object-cover" src="./src/imgs/login/login pic.webp"
+                    alt="Lumera Ritual" />
+                <img class="hidden sm:block w-full h-full absolute z-1 inset-0"
+                    src="./src/imgs/login/Background (1).webp" />
+                <div
+                    class=" w-[90%] sm:w-[70%] absolute z-2 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-20 sm:bottom-20 bottom-1/2 translate-y-1/2 sm:translate-y-0 text-whitetext">
+                    <p class="small-text tracking-[0.125rem]">
+                        THE ETHEREAL CURATOR
+                    </p>
+                    <h1
+                        class="text-whitetext font-Garamond italic text-4xl lg:text-6xl leading-10 md:leading-12 lg:leading-15 mt-4">
+                        A ritual of light and
+                        skin.
+                    </h1>
+                </div>
+            </div>
+            <div class="right flex justify-center items-center  py-15 lg:py-0">
+                <div class=" w-[80%] lg:w-[70%] flex flex-col gap-12">
+                    <div class="head col gap-4">
+                        <h2 class="font-Garamond font-normal
+                        text-lg lg:text-2xl leading-6 lg:leading-8 lg:tracking-[0.063rem] tracking-[0.15rem]">
+                            LUMERA SKIN
+                        </h2>
+                        <div class="col gap-0.75">
+                            <h3 class="font-Garamond font-normal 
+                            text-xl lg:text-4xl leading-6 lg:leading-8">
+                                Create Account
+                            </h3>
+                            <div class="row gap-px">
+                                <p class="text-xs lg:text-sm leading-3.5 lg:leading-5.5">
+                                    Already a member?
+                                </p>
+                                <a class="underline underline-offset-4 button-hover text-xs lg:text-sm leading-3.5 lg:leading-5.5"
+                                    href="./login.html">
+                                    Sign In
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="w-full col gap-6">
+                        <div class="row gap-4">
+                            <label class="w-[50%] col gap-1">
+                                <span class="uppercase text-lable small-text">
+                                    FIRST NAME
+                                </span>
+                                <input class="focus:border-b-[0.094rem] focus:border-b-tertiary focus:outline-0 
+                                w-full py-2 border-b border-b-tertiary/40
+                            placeholder:text-placeholderlogin placeholder:text-sm" placeholder="Evelyn" type="text"
+                                    name="u-name">
+                            </label>
+                            <label class="w-[50%] col gap-1">
+                                <span class="uppercase text-lable small-text">
+                                    LAST NAME
+                                </span>
+                                <input class="focus:border-b-[0.094rem] focus:border-b-tertiary focus:outline-0 
+                                w-full py-2 border-b border-b-tertiary/40
+                            placeholder:text-placeholderlogin placeholder:text-sm" placeholder="Sterling" type="text"
+                                    name="u-name">
+                            </label>
+                        </div>
+                        <label class="w-full col gap-1">
+                            <span class="uppercase text-lable small-text">EMAIL ADDRESS</span>
+                            <input class="focus:border-b-[0.094rem] focus:border-b-tertiary focus:outline-0 
+                                w-full py-2 border-b border-b-tertiary/40
+                            placeholder:text-placeholderlogin placeholder:text-sm" placeholder="evelyn@example.com"
+                                type="email" name="u_email">
+                        </label>
+                        <div class="w-full col items-stretch gap-2">
+                            <div class="row justify-between">
+                                <label class="uppercase text-lable small-text" for="pass-w">PASSWORD</label>
+                                <span class="small-text tracking-0 text-primary/70">
+                                    Strong
+                                </span>
+                            </div>
+                            <input class="focus:border-b-[0.094rem] focus:border-b-tertiary focus:outline-0 
+                                w-full py-2 border-b border-b-tertiary/40
+                            placeholder:text-placeholderlogin placeholder:text-sm" id="pass-w" placeholder="••••••••"
+                                type="password" name="password" required>
+                            <div class="row gap-1">
+                                <hr class="h-1 w-[25%] bg-primary rounded-lg">
+                                <hr class="h-1 w-[25%] bg-primary rounded-lg">
+                                <hr class="h-1 w-[25%] bg-primary rounded-lg">
+                                <hr class="h-1 w-[25%] bg-tertiary/40 rounded-lg">
+                            </div>
+                        </div>
+                        <div class=" py-2 row items-start gap-3">
+                            <input class="mt-1 w-4 h-4 rounded-sm accent-primary" id="Policy" type="checkbox"
+                                name="Privacy_Policy">
+                            <label class="text-xs leading-4.5" for="Policy">
+                                I agree to the
+                                <a class="button-hover underline underline-offset-3" href="#">
+                                    Terms of Service
+                                </a>
+                                and
+                                <a class="button-hover underline underline-offset-3" href="#">
+                                    Privacy Policy
+                                </a>
+                                . Send me exclusive
+                                rituals
+                                and offers.
+                            </label>
+                        </div>
+                        <a class="bg-primary text-whitetext w-full rounded-[10px] 
+                            row items-center justify-center gap-2 mt-4 py-4
+                            button-hover" href="#">
+                            <span
+                                class="text-[0.625rem] md:text-xs leading-2.5 md:leading-4 tracking-widest font-normal">
+                                Create Account
+                            </span>
+                        </a>
+                    </form>
+                    <div class="col gap-8">
+                        <div class="divider row w-full justify-between">
+                            <hr class="w-[35%] border border-tertiary/30">
+                            <span class="text-secondary/60 small-text">
+                                OR JOIN WITH
+                            </span>
+                            <hr class="w-[35%] border border-tertiary/30">
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
