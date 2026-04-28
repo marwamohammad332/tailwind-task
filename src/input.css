@@ -19,6 +19,8 @@
     --font-serif: "Noto Serif", serif;
     --font-inter: "Inter", sans-serif;
     --font-Garamond: "Cormorant Garamond", serif;
+    --text-xxs:0.625rem;
+
 }
 
 @layer base {
@@ -77,6 +79,12 @@
         @apply lg:px-3;
     }
 }
+@layer components{
+    .card{
+    @apply flex flex-col gap-1 items-start 
+    mx-auto;
+}
+}
 
 @utility row {
     @apply flex flex-row items-center;
@@ -91,7 +99,7 @@
 }
 
 @utility col {
-    @apply flex flex-col items-start ;
+    @apply flex flex-col ;
 }
 @utility hero-link{
     @apply bg-primary text-whitetext rounded-lg
@@ -107,12 +115,8 @@
     hover:opacity-50 hover:underline hover:underline-offset-8 
     transition-all duration-500 cursor-pointer ;
 }
-@utility card{
-    @apply flex flex-col gap-1 items-start 
-    mx-auto;
-}
 @utility small-text{
-    @apply text-[0.625rem] leading-3.75 tracking-[0.063rem];
+    @apply text-xxs leading-3.75 tracking-[0.063rem];
 }
 @utility xsmall-text{
     @apply text-[0.563rem] leading-[0.844] tracking-[0.028rem]
