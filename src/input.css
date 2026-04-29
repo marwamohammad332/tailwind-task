@@ -5,58 +5,68 @@
     --color-secondary: #685C58;
     --color-tertiary: #D3C2C5;
     --color-neutral: #FBF9F8;
-    --color-placeholder:#6B7280;
-    --color-border:#b9bcc1;
+    --color-placeholder: #6B7280;
+    --color-border: #b9bcc1;
     --color-background: #F5F3F2;
     --color-forground: #EDDCD7;
     --color-grayground: #E4E2E1;
     --color-roseground: #926A74;
-    --color-whitetext:#FFFBFF;
-    --color-shopherobg:#EFEDEC;
-    --color-footerbord:#E7E5E4;
-    --color-lable:#817476;
-    --color-placeholderlogin:#DBDAD9;
+    --color-whitetext: #FFFBFF;
+    --color-shopherobg: #EFEDEC;
+    --color-footerbord: #E7E5E4;
+    --color-lable: #817476;
+    --color-placeholderlogin: #DBDAD9;
     --font-serif: "Noto Serif", serif;
     --font-inter: "Inter", sans-serif;
     --font-Garamond: "Cormorant Garamond", serif;
-    --text-xxs:0.625rem;
+    --text-xxs: 0.625rem;
 
 }
 
 @layer base {
-    html{
+    html {
         scroll-behavior: smooth;
     }
+
     body {
         background-color: white;
         color: var(--color-secondary);
         font-family: var(--font-inter);
 
     }
-    h1,h2,h3,h4{
+
+    h1,
+    h2,
+    h3,
+    h4 {
         font-family: var(--font-serif);
         color: var(--color-primary);
     }
+
     h1 {
         font-size: 3rem;
         line-height: 3.5rem;
-        @apply md:text-[4rem]  lg:text-[4.688rem] md:leading-18 lg:leading-24;
+        @apply md:text-[4rem] lg:text-[4.688rem] md:leading-18 lg:leading-24;
     }
+
     h2 {
         font-size: 2.25rem;
         line-height: 3.125rem;
         @apply lg:text-[2.5rem] md:leading-9 lg:leading-14;
     }
+
     h3 {
         font-size: 2.5rem;
         line-height: 3.125rem;
         @apply lg:text-5xl md:leading-7 lg:leading-14;
     }
+
     h4 {
         font-size: 0.875rem;
         line-height: 1.5rem;
         @apply sm:text-base lg:text-xl sm:leading-7;
     }
+
     h5 {
         font-family: var(--font-Garamond);
         font-size: 1.25rem;
@@ -64,12 +74,13 @@
         line-height: 1.75rem;
         color: var(--color-primary);
     }
+
     h6 {
-       font-family: var(--font-Garamond);
-       font-size: 1.125rem;
-       font-style: italic;
-       color: var(--color-primary);
-       line-height: 1.75rem;
+        font-family: var(--font-Garamond);
+        font-size: 1.125rem;
+        font-style: italic;
+        color: var(--color-primary);
+        line-height: 1.75rem;
     }
 
     .container {
@@ -79,46 +90,53 @@
         @apply lg:px-3;
     }
 }
-@layer components{
-    .card{
-    @apply flex flex-col gap-1 items-start 
-    mx-auto;
+    @utility card {
+        @apply flex flex-col gap-1 items-start mx-auto;
+    }
+
+    @utility btn {
+        @apply font-normal py-5 px-5 lg:px-10 uppercase rounded-lg bg-primary text-whitetext 
+        button-hover;
+    }
+
+
+@utility hero-link {
+    @apply button-hover btn px-6 lg:px-10 py-3 lg:py-4 text-xs md:text-sm leading-4 md:leading-5 tracking-[0.05rem] md:tracking-[0.088rem];
 }
+
+@utility button-hover {
+    @apply hover:opacity-70 hover:scale-97 transition-all duration-700;
 }
 
 @utility row {
     @apply flex flex-row items-center;
 }
 
+
 @utility nav-link {
     @apply inline-block font-Garamond text-lg text-primary italic nav-hover;
 }
-@utility nav-hover{
-    @apply hover:opacity-90 hover:scale-93 hover:underline hover:underline-offset-8 
-    transition-all duration-300;
+
+@utility nav-hover {
+    @apply hover:opacity-90 hover:scale-93 hover:underline hover:underline-offset-8 transition-all duration-300;
 }
 
 @utility col {
-    @apply flex flex-col ;
-}
-@utility hero-link{
-    @apply bg-primary text-whitetext rounded-lg
-    px-6 lg:px-10 py-3 lg:py-4 text-xs md:text-sm leading-4 md:leading-5
-    tracking-[0.05rem] md:tracking-[0.088rem] uppercase button-hover;
-}
-@utility button-hover{
-    @apply hover:opacity-70 hover:scale-97 transition-all duration-700;
+    @apply flex flex-col;
 }
 
 @utility footer-nav {
-    @apply text-xs sm:text-sm md:text-base 
-    hover:opacity-50 hover:underline hover:underline-offset-8 
-    transition-all duration-500 cursor-pointer ;
+    @apply text-xs sm:text-sm md:text-base hover:opacity-50 hover:underline hover:underline-offset-8 transition-all duration-500 cursor-pointer;
 }
-@utility small-text{
+
+@utility small-text {
     @apply text-xxs leading-3.75 tracking-[0.063rem];
 }
-@utility xsmall-text{
-    @apply text-[0.563rem] leading-[0.844] tracking-[0.028rem]
-    font-semibold;
+
+@utility xsmall-text {
+    @apply text-[0.563rem] leading-[0.844] tracking-[0.028rem] font-semibold;
+}
+
+@utility scale-hover {
+    @apply hover:scale-105 transition-all duration-700;
 }

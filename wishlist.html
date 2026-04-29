@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WISHLIST _ LUMERA SKIN</title>
+    <meta name="description"
+        content="Your Lumera Wishlist: A curated space for your future skincare rituals. Save your most-loved products and keep your glow within reach.">
+    <meta name="keywords"
+        content="skincare, luxury skincare, serums, beauty, skincare routine, vitamin c, hyaluronic acid">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./src/imgs/icons/lumera-skin-favicon.svg" />
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar sticky z-50 top-0 py-6 shadow-lg bg-neutral/80 backdrop-blur-xs">
+        <div class="container row justify-between ">
+            <div class="row gap-8">
+                <a class="hidden" href="./index.html">
+                    <img class=" h-7.75" src="./src/imgs/icons/LS.svg" width="55px" />
+                </a>
+                <a class="barand_name uppercase font-bold font-Garamond text-xl 
+                  sm:text-2xl leading-8 tracking-widest text-primary" href="./index.html">
+                    LUMERA SKIN
+                </a>
+                <ul class="list gap-3 md:gap-4 lg:gap-8 hidden sm:row">
+                    <li><a class="nav-link " href="./shop.html">Shop</a> </li>
+                    <li><a class="nav-link " href="#rituals">Rituals</a> </li>
+                    <li><a class="nav-link " href="#ingredient">Ingredients</a> </li>
+                    <li><a class="nav-link" href="#about">About</a> </li>
+                </ul>
+            </div>
+            <div class="icons">
+                <ul class="icons_nav row gap-5 md:gap-6">
+                    <li class="hidden sm:block py-1.5 nav-hover hover:border-b hover:border-primary"><a href="#">
+                            <img src="./src/imgs/icons/search.svg" alt="serch icon" /> </a>
+                    </li>
+                    <li class="hidden sm:block py-1.5 nav-hover hover:border-b hover:border-primary">
+                        <a href="./wishlist.html">
+                            <img src="./src/imgs/icons/fillheart.svg" alt="heart icon" />
+                        </a>
+                    </li>
+                    <li class=" relative inline-block py-1.5 nav-hover hover:border-b hover:border-primary">
+                        <a href="./cart.html"><img class="" src="./src/imgs/icons/cart.svg" alt="cart icon" />
+                            <span class=" absolute opacity-80 -top-1 -right-2 bg-roseground text-neutral text-xs w-4 h-4
+                            row justify-center rounded-full">3</span>
+                        </a>
+                    </li>
+                    <li class="hidden nav-hover py-1.5 hover:border-b hover:border-primary sm:block">
+                        <a href="./login.html">
+                            <img class="" src="./src/imgs/icons/profile.svg" alt="user profile icon" /> </a>
+                    </li>
+                    <li class="sm:hidden"><button><img class="nav-hover" src="./src/imgs/icons/list icon.svg"
+                                alt="icon list img" /></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="header-section container pt-12 pb-24 col gap-8 sm:gap-0 sm:row sm:items-end sm:justify-between">
+            <div class="left w-full sm:w-[60%] lg:w-[48.4%] col items-start gap-4">
+                <p
+                    class="uppercase font-normal text-xs sm:text-sm md:text-base leading-5 md:leading-6 tracking-widest md:tracking-[0.2rem]">
+                    PERSONAL SELECTION
+                </p>
+                <h1 class="font-Garamond italic">
+                    Curated Wishlist
+                </h1>
+                <p class="mt-2 max-w-[78%] text-sm md:text-base leading-5.5 sm:leading-6.5">
+                    Your personal sanctuary of skincare rituals. These
+                    essentials await their place in your daily ceremony of self-
+                    care.
+                </p>
+            </div>
+            <div class="relative btn text-center border max-w-fit text-xxs sm:text-xs lg:text-sm leading-4 lg:leading-5 tracking-widest lg:tracking-[0.088rem] ">
+                <a href="#">
+                    ADD COMPLETE ROUTINE
+                </a>
+                <div class="absolute inset-0 rounded-lg border border-primary/20 translate-x-2
+                translate-y-2"></div>
+            </div>
+        </section>
+        <section class="wishlist_grid pb-20 container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-6 lg:gap-12">
+            <div class="group col gap-6">
+                <div class="group w-fit relative overflow-hidden rounded-xl">
+                    <img class="overflow-hidden w-fit sm:w-full group-hover:scale-105 transition-all duration-700
+                                rounded-xl border border-background"
+                        src="./src/imgs/whishlist/Velvet Cleansing Balm.webp" alt="" />
+                    <img class="absolute z-1 cursor-pointer top-4 right-4 rounded-full p-2
+                    bg-tertiary/20 hover:bg-tertiary/50" src="./src/imgs/icons/remove.svg" />
+                    <div class=" z-1 absolute w-full bottom-0 left-0 translate-y-full 
+                            group-hover:opacity-80 group-hover:translate-y-0 ease-in-out 
+                              transition-all duration-700">
+                        <button class=" cursor-pointer py-6 w-full bg-whitetext text-primary
+                        text-sm leading-4 tracking-wide">
+                            Quick add — $68
+                        </button>
+                    </div>
+                </div>
+                <div class="card w-fit mx-0">
+                    <p class="small-text text-secondary/60 uppercase">
+                        STEP 01: CLEANSE
+                    </p>
+                    <h3 class="font-Garamond italic text-lg lg::text-xl leading-6 md:leading-8">
+                        Velvet Cleansing Balm
+                    </h3>
+                    <p class="w-[97%] mt-2 text-xs lg:text-sm leading-5 lg:leading-6.5 font-normal">
+                        A transformative oil-to-milk
+                        formula infused with damask rose
+                        and apricot kernel.
+                    </p>
+                </div>
+            </div>
+             <div class="group col gap-6">
+                <div class="group w-fit relative overflow-hidden rounded-xl">
+                    <img class="overflow-hidden w-fit sm:w-full group-hover:scale-105 transition-all duration-700
+                                rounded-xl border border-background"
+                        src="./src/imgs/whishlist/Nectar Infusion Oil.webp" alt="" />
+                    <img class="absolute cursor-pointer top-4 right-4 rounded-full p-2
+                    bg-tertiary/20 hover:bg-tertiary/50" src="./src/imgs/icons/remove.svg" />
+                    <div class=" z-1 absolute w-full bottom-0 left-0 translate-y-full 
+                            group-hover:opacity-80 group-hover:translate-y-0 ease-in-out 
+                              transition-all duration-700">
+                        <button class=" cursor-pointer py-6 w-full bg-whitetext text-primary
+                        text-sm leading-4 tracking-wide">
+                            Quick add — $68
+                        </button>
+                    </div>
+                </div>
+                <div class="card mx-0">
+                    <p class="small-text text-secondary/60 uppercase">
+                        STEP 01: CLEANSE
+                    </p>
+                    <h3 class="font-Garamond italic text-lg lg::text-xl leading-6 md:leading-8">
+                        Velvet Cleansing Balm
+                    </h3>
+                    <p class="w-[97%] mt-2 text-xs lg:text-sm leading-5 lg:leading-6.5 font-normal">
+                        A transformative oil-to-milk
+                        formula infused with damask rose
+                        and apricot kernel.
+                    </p>
+                </div>
+            </div>
+             <div class="group col gap-6">
+                <div class="group w-fit relative overflow-hidden rounded-xl">
+                    <img class="overflow-hidden w-fit sm:w-full group-hover:scale-105 transition-all duration-700
+                                rounded-xl border border-background"
+                        src="./src/imgs/whishlist/Ethereal Mist.webp" alt="" />
+                    <img class="absolute cursor-pointer top-4 right-4 rounded-full p-2
+                    bg-tertiary/20 hover:bg-tertiary/50" src="./src/imgs/icons/remove.svg" />
+                    <div class=" z-1 absolute w-full bottom-0 left-0 translate-y-full 
+                            group-hover:opacity-80 group-hover:translate-y-0 ease-in-out 
+                              transition-all duration-700">
+                        <button class=" cursor-pointer py-6 w-full bg-whitetext text-primary
+                        text-sm leading-4 tracking-wide">
+                            Quick add — $68
+                        </button>
+                    </div>
+                </div>
+                <div class="card mx-0">
+                    <p class="small-text text-secondary/60 uppercase">
+                        STEP 01: CLEANSE
+                    </p>
+                    <h3 class="font-Garamond italic text-lg lg::text-xl leading-6 md:leading-8">
+                        Velvet Cleansing Balm
+                    </h3>
+                    <p class="w-[97%] mt-2 text-xs lg:text-sm leading-5 lg:leading-6.5 font-normal">
+                        A transformative oil-to-milk
+                        formula infused with damask rose
+                        and apricot kernel.
+                    </p>
+                </div>
+            </div>
+             <div class="group col gap-6">
+                <div class="group w-fit relative overflow-hidden rounded-xl">
+                    <img class="overflow-hidden w-fit sm:w-full group-hover:scale-105 transition-all duration-700
+                                rounded-xl border border-background"
+                        src="./src/imgs/whishlist/Alabaster Cream.webp" alt="" />
+                    <img class="absolute cursor-pointer top-4 right-4 rounded-full p-2
+                    bg-tertiary/20 hover:bg-tertiary/50" src="./src/imgs/icons/remove.svg" />
+                    <div class=" z-1 absolute w-full bottom-0 left-0 translate-y-full 
+                            group-hover:opacity-80 group-hover:translate-y-0 ease-in-out 
+                              transition-all duration-700">
+                        <button class=" cursor-pointer py-6 w-full bg-whitetext text-primary
+                        text-sm leading-4 tracking-wide">
+                            Quick add — $68
+                        </button>
+                    </div>
+                </div>
+                <div class="card mx-0">
+                    <p class="small-text text-secondary/60 uppercase">
+                        STEP 01: CLEANSE
+                    </p>
+                    <h3 class="font-Garamond italic text-lg lg::text-xl leading-6 md:leading-8">
+                        Velvet Cleansing Balm
+                    </h3>
+                    <p class="w-[97%] mt-2 text-xs lg:text-sm leading-5 lg:leading-6.5 font-normal">
+                        A transformative oil-to-milk
+                        formula infused with damask rose
+                        and apricot kernel.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class=" footer py-20 bg-background border-t border-t-footerbord/20">
+        <div class="container px-12 lg:px-3 flex flex-col gap-20  ">
+            <div class=" grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-13.25 md:gap-10 lg:gap-12">
+                <div class="col gap-6">
+                    <h5 class="font-bold">
+                        LUMERA SKIN
+                    </h5>
+                    <p class="text-sm md:text-base leading-5 sm:leading-6.5">
+                        Crafting ethereal rituals for the
+                        conscious skin enthusiast.
+                    </p>
+                    <div class="row gap-3 sm:gap-4">
+                        <a href="#"><img class="hover:opacity-50 hover:scale-110 transition-all duration-500"
+                                src="./src/imgs/icons/language.webp" width="19px" alt="select your language" />
+                        </a>
+                        <a href="#"><img class="hover:opacity-50 hover:scale-110 transition-all duration-500"
+                                src="./src/imgs/icons/reviews.webp" width="19px" alt="customers ratings" />
+                        </a>
+                        <a href="#"><img class="hover:opacity-50 hover:scale-110 transition-all duration-500"
+                                src="./src/imgs/icons/live chat.webp" width="19px" alt="live chat with us" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col gap-4">
+                    <h6>
+                        Navigation
+                    </h6>
+                    <ul class="col gap-2">
+                        <li><a class="footer-nav href=" #">Privacy Policy</a> </li>
+                        <li><a class="footer-nav href=" #"> Shipping & Returns</a></li>
+                        <li><a class="footer-nav href=" #">Contact</a> </li>
+                        <li><a class="footer-nav href=" #"> Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col gap-4">
+                    <h6>
+                        Studio
+                    </h6>
+                    <p class="text-xs sm:text-sm leading-6 sm:leading-7">
+                        22 Rue de la Paix
+                        75002 Paris, France
+                        <span class="cursor-pointer hover:opacity-60 hover:underline hover:underline-offset-8
+                         transition-all duration-500">contact@lumeraskin.com</span>
+                    </p>
+                </div>
+                <div class="col gap-4">
+                    <h6>
+                        Newsletter
+                    </h6>
+                    <p class="text-xs sm:text-sm leading-5.5 sm:leading-5">
+                        Join our inner circle for exclusive
+                        rituals.
+                    </p>
+                    <form class="flex">
+                        <input class="w-[50%] sm:w-full border border-border rounded-lg px-1 sm:px-3 py-2.5
+                            placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm
+                             focus:border-sky-500 focus:outline focus:outline-sky-500" type="email" name="u_email"
+                            placeholder="Email Address">
+                        <button class="group button-hover
+                             shadow-md shrink-0 p-3 border-b border-b-border" type="submit">
+                            <img class="group-hover:translate-x-1 transition-all duration-75"
+                                src="./src/imgs/icons/arrow.webp" width="15px"
+                                alt="arrow icon submit your email" /></button>
+                    </form>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 justify-center sm:flex-row sm:justify-between">
+                <p class="text-xxs leading-3.5 tracking-[.188rem]">© 2024 LUMERA SKIN. THE ETHEREAL CURATOR.</p>
+                <div class="row gap-8">
+                    <a href="#"><img class="hover:scale-110 transition-all duration-100"
+                            src="./src/imgs/icons/location.webp" width="16px" alt="our navigation" /> </a>
+                    <a href="#"><img class="hover:scale-110 transition-all duration-100"
+                            src="./src/imgs/icons/website.webp" width="16px" alt="website" /> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
