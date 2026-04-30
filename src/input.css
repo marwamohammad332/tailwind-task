@@ -38,49 +38,11 @@
     h1,
     h2,
     h3,
-    h4 {
-        font-family: var(--font-Garamond);
-        color: var(--color-primary);
-    }
-
-    h1 {
-        font-size: 3rem;
-        line-height: 3.5rem;
-        @apply md:text-[4rem] lg:text-[4.688rem] md:leading-18 lg:leading-24;
-    }
-
-    h2 {
-        font-size: 2.25rem;
-        line-height: 3.125rem;
-        @apply lg:text-[2.5rem] md:leading-9 lg:leading-14;
-    }
-
-    h3 {
-        font-size: 2.5rem;
-        line-height: 3.125rem;
-        @apply lg:text-5xl md:leading-7 lg:leading-14;
-    }
-
-    h4 {
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        @apply sm:text-base lg:text-xl sm:leading-7;
-    }
-
-    h5 {
-        font-family: var(--font-Garamond);
-        font-size: 1.25rem;
-        font-weight: 700;
-        line-height: 1.75rem;
-        color: var(--color-primary);
-    }
-
+    h4,
+    h5,
     h6 {
         font-family: var(--font-Garamond);
-        font-size: 1.125rem;
-        font-style: italic;
         color: var(--color-primary);
-        line-height: 1.75rem;
     }
 
     .container {
@@ -90,18 +52,25 @@
         @apply lg:px-3;
     }
 }
-    @utility card {
-        @apply flex flex-col gap-1 items-start mx-auto;
-    }
 
-    @utility btn {
-        @apply font-normal py-5 px-5 lg:px-10 uppercase rounded-lg bg-primary text-whitetext 
-        button-hover;
+@layer components {
+    .card-theme {
+        @apply rounded-2xl overflow-hidden;
     }
-    @utility btn-noround {
-        @apply font-normal uppercase bg-primary text-whitetext 
-        button-hover;
-    }
+}
+
+@utility card {
+    @apply flex flex-col gap-1 items-start mx-auto;
+}
+
+
+@utility btn {
+    @apply font-normal py-5 px-5 lg:px-10 uppercase rounded-lg bg-primary text-whitetext button-hover;
+}
+
+@utility btn-noround {
+    @apply font-normal uppercase bg-primary text-whitetext button-hover;
+}
 
 
 @utility hero-link {
@@ -130,7 +99,7 @@
 }
 
 @utility footer-nav {
-    @apply text-xs sm:text-sm  hover:opacity-50 hover:underline hover:underline-offset-8 transition-all duration-500 cursor-pointer;
+    @apply text-xs sm:text-sm hover:opacity-50 hover:underline hover:underline-offset-8 transition-all duration-500 cursor-pointer;
 }
 
 @utility small-text {
