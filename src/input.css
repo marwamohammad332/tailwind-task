@@ -39,7 +39,7 @@
     h2,
     h3,
     h4 {
-        font-family: var(--font-serif);
+        font-family: var(--font-Garamond);
         color: var(--color-primary);
     }
 
@@ -98,6 +98,10 @@
         @apply font-normal py-5 px-5 lg:px-10 uppercase rounded-lg bg-primary text-whitetext 
         button-hover;
     }
+    @utility btn-noround {
+        @apply font-normal uppercase bg-primary text-whitetext 
+        button-hover;
+    }
 
 
 @utility hero-link {
@@ -126,7 +130,7 @@
 }
 
 @utility footer-nav {
-    @apply text-xs sm:text-sm md:text-base hover:opacity-50 hover:underline hover:underline-offset-8 transition-all duration-500 cursor-pointer;
+    @apply text-xs sm:text-sm  hover:opacity-50 hover:underline hover:underline-offset-8 transition-all duration-500 cursor-pointer;
 }
 
 @utility small-text {
