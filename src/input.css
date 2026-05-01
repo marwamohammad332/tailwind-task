@@ -63,6 +63,16 @@
     @apply flex flex-col gap-1 items-start mx-auto;
 }
 
+@utility group-hover {
+    @apply group-hover:scale-105 transition-all duration-700;
+}
+@utility imgdiv-highet{
+    @apply h-[200px] sm:h-[250px];
+}
+@utility quick-add {
+    @apply z-1 absolute w-full bottom-0 left-0 translate-y-full group-hover:opacity-80 
+    group-hover:translate-y-0 ease-in-out transition-all duration-700;
+}
 
 @utility btn {
     @apply font-normal py-5 px-5 lg:px-10 uppercase rounded-lg bg-primary text-whitetext button-hover;
@@ -79,6 +89,10 @@
 
 @utility button-hover {
     @apply hover:opacity-70 hover:scale-97 transition-all duration-700;
+}
+
+@utility link-hover {
+    @apply hover:scale-105 transition-all duration-150;
 }
 
 @utility row {
@@ -110,6 +124,6 @@
     @apply text-[0.563rem] leading-[0.844] tracking-[0.028rem] font-semibold;
 }
 
-@utility scale-hover {
-    @apply hover:scale-105 transition-all duration-700;
+@utility page-label {
+    @apply uppercase font-medium text-lable text-xs leading-4 tracking-[0.055rem];
 }

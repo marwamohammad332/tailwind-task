@@ -66,12 +66,13 @@
         </div>
     </header>
     <main>
-        <section class="container py-20 grid grid-cols-2[1fr_3fr] gap-12">
-            <div class="a-said sticky top-[160px] h-fit">
-                <p class="mb-4 uppercase text-lable text-xs leading-4 tracking-[0.055rem]">
+        <section class="container py-20 grid grid-cols-[50px_1fr] sm:grid-cols-[130px_1fr]
+             md:grid-cols-[170px_1fr] gap-5 sm:gap-10">
+            <div class="a-said sticky top-30 md:top-40 h-fit">
+                <p class="hidden sm:block mb-4 page-label text-xxs md:text-xs">
                     PERSONAL SANCTUARY
                 </p>
-                <ul class="col mb-10 gap-4 items-start">
+                <ul class="col mb-10 gap-3 md:gap-4 items-start">
                     <li class="">
                         <a class="group row gap-3" href="#">
                             <svg class="fill-primary group-hover:fill-primary" width="14" height="14"
@@ -81,7 +82,7 @@
                                     fill="#currentcolor" />
                             </svg>
                             <p
-                                class="font-Garamond font-normal underline underline-offset-8 decoration-1 text-lg leading-7
+                                class="hidden sm:block font-Garamond font-normal underline underline-offset-8 decoration-1 text-base lg:text-lg leading-5 lg:leading-7
                             group-hover:underline group-hover:underline-offset-8 
                             group-hover:decoration-[0.01rem] group-hover:decoration-primary/30 group-hover:text-primary">
                                 Profile
@@ -98,7 +99,7 @@
                             </svg>
 
                             <p
-                                class="font-Garamond font-normal text-lg leading-7
+                                class="hidden sm:block font-Garamond font-normal text-base lg:text-lg leading-5 lg:leading-7
                             group-hover:underline group-hover:underline-offset-8 
                             group-hover:decoration-[0.01rem] group-hover:decoration-primary/30 group-hover:text-primary">
                                 Orders
@@ -114,7 +115,7 @@
                                     fill="#currentcolor" />
                             </svg>
                             <p
-                                class="font-Garamond font-normal text-lg leading-7
+                                class="hidden sm:block font-Garamond font-normal text-base lg:text-lg leading-5 lg:leading-7
                             group-hover:underline group-hover:underline-offset-8 
                             group-hover:decoration-[0.01rem] group-hover:decoration-primary/30 group-hover:text-primary">
                                 Wishlist
@@ -131,7 +132,7 @@
                             </svg>
 
                             <p
-                                class="font-Garamond font-normal text-lg leading-7
+                                class="hidden sm:block font-Garamond font-normal text-base lg:text-lg leading-5 lg:leading-7
                             group-hover:underline group-hover:underline-offset-8 
                             group-hover:decoration-[0.01rem] group-hover:decoration-primary/30 group-hover:text-primary">
                                 Reward Points
@@ -148,7 +149,7 @@
                             </svg>
 
                             <p
-                                class="font-Garamond font-normal text-lg leading-7
+                                class="hidden sm:block font-Garamond font-normal text-base lg:text-lg leading-5 lg:leading-7
                             group-hover:underline group-hover:underline-offset-8 
                             group-hover:decoration-[0.01rem] group-hover:decoration-primary/30 group-hover:text-primary">
                                 Settings
@@ -157,12 +158,14 @@
                     </li>
                 </ul>
                 <a class="group row gap-3 mt-10" href="#">
-                    <svg class="fill-secondary group-hover:fill-primary" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="fill-secondary group-hover:fill-primary" width="15" height="15" viewBox="0 0 15 15"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M1.66667 15C1.20833 15 0.815972 14.8368 0.489583 14.5104C0.163194 14.184 0 13.7917 0 13.3333V1.66667C0 1.20833 0.163194 0.815972 0.489583 0.489583C0.815972 0.163194 1.20833 0 1.66667 0H7.5V1.66667H1.66667V1.66667V1.66667V13.3333V13.3333V13.3333H7.5V15H1.66667V15M10.8333 11.6667L9.6875 10.4583L11.8125 8.33333H5V6.66667H11.8125L9.6875 4.54167L10.8333 3.33333L15 7.5L10.8333 11.6667V11.6667"
                             fill="#currentcolor" />
                     </svg>
-                    <p class="font-Garamond font-normal text-lg leading-7
+                    <p
+                        class="hidden sm:block font-Garamond font-normal text-base lg:text-lg leading-5 lg:leading-7
                             group-hover:underline group-hover:underline-offset-8 
                             group-hover:decoration-[0.01rem] group-hover:decoration-primary/30 group-hover:text-primary">
                         Sign Out
@@ -170,16 +173,226 @@
                 </a>
 
             </div>
-            <div class="dashbord">
-                <div class="headersection col gap-2">
-                    <p class="">
+            <div class="dashbord min-w-0 col">
+                <div class="headersection pb-8 col gap-2">
+                    <p class="page-label">
                         WELCOME BACK
                     </p>
-                    <h1>
+                    <h1 class=" text-2xl lg:text-5xl leading-9 lg:leading-12">
                         Alexandra’s Glow Ritual
                     </h1>
                 </div>
+                <div class="bento_grid py-8 grid grid-cols-1 md:grid-cols-[1fr_0.7fr] lg:grid-cols-[2fr_1fr] gap-4 lg:gap-6">
+                    <div class="w-full flex flex-col md:flex-row justify-center">
+                        <div class="w-[97%] md:w-[90%] py-8 col gap-2 items-start">
+                            <p class="page-label">
+                                CURRENT BALANCE
+                            </p>
+                            <p
+                                class=" row gap-2 items-end
+                            font-Garamond text-primary font-normal text-2xl md:text-4xl lg:text-6xl leading-9 md:leading-11 lg:leading-15">
+                                2,450
+                                <span class="italic text-secondary text-base lg:text-lg leading-7">
+                                    lumera points
+                                </span>
+                            </p>
+                            <p class="w-[97%] md:w-[95%] mt-[7.2px] text-xs lg:text-sm leading-4 lg:leading-6">
+                                You're only 50 points away from your next $20 gift voucher.
+                                Every ritual brings you closer to radiance.
+                            </p>
+                            <div class="mt-6 btn py-3 lg:py-5 w-fit">
+                                <a class="font-light text-xs lg:text-sm leading-5.5" href="#">
+                                    Redeem Rewards
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-2xl mx-auto w-[95%] sm:w-[60%] md:w-full bg-roseground py-9.5 px-5 lg:px-8 col text-center items-center justify-center">
+                        <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 30.75L7.5 9.75L21 23.25L0 30.75ZM4.95 25.8L15.525 22.05L8.7 15.225L4.95 25.8ZM18.825 16.575L17.25 15L25.65 6.6C26.45 5.8 27.4125 5.4 28.5375 5.4C29.6625 5.4 30.625 5.8 31.425 6.6L32.325 7.5L30.75 9.075L29.85 8.175C29.5 7.825 29.0625 7.65 28.5375 7.65C28.0125 7.65 27.575 7.825 27.225 8.175L18.825 16.575ZM12.825 10.575L11.25 9L12.15 8.1C12.5 7.75 12.675 7.325 12.675 6.825C12.675 6.325 12.5 5.9 12.15 5.55L11.175 4.575L12.75 3L13.725 3.975C14.525 4.775 14.925 5.725 14.925 6.825C14.925 7.925 14.525 8.875 13.725 9.675L12.825 10.575ZM15.825 13.575L14.25 12L19.65 6.6C20 6.25 20.175 5.8125 20.175 5.2875C20.175 4.7625 20 4.325 19.65 3.975L17.25 1.575L18.825 0L21.225 2.4C22.025 3.2 22.425 4.1625 22.425 5.2875C22.425 6.4125 22.025 7.375 21.225 8.175L15.825 13.575ZM21.825 19.575L20.25 18L22.65 15.6C23.45 14.8 24.4125 14.4 25.5375 14.4C26.6625 14.4 27.625 14.8 28.425 15.6L30.825 18L29.25 19.575L26.85 17.175C26.5 16.825 26.0625 16.65 25.5375 16.65C25.0125 16.65 24.575 16.825 24.225 17.175L21.825 19.575Z"
+                                fill="#FFFBFF" />
+                        </svg>
+                        <p class="text-whitetext mb-3.5 mt-4 font-Garamond font-normal
+                        text-base lg:text-2xl leading-6 lg:leading-8">
+                            Birthday Month
+                        </p>
+                        <p
+                            class="text-whitetext w-[80%] lg:w-full font-normal text-xs lg:text-sm leading-3.5 lg:leading-5.5">
+                            Unlock a complementary
+                            Botanical Infusion with your
+                            next order.
+                        </p>
+                        <a class="text-whitetext link-hover mt-4 underline text-xs lg:text-sm leading-3 lg:leading-5"
+                            href="#">
+                            Claim Gift
+                        </a>
+                    </div>
+                </div>
+                <div class="recommended_product col gap-12 py-8">
+                    <div class="mt-12 row justify-between items-end">
+                        <div class="col gap-1">
+                            <p class="page-label">
+                                TAILORED FOR YOU
+                            </p>
+                            <h2 class="text-3xl leading-9">
+                                The Ritual Additions
+                            </h2>
+                        </div>
+                        <div class="hidden sm:row flex-nowrap gap-2 items-end">
+                            <img class="cursor-pointer rotate-90 p-4 border border-tertiary/50"
+                                src="./src/imgs/icons/arrow down.svg" />
+                            <img class="cursor-pointer -rotate-90 p-4 border border-tertiary/50"
+                                src="./src/imgs/icons/arrow down.svg" />
+                        </div>
+                    </div>
+                    <div class="products overflow-x-auto w-full pb-6">
+                        <div class="grid grid-flow-col auto-cols-[150px] sm:auto-cols-[200px] overflow-x-auto gap-8 ">
+                            <div class="card-theme shrink-0 group bg-background">
+                                <div class="card-theme imgdiv-highet rounded-b-none relative">
+                                    <img class="card-theme w-full h-full rounded-b-none group-hover"
+                                        src="./src/imgs/account/set in sunshine.webp" alt="" />
+                                    <div class="quick-add">
+                                        <button class="uppercase cursor-pointer py-5
+                                     bg-primary text-whitetext text-sm w-full">
+                                            Quick add
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card p-6">
+                                    <h4 class="italic text-base lg:text-xl leading-4 lg:leading-6">
+                                        Moonlight Balm
+                                    </h4>
+                                    <p class="text-xs lg:text-sm leading-3.5 lg:leading-5">
+                                        Nocturnal Recovery Cream
+                                    </p>
+                                    <p class="mt-3 font-Garamond text-primary text-base lg:text-lg leading-7">
+                                        $78.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-theme shrink-0 group bg-background">
+                                <div class="card-theme imgdiv-highet rounded-b-none relative">
+                                    <img class="card-theme w-full h-full rounded-b-none group-hover"
+                                        src="./src/imgs/account/white serum.webp" alt="" />
+                                    <div class="quick-add">
+                                        <button class="uppercase cursor-pointer py-5
+                                     bg-primary text-whitetext text-sm w-full">
+                                            Quick add
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card p-6">
+                                    <h4 class="italic text-base lg:text-xl leading-4 lg:leading-6">
+                                        Essence Mist
+                                    </h4>
+                                    <p class="text-xs lg:text-sm leading-3.5 lg:leading-5">
+                                        Botanical Hydration Veil
+                                    </p>
+                                    <p class="mt-3 font-Garamond text-primary text-base lg:text-lg leading-7">
+                                        $54.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-theme shrink-0 group bg-background">
+                                <div class="card-theme imgdiv-highet rounded-b-none relative">
+                                    <img class="card-theme w-full h-full rounded-b-none group-hover" src="./src/imgs/account/set.webp"
+                                        alt="" />
+                                    <div class="quick-add">
+                                        <button class="uppercase cursor-pointer py-5
+                                     bg-primary text-whitetext text-sm w-full">
+                                            Quick add
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card p-6">
+                                    <h4 class="italic text-base lg:text-xl leading-4 lg:leading-6">
+                                        Quartz Polish
+                                    </h4>
+                                    <p class="text-xs lg:text-sm leading-3.5 lg:leading-5">
+                                        Gentle Mineral Exfoliant
+                                    </p>
+                                    <p class="mt-3 font-Garamond text-primary text-base lg:text-lg leading-7">
+                                        $62.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-theme shrink-0 group bg-background">
+                                <div class="card-theme imgdiv-highet rounded-b-none relative">
+                                    <img class="card-theme w-full h-full rounded-b-none group-hover"
+                                        src="./src/imgs/account/unnamed (2).webp" alt="" />
+                                    <div class="quick-add">
+                                        <button class="uppercase cursor-pointer py-5
+                                     bg-primary text-whitetext text-sm w-full">
+                                            Quick add
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card p-6">
+                                    <h4 class="italic text-base lg:text-xl leading-4 lg:leading-6">
+                                        Ceramide Silk
+                                    </h4>
+                                    <p class="text-xs lg:text-sm leading-3.5 lg:leading-5">
+                                        Barrier Support Serum
+                                    </p>
+                                    <p class="mt-3 font-Garamond text-primary text-base lg:text-lg leading-7">
+                                        $92.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-theme shrink-0 group bg-background">
+                                <div class="card-theme imgdiv-highet rounded-b-none relative">
+                                    <img class="card-theme w-full h-full rounded-b-none group-hover"
+                                        src="./src/imgs/account/Lumera body cream.webp" alt="" />
+                                    <div class="quick-add">
+                                        <button class="uppercase cursor-pointer py-5
+                                     bg-primary text-whitetext text-sm w-full">
+                                            Quick add
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card flex-none p-6">
+                                    <h4 class="italic text-base lg:text-xl leading-4 lg:leading-6">
+                                        Cashmere Body Balm
+                                    </h4>
+                                    <p class="text-xs lg:text-sm leading-3.5 lg:leading-5">
+                                        Nocturnal Body Cream
+                                    </p>
+                                    <p class="mt-3 font-Garamond text-primary text-base lg:text-lg leading-7">
+                                        $52.00
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-theme shrink-0 group bg-background">
+                                <div class="card-theme imgdiv-highet rounded-b-none relative">
+                                    <img class="card-theme w-full h-full rounded-b-none group-hover"
+                                        src="./src/imgs/account/Lumera facial oil.webp" alt="" />
+                                    <div class="quick-add">
+                                        <button class="uppercase cursor-pointer py-5
+                                     bg-primary text-whitetext text-sm w-full">
+                                            Quick add
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card p-6">
+                                    <h4 class="italic text-base lg:text-xl leading-4 lg:leading-6">
+                                        Velvet Quartz Oil
+                                    </h4>
+                                    <p class="text-xs lg:text-sm leading-3.5 lg:leading-5">
+                                        The Ritual Starter Trio
+                                    </p>
+                                    <p class="mt-3 font-Garamond text-primary text-base lg:text-lg leading-7">
+                                        $64.00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </section>
     </main>
     <footer class=" footer py-20 bg-background border-t border-t-footerbord/20">
