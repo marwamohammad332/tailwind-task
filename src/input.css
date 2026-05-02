@@ -64,10 +64,10 @@
 }
 
 @utility group-hover {
-    @apply group-hover:scale-105 transition-all duration-700;
+    @apply group-hover:scale-105 transition-all duration-900;
 }
 @utility imgdiv-highet{
-    @apply h-[200px] sm:h-[250px];
+    @apply h-50 sm:h-62.5;
 }
 @utility quick-add {
     @apply z-1 absolute w-full bottom-0 left-0 translate-y-full group-hover:opacity-80 
