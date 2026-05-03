@@ -65,8 +65,7 @@
 
 
 @utility quick-add {
-    @apply z-1 absolute w-full bottom-0 left-0 translate-y-full group-hover:opacity-80 
-    group-hover:translate-y-0 ease-in-out transition-all duration-700;
+    @apply z-1 absolute w-full bottom-0 left-0 translate-y-full group-hover:opacity-80 group-hover:translate-y-0 ease-in-out transition-all duration-700;
 }
 
 @utility btn {
@@ -85,12 +84,15 @@
 @utility button-hover {
     @apply hover:opacity-70 hover:scale-97 transition-all duration-700;
 }
+
 @utility group-hover {
     @apply group-hover:scale-105 transition-all duration-900;
 }
-@utility imgdiv-highet{
+
+@utility imgdiv-highet {
     @apply h-50 sm:h-62.5;
 }
+
 @utility link-hover {
     @apply hover:scale-105 transition-all duration-150;
 }
@@ -126,4 +128,13 @@
 
 @utility page-label {
     @apply uppercase font-medium text-lable text-xs leading-4 tracking-[0.055rem];
+}
+
+@utility input-fill {
+    @apply rounded-lg px-4 py-3.5 placeholder:text-xs placeholder:sm:text-sm placeholder:md:text-base placeholder:text-secondary/50 
+    bg-white drop-shadow-md focus:border-secondary/20 focus:outline focus:outline-secondary/20;
+}
+
+@utility label-info {
+    @apply uppercase font-medium text-xxs leading-4 tracking-[0.055rem];
 }
