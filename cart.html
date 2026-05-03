@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMERA SKIN — Luxury Skincare Rituals</title>
+    <meta name="description"
+        content="Discover LUMERA SKIN — premium skincare crafted with science-backed ingredients. Elevate your daily ritual with radiant, healthy skin.">
+    <meta name="keywords"
+        content="skincare, luxury skincare, serums, beauty, skincare routine, vitamin c, hyaluronic acid">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./src/imgs/icons/lumera-skin-favicon.svg" />
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar sticky z-50 top-0 py-6 shadow-lg bg-neutral/80 backdrop-blur-xs">
+        <div class="container row justify-between ">
+            <div class="row gap-8">
+                <a class="hidden" href="./index.html">
+                    <img class=" h-7.75" src="./src/imgs/icons/LS.svg" width="55px" />
+                </a>
+                <a class="barand_name uppercase font-bold font-Garamond text-xl 
+                  sm:text-2xl leading-8 tracking-widest text-primary" href="./index.html">
+                    LUMERA SKIN
+                </a>
+                <ul class="list gap-3 md:gap-4 lg:gap-8 hidden sm:row">
+                    <li><a class="nav-link " href="./shop.html">Shop</a> </li>
+                    <li><a class="nav-link " href="#rituals">Rituals</a> </li>
+                    <li><a class="nav-link " href="#ingredient">Ingredients</a> </li>
+                    <li><a class="nav-link" href="#about">About</a> </li>
+                </ul>
+            </div>
+            <div class="icons">
+                <ul class="icons_nav row gap-5 md:gap-[1.499rem]">
+                    <li class="hidden sm:block py-1.5 nav-hover hover:border-b hover:border-primary"><a href="#">
+                            <img src="./src/imgs/icons/search.svg" alt="serch icon" /> </a>
+                    </li>
+                    <li class="hidden sm:block py-1.5 nav-hover hover:border-b hover:border-primary">
+                        <a href="./wishlist.html">
+                            <img src="./src/imgs/icons/heart.svg" alt="heart icon" />
+                        </a>
+                    </li>
+                    <li class=" relative inline-block py-1.5 nav-hover hover:border-b hover:border-primary">
+                        <a href="./cart.html"><img class="" src="./src/imgs/icons/cart.svg" alt="cart icon" />
+                            <span class=" absolute opacity-80 -top-1 -right-2 bg-roseground text-neutral text-xs w-4 h-4
+                            row justify-center rounded-full">3</span>
+                        </a>
+                    </li>
+                    <li class="hidden nav-hover py-1.5 hover:border-b hover:border-primary sm:block">
+                        <a href="./account dashbord.html">
+                            <img class="" src="./src/imgs/icons/profile.svg" alt="user profile icon" /> </a>
+                    </li>
+                    <li class="sm:hidden"><button><img class="nav-hover" src="./src/imgs/icons/list icon.svg"
+                                alt="icon list img" /></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container pt-12 pb-8 col gap-4">
+            <h1 class="italic text-5xl md:text-6xl leading-15">
+                Your Selection
+            </h1>
+            <p class="text-xxs md:text-xs leading-4 tracking-widest">
+                THE ETHEREAL COLLECTION — 03 ITEMS
+            </p>
+        </section>
+        <section class="container pt-8 pb-52 grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-8 lg:gap-16">
+            <div class="product_row col gap-12">
+                <div class="pb-12 row items-start gap-8 border-b border-b-tertiary/30">
+                    <input class="hidden peer" type="checkbox" id="remove1" name="remove1">
+                    <div class=" col sm:row sm:items-start gap-8 flex-1 peer-checked:hidden">
+                        <img class="mx-auto rounded-xl w-[50%] sm:w-fit" src="./src/imgs/cart/firstpro.webp" alt="" />
+                        <div class="col gap-2 w-full">
+                            <div class="row items-center justify-between">
+                                <h3 class="text-xl md:text-2xl leading-8">
+                                    Velvet Dawn Serum
+                                </h3>
+                                <span class="font-Garamond text-primary
+                                text-base md:text-lg leading-7">
+                                    $124.00
+                                </span>
+                            </div>
+                            <p class="text-xs md:text-sm leading-4 md:leading-5 tracking-[0.022rem]">
+                                30ml — AM Ritual Concentration
+                            </p>
+                            <div class="mt-6 row items-end justify-between">
+                                <div
+                                    class="row w-fit items-center gap-6 py-2 px-4 rounded-full border border-tertiary/30">
+                                    <button class="cursor-pointer hover:opacity-30">–</button>
+                                    <span class="text-xs md:text-sm leading-5 text-primary">01</span>
+                                    <button class="cursor-pointer hover:opacity-30">+</button>
+                                </div>
+                                <label
+                                    class="button-hover cursor-pointer text-xxs sm:text-xs leading-4 tracking-[0.075rem] underline"
+                                    for="remove1">
+                                    REMOVE
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-12 row items-start gap-8 border-b border-b-tertiary/30">
+                    <input class="hidden peer" type="checkbox" id="remove2" name="remove2">
+                    <div class=" col sm:row sm:items-start gap-8 flex-1 peer-checked:hidden">
+                        <img class="mx-auto rounded-xl w-[50%] sm:w-fit" src="./src/imgs/cart/secondpro.webp" alt="" />
+                        <div class="col gap-2 w-full">
+                            <div class="row items-center justify-between">
+                                <h3 class="text-xl md:text-2xl leading-8">
+                                    Moonlight Balm
+                                </h3>
+                                <span class="font-Garamond text-primary
+                                text-base md:text-lg leading-7">
+                                    $88.00
+                                </span>
+                            </div>
+                            <p class="text-xs md:text-sm leading-4 md:leading-5 tracking-[0.022rem]">
+                                50ml — Restorative Evening Treatment
+                            </p>
+                            <div class="mt-6 row items-end justify-between">
+                                <div
+                                    class="row w-fit items-center gap-6 py-2 px-4 rounded-full border border-tertiary/30">
+                                    <button class="cursor-pointer hover:opacity-30">–</button>
+                                    <span class="text-xs md:text-sm leading-5 text-primary">01</span>
+                                    <button class="cursor-pointer hover:opacity-30">+</button>
+                                </div>
+                                <label
+                                    class="button-hover cursor-pointer text-xxs sm:text-xs leading-4 tracking-[0.075rem] underline"
+                                    for="remove2">
+                                    REMOVE
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-12 row items-start gap-8 border-b border-b-tertiary/30">
+                    <input class="hidden peer" type="checkbox" id="remove3" name="remove3">
+                    <div class=" col sm:row sm:items-start gap-8 flex-1 peer-checked:hidden">
+                        <img class="mx-auto rounded-xl w-[50%] sm:w-fit" src="./src/imgs/cart/thirdpro.webp" alt="" />
+                        <div class="col gap-2 w-full">
+                            <div class="row items-center justify-between">
+                                <h3 class="text-xl md:text-2xl leading-8">
+                                    Petal Essence Mist
+                                </h3>
+                                <span class="font-Garamond text-primary
+                                text-base md:text-lg leading-7">
+                                    $56.00
+                                </span>
+                            </div>
+                            <p class="text-xs md:text-sm leading-4 md:leading-5 tracking-[0.022rem]">
+                                100ml — Botanical Refreshment
+                            </p>
+                            <div class="mt-6 row items-end justify-between">
+                                <div
+                                    class="row w-fit items-center gap-6 py-2 px-4 rounded-full border border-tertiary/30">
+                                    <button class="cursor-pointer hover:opacity-30">–</button>
+                                    <span class="text-xs md:text-sm leading-5 text-primary">02</span>
+                                    <button class="cursor-pointer hover:opacity-30">+</button>
+                                </div>
+                                <label
+                                    class="button-hover cursor-pointer text-xxs sm:text-xs leading-4 tracking-[0.075rem] underline"
+                                    for="remove3">
+                                    REMOVE
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gift p-8 bg-background rounded-xl row items-center justify-between">
+                    <div class="row items-center gap-4">
+                        <input class="w-6 h-6 accent-primary rounded-sm" type="checkbox" id="gift" name="gift">
+                        <label for="gift"
+                            class="col justify-start cursor-pointer text-sm leading-4 tracking-[0.075rem]">
+                            <span class="font-Garamond italic
+                        text-base md:text-lg leading-7 text-primary">
+                                Ethereal Gift Packaging
+                            </span>
+                            + $12.00
+                        </label>
+                    </div>
+                    <div class="cursor-pointer">
+                        <svg class="button-hover" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.34613 16.6506V7.58007H0V3.23717H4.30929C4.19177 3.10149 4.1119 2.94869 4.0697 2.77878C4.0275 2.60887 4.0064 2.43047 4.0064 2.24357C4.0064 1.62036 4.22452 1.09063 4.66077 0.654376C5.09702 0.218125 5.62676 0 6.24997 0C6.56941 0 6.86535 0.0670412 7.13779 0.201124C7.41022 0.335206 7.65381 0.514427 7.86856 0.738787C8.0833 0.505881 8.32689 0.324523 8.59932 0.194714C8.87176 0.0649045 9.1677 0 9.48714 0C10.1104 0 10.6401 0.218125 11.0763 0.654376C11.5126 1.09063 11.7307 1.62036 11.7307 2.24357C11.7307 2.4284 11.7075 2.60415 11.661 2.77082C11.6145 2.93749 11.5368 3.09294 11.4278 3.23717H15.8333V7.58007H14.4871V16.6506H1.34613ZM9.48714 1.24997C9.20829 1.24997 8.97298 1.34492 8.7812 1.53482C8.58943 1.72472 8.49354 1.96004 8.49354 2.24076C8.49354 2.52148 8.58903 2.75773 8.78001 2.94951C8.97099 3.14128 9.20764 3.23717 9.48995 3.23717C9.77227 3.23717 10.008 3.14168 10.1971 2.9507C10.3862 2.75972 10.4807 2.52308 10.4807 2.24076C10.4807 1.95844 10.3849 1.72273 10.1931 1.53363C10.0013 1.34452 9.76599 1.24997 9.48714 1.24997ZM5.25637 2.24076C5.25637 2.52148 5.35226 2.75773 5.54403 2.94951C5.73581 3.14128 5.97112 3.23717 6.24997 3.23717C6.52882 3.23717 6.76413 3.14168 6.95591 2.9507C7.14768 2.75972 7.24357 2.52308 7.24357 2.24076C7.24357 1.95844 7.14862 1.72273 6.95872 1.53363C6.76882 1.34452 6.5335 1.24997 6.25278 1.24997C5.97206 1.24997 5.73581 1.34492 5.54403 1.53482C5.35226 1.72472 5.25637 1.96004 5.25637 2.24076ZM1.24997 4.48714V6.3301H7.29165V4.48714H1.24997ZM7.29165 15.4006V7.58007H2.5961V15.4006H7.29165ZM8.54162 15.4006H13.2372V7.58007H8.54162V15.4006ZM14.5833 6.3301V4.48714H8.54162V6.3301H14.5833Z"
+                                fill="#77525C" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="summary_card h-fit w-full p-10 col gap-8 bg-background rounded-2xl">
+                <h2 class="pb-6 border-b border-b-tertiary/30 italic
+                text-2xl md:text-3xl leading-8 md:leading-9">
+                    Order Summary
+                </h2>
+                <div class="col gap-4">
+                    <div class="row justify-between text-xxs sm:text-xs md:text-sm 
+                    leading-4 md:leading-5 tracking-[0.088rem]">
+                        <span>
+                            SUBTOTAL
+                        </span>
+                        <span>
+                            $324.00
+                        </span>
+                    </div>
+                    <div class="row justify-between text-xxs sm:text-xs md:text-sm 
+                    leading-4 md:leading-5 tracking-[0.088rem]">
+                        <span>
+                            SHIPPING
+                        </span>
+                        <span class="text-xxs md:text-xs text-roseground">
+                            Complimentary
+                        </span>
+                    </div>
+                    <div class="row justify-between text-xxs sm:text-xs md:text-sm 
+                    leading-4 md:leading-5 tracking-[0.088rem]">
+                        <span>
+                            TAX
+                        </span>
+                        <span>
+                            $26.08
+                        </span>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <form class="col gap-3 max-w-full">
+                        <input class="peer hidden" type="checkbox" name="check_code" id="check_code">
+                        <label class=" row gap-3 cursor-pointer" for="check_code">
+                            <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.91692 10.1282C8.09408 10.1282 8.24248 10.0682 8.36214 9.94839C8.48179 9.82855 8.54162 9.68005 8.54162 9.50289C8.54162 9.32573 8.4817 9.17732 8.36186 9.05767C8.24201 8.93801 8.09351 8.87818 7.91636 8.87818C7.7392 8.87818 7.59079 8.93811 7.47113 9.05795C7.35148 9.17779 7.29165 9.32629 7.29165 9.50345C7.29165 9.68061 7.35157 9.82901 7.47142 9.94867C7.59126 10.0683 7.73976 10.1282 7.91692 10.1282ZM7.91692 6.87495C8.09408 6.87495 8.24248 6.81503 8.36214 6.69519C8.48179 6.57535 8.54162 6.42685 8.54162 6.24969C8.54162 6.07253 8.4817 5.92412 8.36186 5.80447C8.24201 5.68481 8.09351 5.62498 7.91636 5.62498C7.7392 5.62498 7.59079 5.68491 7.47113 5.80475C7.35148 5.92459 7.29165 6.07309 7.29165 6.25025C7.29165 6.42741 7.35157 6.57582 7.47142 6.69547C7.59126 6.81513 7.73976 6.87495 7.91692 6.87495ZM7.91692 3.62175C8.09408 3.62175 8.24248 3.56183 8.36214 3.44199C8.48179 3.32215 8.54162 3.17365 8.54162 2.99649C8.54162 2.81933 8.4817 2.67092 8.36186 2.55127C8.24201 2.43161 8.09351 2.37179 7.91636 2.37179C7.7392 2.37179 7.59079 2.43171 7.47113 2.55155C7.35148 2.67139 7.29165 2.81989 7.29165 2.99705C7.29165 3.17421 7.35157 3.32262 7.47142 3.44227C7.59126 3.56193 7.73976 3.62175 7.91692 3.62175ZM14.3269 12.4999H1.5064C1.09214 12.4999 0.737508 12.3524 0.442505 12.0574C0.147501 11.7624 0 11.4078 0 10.9935V8.2532C0.47436 8.16238 0.870728 7.92974 1.1891 7.55527C1.50748 7.1808 1.66667 6.7457 1.66667 6.24997C1.66667 5.75424 1.50748 5.31914 1.1891 4.94467C0.870728 4.5702 0.47436 4.33756 0 4.24674V1.5064C0 1.09214 0.147501 0.737508 0.442505 0.442505C0.737508 0.147502 1.09214 0 1.5064 0H14.3269C14.7411 0 15.0958 0.147502 15.3908 0.442505C15.6858 0.737508 15.8333 1.09214 15.8333 1.5064V4.24674C15.3589 4.33756 14.9625 4.5702 14.6442 4.94467C14.3258 5.31914 14.1666 5.75424 14.1666 6.24997C14.1666 6.7457 14.3258 7.1808 14.6442 7.55527C14.9625 7.92974 15.3589 8.16238 15.8333 8.2532V10.9935C15.8333 11.4078 15.6858 11.7624 15.3908 12.0574C15.0958 12.3524 14.7411 12.4999 14.3269 12.4999ZM14.3269 11.25C14.4017 11.25 14.4631 11.2259 14.5112 11.1778C14.5593 11.1298 14.5833 11.0683 14.5833 10.9935V9.12497C14.0694 8.81941 13.6632 8.41316 13.3646 7.90622C13.0659 7.39927 12.9166 6.84719 12.9166 6.24997C12.9166 5.65275 13.0659 5.10066 13.3646 4.59372C13.6632 4.08677 14.0694 3.68053 14.5833 3.37497V1.5064C14.5833 1.43161 14.5593 1.37017 14.5112 1.32209C14.4631 1.27401 14.4017 1.24997 14.3269 1.24997H1.5064C1.43161 1.24997 1.37017 1.27401 1.32209 1.32209C1.27401 1.37017 1.24997 1.43161 1.24997 1.5064V3.37497C1.76386 3.68053 2.17011 4.08677 2.46872 4.59372C2.76733 5.10066 2.91664 5.65275 2.91664 6.24997C2.91664 6.84719 2.76733 7.39927 2.46872 7.90622C2.17011 8.41316 1.76386 8.81941 1.24997 9.12497V10.9935C1.24997 11.0683 1.27401 11.1298 1.32209 11.1778C1.37017 11.2259 1.43161 11.25 1.5064 11.25H14.3269Z"
+                                    fill="#685C58" />
+                            </svg>
+
+                            <span class="text-xxs md:text-xs leading-4 tracking-[0.075rem]">
+                                APPLY PROMO CODE
+                            </span>
+                        </label>
+                        <div class=" gap-2 hidden peer-checked:row">
+                            <input class="py-3 px-4 w-fit rounded-lg border border-tertiary
+                             placeholder:text-tertiary placeholder:text-xs placeholder:md:text-sm 
+                             focus:border-sky-500 focus:outline focus:outline-sky-500" id="code" type="text"
+                                name="code" placeholder="Enter code">
+                            <button class="py-3 px-4 rounded-lg bg-forground uppercase
+                            font-medium text-xs md:text-sm leading-4 md:leading-5">
+                                Apply
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="total pt-8 row justify-between border-t border-t-tertiary/30
+                text-xl md:text-2xl leading-7 md:leading-8 font-Garamond">
+                    <span>
+                        Total
+                    </span>
+                    <span>
+                        $350.08
+                    </span>
+                </div>
+                <div class="col gap-4">
+                    <button class="mt-4 btn w-full text-xs md:text-sm
+                     leading-4 md:leading-5 tracking-[0.025rem] align-middle">
+                        Proceed to Checkout
+                    </button>
+                    <div class="col gap-4">
+                        <div class="row gap-3 justify-center">
+                            <svg width="10" height="13" viewBox="0 0 10 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.16667 12.25C0.845833 12.25 0.571181 12.1358 0.342708 11.9073C0.114236 11.6788 0 11.4042 0 11.0833V5.25C0 4.92917 0.114236 4.65451 0.342708 4.42604C0.571181 4.19757 0.845833 4.08333 1.16667 4.08333H1.75V2.91667C1.75 2.10972 2.03438 1.42188 2.60313 0.853125C3.17188 0.284375 3.85972 0 4.66667 0C5.47361 0 6.16146 0.284375 6.73021 0.853125C7.29896 1.42188 7.58333 2.10972 7.58333 2.91667V4.08333H8.16667C8.4875 4.08333 8.76215 4.19757 8.99063 4.42604C9.2191 4.65451 9.33333 4.92917 9.33333 5.25V11.0833C9.33333 11.4042 9.2191 11.6788 8.99063 11.9073C8.76215 12.1358 8.4875 12.25 8.16667 12.25H1.16667ZM1.16667 11.0833H8.16667V5.25H1.16667V11.0833ZM4.66667 9.33333C4.9875 9.33333 5.26215 9.2191 5.49062 8.99063C5.7191 8.76215 5.83333 8.4875 5.83333 8.16667C5.83333 7.84583 5.7191 7.57118 5.49062 7.34271C5.26215 7.11424 4.9875 7 4.66667 7C4.34583 7 4.07118 7.11424 3.84271 7.34271C3.61424 7.57118 3.5 7.84583 3.5 8.16667C3.5 8.4875 3.61424 8.76215 3.84271 8.99063C4.07118 9.2191 4.34583 9.33333 4.66667 9.33333ZM2.91667 4.08333H6.41667V2.91667C6.41667 2.43056 6.24653 2.01736 5.90625 1.67708C5.56597 1.33681 5.15278 1.16667 4.66667 1.16667C4.18056 1.16667 3.76736 1.33681 3.42708 1.67708C3.08681 2.01736 2.91667 2.43056 2.91667 2.91667V4.08333ZM1.16667 11.0833V5.25V11.0833Z"
+                                    fill="#685C58" />
+                            </svg>
+                            <p class="small-text">
+                                Secure checkout with SSL encryption
+                            </p>
+                        </div>
+                        <div class="row justify-center gap-4">
+                            <svg class="opacity-50" width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13 9C12.1667 9 11.4583 8.70833 10.875 8.125C10.2917 7.54167 10 6.83333 10 6C10 5.16667 10.2917 4.45833 10.875 3.875C11.4583 3.29167 12.1667 3 13 3C13.8333 3 14.5417 3.29167 15.125 3.875C15.7083 4.45833 16 5.16667 16 6C16 6.83333 15.7083 7.54167 15.125 8.125C14.5417 8.70833 13.8333 9 13 9ZM6 12C5.45 12 4.97917 11.8042 4.5875 11.4125C4.19583 11.0208 4 10.55 4 10V2C4 1.45 4.19583 0.979167 4.5875 0.5875C4.97917 0.195833 5.45 0 6 0H20C20.55 0 21.0208 0.195833 21.4125 0.5875C21.8042 0.979167 22 1.45 22 2V10C22 10.55 21.8042 11.0208 21.4125 11.4125C21.0208 11.8042 20.55 12 20 12H6ZM8 10H18C18 9.45 18.1958 8.97917 18.5875 8.5875C18.9792 8.19583 19.45 8 20 8V4C19.45 4 18.9792 3.80417 18.5875 3.4125C18.1958 3.02083 18 2.55 18 2H8C8 2.55 7.80417 3.02083 7.4125 3.4125C7.02083 3.80417 6.55 4 6 4V8C6.55 8 7.02083 8.19583 7.4125 8.5875C7.80417 8.97917 8 9.45 8 10ZM19 16H2C1.45 16 0.979167 15.8042 0.5875 15.4125C0.195833 15.0208 0 14.55 0 14V3H2V14H19V16ZM6 10V2V10Z"
+                                    fill="#685C58" />
+                            </svg>
+                            <svg class="opacity-50" width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 16V2C2 2 2 2.37083 2 3.1125C2 3.85417 2 4.81667 2 6V12C2 13.1833 2 14.1458 2 14.8875C2 15.6292 2 16 2 16ZM2 18C1.45 18 0.979167 17.8042 0.5875 17.4125C0.195833 17.0208 0 16.55 0 16V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H16C16.55 0 17.0208 0.195833 17.4125 0.5875C17.8042 0.979167 18 1.45 18 2V4.5H16V2H2V16H16V13.5H18V16C18 16.55 17.8042 17.0208 17.4125 17.4125C17.0208 17.8042 16.55 18 16 18H2ZM10 14C9.45 14 8.97917 13.8042 8.5875 13.4125C8.19583 13.0208 8 12.55 8 12V6C8 5.45 8.19583 4.97917 8.5875 4.5875C8.97917 4.19583 9.45 4 10 4H17C17.55 4 18.0208 4.19583 18.4125 4.5875C18.8042 4.97917 19 5.45 19 6V12C19 12.55 18.8042 13.0208 18.4125 13.4125C18.0208 13.8042 17.55 14 17 14H10ZM17 12V6H10V12H17ZM13 10.5C13.4167 10.5 13.7708 10.3542 14.0625 10.0625C14.3542 9.77083 14.5 9.41667 14.5 9C14.5 8.58333 14.3542 8.22917 14.0625 7.9375C13.7708 7.64583 13.4167 7.5 13 7.5C12.5833 7.5 12.2292 7.64583 11.9375 7.9375C11.6458 8.22917 11.5 8.58333 11.5 9C11.5 9.41667 11.6458 9.77083 11.9375 10.0625C12.2292 10.3542 12.5833 10.5 13 10.5Z"
+                                    fill="#685C58" />
+                            </svg>
+                            <svg class="opacity-50" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 2V14C20 14.55 19.8042 15.0208 19.4125 15.4125C19.0208 15.8042 18.55 16 18 16H2C1.45 16 0.979167 15.8042 0.5875 15.4125C0.195833 15.0208 0 14.55 0 14V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H18C18.55 0 19.0208 0.195833 19.4125 0.5875C19.8042 0.979167 20 1.45 20 2ZM2 4H18V2H2V4ZM2 8V14H18V8H2ZM2 14V2V14Z"
+                                    fill="#685C58" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class=" footer py-20 bg-background border-t border-t-footerbord/20">
+        <div class="container px-12 lg:px-3 flex flex-col gap-20  ">
+            <div class=" grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-13.25 md:gap-10 lg:gap-12">
+                <div class="col gap-6">
+                    <h5 class="font-bold tracking-[9px]">
+                        LUMERA
+                    </h5>
+                    <p class="w-[90%] italic text-xs md:text-sm leading-5 sm:leading-6.5">
+                        Crafting ethereal rituals for the
+                        conscious skin enthusiast.
+                    </p>
+                    <div class="row gap-3 sm:gap-4">
+                        <a href="#"><img class="hover:opacity-50 hover:scale-110 transition-all duration-500"
+                                src="./src/imgs/icons/language.webp" width="15px" alt="select your language" />
+                        </a>
+                        <a href="#"><img class="hover:opacity-50 hover:scale-110 transition-all duration-500"
+                                src="./src/imgs/icons/reviews.webp" width="15px" alt="customers ratings" />
+                        </a>
+                        <a href="#"><img class="hover:opacity-50 hover:scale-110 transition-all duration-500"
+                                src="./src/imgs/icons/live chat.webp" width="15px" alt="live chat with us" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col gap-4">
+                    <h6>
+                        Navigation
+                    </h6>
+                    <ul class="col gap-2">
+                        <li><a class="footer-nav" href=" #">Privacy Policy</a> </li>
+                        <li><a class="footer-nav" href=" #"> Shipping & Returns</a></li>
+                        <li><a class="footer-nav" href=" #">Contact</a> </li>
+                        <li><a class="footer-nav" href=" #"> Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col gap-4">
+                    <h6>
+                        Studio
+                    </h6>
+                    <p class="text-xs sm:text-sm leading-6 sm:leading-7">
+                        22 Rue de la Paix
+                        75002 Paris, France
+                        <span class="cursor-pointer hover:opacity-60 hover:underline hover:underline-offset-8
+                         transition-all duration-500">contact@lumeraskin.com</span>
+                    </p>
+                </div>
+                <div class="col gap-4">
+                    <h6>
+                        Newsletter
+                    </h6>
+                    <p class="text-xs sm:text-sm leading-5.5 sm:leading-5">
+                        Join our inner circle for exclusive
+                        rituals.
+                    </p>
+                    <form class="flex">
+                        <input class="w-[50%] sm:w-full border border-border rounded-l-lg px-1 sm:px-3 py-2.5
+                            placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm
+                             focus:border-sky-500 focus:outline focus:outline-sky-500" type="email" name="u_email"
+                            placeholder="Email Address">
+                        <button class="group button-hover rounded-r-lg
+                             shadow-md shrink-0 p-3 border-b border-b-border" type="submit">
+                            <img class="group-hover:translate-x-1 transition-all duration-75"
+                                src="./src/imgs/icons/arrow.webp" width="15px"
+                                alt="arrow icon submit your email" /></button>
+                    </form>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 justify-center sm:flex-row sm:justify-between">
+                <p class="text-xxs leading-3.5 tracking-[.188rem]">© 2024 LUMERA SKIN. THE ETHEREAL CURATOR.</p>
+                <div class="row gap-8">
+                    <a href="#"><img class="hover:scale-110 transition-all duration-100"
+                            src="./src/imgs/icons/location.webp" width="15px" alt="our navigation" /> </a>
+                    <a href="#"><img class="hover:scale-110 transition-all duration-100"
+                            src="./src/imgs/icons/website.webp" width="15px" alt="website" /> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
