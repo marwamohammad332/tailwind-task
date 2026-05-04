@@ -138,3 +138,6 @@
 @utility label-info {
     @apply uppercase font-medium text-xxs leading-4 tracking-[0.055rem];
 }
+@utility side-text{
+    @apply font-normal text-xxs sm:text-xs md:text-sm leading-4 md:leading-5;
+}
