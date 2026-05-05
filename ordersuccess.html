@@ -68,7 +68,7 @@
     </header>
     <main>
         <section class="container py-12">
-            <div class="mx-auto w-full lg:w-[75.67%] bg-background border border-tertiary/10">
+            <div class="mx-auto rounded-2xl w-full lg:w-[75.67%] bg-background border border-tertiary/10">
                 <div class="p-12 md:p-24 col justify-center items-center text-center gap-6">
                     <p class="font-semibold small-text tracking-[0.125rem]">
                         ORDER CONFIRMED
@@ -198,11 +198,11 @@
                 </a>
             </div>
             <div class="product-grid grid grid-cols-1 sm:grid-cols-3">
-                <div class="group p-8 lg:p-12 col gap-8 cursor-pointer hover:bg-tertiary/20
+                <a href="./product details.html" class="group p-8 lg:p-12 col gap-8 cursor-pointer hover:bg-tertiary/20
                  bg-neutral transition-all duration-700 rounded-l-2xl">
                     <div class="card-theme">
-                        <img class="mx-auto card-theme group-hover" src="./src/imgs/ordersuccess/Skincare face mist.webp"
-                            alt="" />
+                        <img class="mx-auto card-theme group-hover"
+                            src="./src/imgs/ordersuccess/Skincare face mist.webp" alt="" />
                     </div>
                     <div class="card flex-1">
                         <p class="mb-1 small-text uppercase">
@@ -219,8 +219,8 @@
                             $48.00
                         </p>
                     </div>
-                </div>
-                <div class="group p-8 lg:p-12 col gap-8 cursor-pointer hover:bg-tertiary/20
+                </a>
+                <a href="./product details.html" class="group p-8 lg:p-12 col gap-8 cursor-pointer hover:bg-tertiary/20
                  bg-neutral transition-all duration-700 sm:border-x sm:border-x-tertiary/30">
                     <div class="card-theme">
                         <img class="card-theme mx-auto group-hover"
@@ -241,8 +241,8 @@
                             $62.00
                         </p>
                     </div>
-                </div>
-                <div class="group p-8 lg:p-12 col gap-8 cursor-pointer hover:bg-tertiary/20
+                </a>
+                <a href="./product details.html" class="group p-8 lg:p-12 col gap-8 cursor-pointer hover:bg-tertiary/20
                  bg-neutral transition-all duration-700 rounded-r-2xl">
                     <div class="card-theme">
                         <img class="card-theme mx-auto group-hover"
@@ -263,9 +263,34 @@
                             $84.00
                         </p>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
+        <section class="join container pt-12 pb-24">
+            <div class="text-center col justify-between items-center
+             gap-6 bg-primary py-24 rounded-2xl">
+                <h2 class=" text-whitetext italic text-2xl md:text-4xl 
+            leading-8 md:leading-10">
+                    Join The Inner Circle
+                </h2>
+                <p class="w-[80%] md:w-[70%] lg:w-[48.6%] text-whitetext 
+            text-sm md:text-base leading-5 md:leading-6">
+                    Subscribe to receive seasonal ritual guides, early access to botanical drops,
+                    and insights from our founder.
+                </p>
+                <form class="pt-4 col sm:row gap-4 w-[70%] md:w-[60%] lg:w-[40%]">
+                    <input class="text-whitetext/60 w-full border border-tertiary bg-primary py-3.25 px-1
+                placeholder:text-xs placeholder:md:text-sm placeholder:text-whitetext/40 
+                focus:border-neutral/20 focus:outline focus:outline-neutral/20 rounded-lg" type="email"
+                        name="u_email" placeholder="Email address">
+                    <button class="btn cursor-pointer  py-3.75 bg-whitetext text-primary
+                font-semibold text-xxs md:text-xs leading-3.5 md:leading-4">
+                        JOIN
+                    </button>
+                </form>
+            </div>
+        </section>
+
     </main>
     <footer class=" footer py-20 bg-background border-t border-t-footerbord/20">
         <div class="container px-12 lg:px-3 flex flex-col gap-20  ">
