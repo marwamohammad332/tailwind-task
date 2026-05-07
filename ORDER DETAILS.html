@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMERA SKIN — ORDER DETAILS</title>
+    <meta name="description"
+        content="Discover LUMERA SKIN — premium skincare crafted with science-backed ingredients. Elevate your daily ritual with radiant, healthy skin.">
+    <meta name="keywords"
+        content="skincare, luxury skincare, serums, beauty, skincare routine, vitamin c, hyaluronic acid">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./src/imgs/icons/lumera-skin-favicon.svg" />
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar sticky z-50 top-0 py-6 shadow-lg bg-neutral/80 backdrop-blur-xs">
+        <div class="container row justify-between ">
+            <div class="row gap-8">
+                <a class="hidden" href="./index.html">
+                    <img class=" h-7.75" src="./src/imgs/icons/LS.svg" width="55px" />
+                </a>
+                <a class="barand_name uppercase font-bold font-Garamond text-xl 
+                  sm:text-2xl leading-8 tracking-widest text-primary" href="./index.html">
+                    LUMERA SKIN
+                </a>
+                <ul class="list gap-3 md:gap-4 lg:gap-8 hidden sm:row">
+                    <li><a class="nav-link " href="./shop.html">Shop</a> </li>
+                    <li><a class="nav-link " href="#rituals">Rituals</a> </li>
+                    <li><a class="nav-link " href="#ingredient">Ingredients</a> </li>
+                    <li><a class="nav-link" href="#about">About</a> </li>
+                </ul>
+            </div>
+            <div class="icons">
+                <ul class="icons_nav row gap-5 md:gap-[1.499rem]">
+                    <li class="hidden sm:block py-1.5 nav-hover hover:border-b hover:border-primary"><a href="#">
+                            <img src="./src/imgs/icons/search.svg" alt="serch icon" /> </a>
+                    </li>
+                    <li class="hidden sm:block py-1.5 nav-hover hover:border-b hover:border-primary">
+                        <a href="./wishlist.html">
+                            <img src="./src/imgs/icons/heart.svg" alt="heart icon" />
+                        </a>
+                    </li>
+                    <li class=" relative inline-block py-1.5 nav-hover hover:border-b hover:border-primary">
+                        <a href="./cart.html"><img class="" src="./src/imgs/icons/cart.svg" alt="cart icon" />
+                            <span class=" absolute opacity-80 -top-1 -right-2 bg-roseground text-neutral text-xs w-4 h-4
+                            row justify-center rounded-full">4</span>
+                        </a>
+                    </li>
+                    <li class="hidden nav-hover py-1.5 hover:border-b hover:border-primary sm:block">
+                        <a href="./account dashbord.html">
+                            <img class="" src="./src/imgs/icons/profile.svg" alt="user profile icon" /> </a>
+                    </li>
+                    <li class="sm:hidden"><button><img class="nav-hover" src="./src/imgs/icons/list icon.svg"
+                                alt="icon list img" /></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container pb-24 pt-10">
+            <div class=" col gap-5 sm:gap-8 items-center justify-center text-center">
+                <div class="relative p-13 rounded-full">
+                    <svg class="bluer-none" width="54" height="54" viewBox="0 0 54 54" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.6846 38.7231L41.8731 19.5346L39.75 17.4115L22.6846 34.4769L14.1346 25.9269L12.0115 28.05L22.6846 38.7231V38.7231M27.0101 54C23.2764 54 19.7662 53.2916 16.4793 51.8746C13.1925 50.4576 10.3334 48.5346 7.90198 46.1055C5.4706 43.6764 3.54576 40.8199 2.12746 37.5361C0.709152 34.2524 0 30.7437 0 27.0101C0 23.2764 0.708487 19.7662 2.12546 16.4793C3.54244 13.1925 5.46547 10.3334 7.89457 7.90198C10.3237 5.4706 13.1801 3.54576 16.4639 2.12746C19.7477 0.709152 23.2564 0 26.99 0C30.7236 0 34.2338 0.708487 37.5207 2.12546C40.8076 3.54243 43.6667 5.46547 46.0981 7.89457C48.5294 10.3237 50.4543 13.1801 51.8726 16.4639C53.2909 19.7477 54 23.2564 54 26.99C54 30.7236 53.2916 34.2338 51.8746 37.5207C50.4576 40.8076 48.5346 43.6667 46.1055 46.0981C43.6764 48.5294 40.8199 50.4543 37.5361 51.8726C34.2524 53.2909 30.7437 54 27.0101 54V54M27 51C33.7 51 39.375 48.675 44.025 44.025C48.675 39.375 51 33.7 51 27C51 20.3 48.675 14.625 44.025 9.97502C39.375 5.32502 33.7 3.00002 27 3.00002C20.3 3.00002 14.625 5.32502 9.97502 9.97502C5.32502 14.625 3.00002 20.3 3.00002 27C3.00002 33.7 5.32502 39.375 9.97502 44.025C14.625 48.675 20.3 51 27 51V51M27 27V27V27V27V27V27V27V27V27V27"
+                            fill="#77525C" />
+                    </svg>
+                    <div class="absolute inset-0 -z-20 bg-primary/30 rounded-full blur-2xl"></div>
+                </div>
+                <p class="small-text">
+                    ORDER CONFIRMED
+                </p>
+                <h1 class="italic text-4xl md:text-6xl leading-12 md:leading-15">
+                    Thank you for your order!
+                </h1>
+                <div class="col sm:row gap-4 mt-8">
+                    <a class="px-10 py-4 bg-primary text-whitetext rounded-lg button-hover
+                    font-medium text-xs md:text-sm leading-4.5 md:leading-5.5 tracking-[0.024rem]" href="#">
+                        Track your order
+                    </a>
+                    <a class="px-10 py-4 bg-forground text-secondary rounded-lg button-hover
+                    font-medium text-xs md:text-sm leading-4.5 md:leading-5.5 tracking-[0.024rem]" href="./shop.html">
+                        Continue Shopping
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="pb-24 bg-[#FFF8F5]">
+            <div class="container grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-16 ">
+                <div class="order w-full p-4 sm:p-12 col gap-10 bg-whitetext">
+                    <h3 class="mb-4 text-lg md:text-2xl leading-6 md:leading-8">
+                        Order Summary
+                    </h3>
+                    <div class="col gap-6">
+                        <div class="row gap-4">
+                            <div class="w-[26%]">
+                                <img class="mx-auto rounded-xl w-full" src="./src/imgs/cart/one.webp"
+                                    alt="Velvet Dawn Serum: 30ml AM Ritual Concentration (Quantity: 1) - $124.00" />
+                            </div>
+                            <div class="col gap-6 py-1 flex-1">
+                                <div class="col gap-1">
+                                    <h4 class="font-medium font-inter text-xs sm:text-base leading-4 sm:leading-5">
+                                        Velvet Dawn Serum
+                                    </h4>
+                                    <p class=" text-xxs sm:text-xs leading-4">
+                                        30ml — AM Ritual Concentration
+                                    </p>
+                                </div>
+                                <div class="row justify-between">
+                                    <span class="text-xs sm:text-sm py-0.5 leading-4 sm:leading-5">
+                                        Qty: 1
+                                    </span>
+                                    <span class="font-medium text-xs sm:text-base leading-4 sm:leading-5 text-primary">
+                                        $124.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gap-4">
+                            <div class="w-[26%]">
+                                <img class="mx-auto rounded-xl w-full" src="./src/imgs/cart/tow.webp"
+                                    alt="Moonlight Balm: 50ml Restorative Evening Treatment (Quantity: 1) - $88.00" />
+                            </div>
+                            <div class="flex-1 col gap-6 py-1">
+                                <div class="col gap-1">
+                                    <h4 class="font-medium font-inter text-xs sm:text-base leading-4 sm:leading-5">
+                                        Moonlight Balm
+                                    </h4>
+                                    <p class=" text-xxs sm:text-xs leading-4">
+                                        50ml — Restorative Evening Treatment
+                                    </p>
+                                </div>
+                                <div class="row justify-between">
+                                    <span class="text-xs sm:text-sm py-0.5 leading-4 sm:leading-5">
+                                        Qty: 1
+                                    </span>
+                                    <span class="font-medium text-xs sm:text-base leading-4 sm:leading-5 text-primary">
+                                        $88.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gap-4">
+                            <div class="w-[26%]">
+                                <img class="mx-auto rounded-xl w-full" src="./src/imgs/cart/three.webp"
+                                    alt="Petal Essence Mist: 100ml Botanical Refreshment (Quantity: 2) - $56.00" />
+                            </div>
+                            <div class="flex-1 col gap-6 py-1">
+                                <div class="col gap-1">
+                                    <h4 class="font-medium font-inter text-xs sm:text-base leading-4 sm:leading-5">
+                                        Petal Essence Mist
+                                    </h4>
+                                    <p class=" text-xxs sm:text-xs leading-4">
+                                        100ml — Botanical Refreshment
+                                    </p>
+                                </div>
+                                <div class="row justify-between">
+                                    <span class="text-xs sm:text-sm py-0.5 leading-4 sm:leading-5">
+                                        Qty: 2
+                                    </span>
+                                    <span class="font-medium text-xs sm:text-base leading-4 sm:leading-5 text-primary">
+                                        $56.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col gap-4 mt-10">
+                        <div class="row justify-between">
+                            <p class="side-text">
+                                Subtotal
+                            </p>
+                            <span class="side-text">
+                                $324.00
+                            </span>
+                        </div>
+                        <div class="row justify-between">
+                            <p class="side-text">
+                                Shipping
+                            </p>
+                            <span class="side-text">
+                                Complimentary
+                            </span>
+                        </div>
+                        <div class="row justify-between">
+                            <p class="side-text">
+                                Tax
+                            </p>
+                            <span class="side-text">
+                                $26.08
+                            </span>
+                        </div>
+                        <div class="row justify-between mt-4">
+                            <p class="font-medium text-sm sm:text-base md:text-lg text-primary
+                                leading-6 md:leading-7">
+                                Total
+                            </p>
+                            <span class="font-medium text-sm sm:text-base md:text-lg text-primary
+                                leading-6 md:leading-7">
+                                $350.08
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col gap-10 lg:justify-between">
+                    <div class="mt-10 p-4 sm:p-8 rounded-2xl bg-[#F3ECE9] col gap-6">
+                        <h3 class="text-lg md:text-xl leading-6 md:leading-7">
+                            Delivery Details
+                        </h3>
+                        <div class="col gap-1.75">
+                            <p class="label-info text-primary">
+                                SHIPPING TO
+                            </p>
+                            <p class="side-text">
+                                Alexandra Winters
+                                742 Editorial Avenue, Apt 4C
+                                New York, NY 10012
+                            </p>
+                        </div>
+                        <div class="col gap-1.75">
+                            <p class="label-info text-primary">
+                                ESTIMATED ARRIVAL
+                            </p>
+                            <p class="side-text">
+                                October 14 - October 16
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl border border-tertiary/30 p-4 sm:p-8
+                col gap-4">
+                        <p class="italic text-xs md:text-sm leading-4 md:leading-5">
+                            Need help with your order?
+                        </p>
+                        <div class="row gap-4">
+                            <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.80768 14.9999C1.30255 14.9999 0.874992 14.8249 0.524995 14.4749C0.174998 14.1249 0 13.6974 0 13.1922V1.80768C0 1.30255 0.174998 0.874992 0.524995 0.524995C0.874992 0.174998 1.30255 0 1.80768 0H17.1922C17.6974 0 18.1249 0.174998 18.4749 0.524995C18.8249 0.874992 18.9999 1.30255 18.9999 1.80768V13.1922C18.9999 13.6974 18.8249 14.1249 18.4749 14.4749C18.1249 14.8249 17.6974 14.9999 17.1922 14.9999H1.80768ZM9.49996 8.05762L1.49996 2.94223V13.1922C1.49996 13.282 1.52881 13.3557 1.58651 13.4134C1.6442 13.4711 1.71793 13.5 1.80768 13.5H17.1922C17.282 13.5 17.3557 13.4711 17.4134 13.4134C17.4711 13.3557 17.5 13.282 17.5 13.1922V2.94223L9.49996 8.05762ZM9.49996 6.49996L17.3461 1.49996H1.65382L9.49996 6.49996ZM1.49996 2.94223V1.49996V2.94223V13.1922C1.49996 13.282 1.52881 13.3557 1.58651 13.4134C1.6442 13.4711 1.71793 13.5 1.80768 13.5H1.49996C1.49996 13.5 1.49996 13.4711 1.49996 13.4134C1.49996 13.3557 1.49996 13.282 1.49996 13.1922V2.94223Z"
+                                    fill="#77525C" />
+                            </svg>
+                            <a class="text-xs md:text-sm leading-4 md:leading-5
+                        hover:underline hover:underline-offset-4 hover:opacity-70
+                        transition-all duration-700" href="#">
+                                concierge@lumeraskin.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pb-24 bg-[#FFF8F5]">
+            <div class="container grid grid-cols-2 gap-4">
+                <div class="relative group rounded-2xl overflow-hidden">
+                    <img class="w-fit group-hover group-hover:blur-xs" src="./src/imgs/order details/Background (3).webp" alt=""/>
+                    <div class="absolute left-8 bottom-8">
+                        <h3 class="mb-2 text-2xl md:text-3xl leading-8 md:leading-9 text-whitetext">
+                            The Glow Ritual
+                        </h3>
+                        <p class="mt-4 text-whitetext text-xs md:text-sm leading-4 md:leading-5">
+                            Discover the steps to radiant luminosity.
+                        </p>
+                        <a class="pb-1 border-b small-text text-whitetext  link-hover inline-block" href="./shop.html">
+                            EXPLORE RITUALS
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="p-8 bg-forground col justify-center items-center rounded-2xl h-1/2">
+                        <h3 class="mb-2">
+                            Consult with Specialists
+                        </h3>
+                        <p class="mb-6">
+                            personalized regimens for your unique complexion.
+                        </p>
+                        <button class="py-3 px-5 lg:px-8 bg-primary text-whitetext font-semibold 
+                        small-text rounded-lg button-hover cursor-pointer">
+                            BOOK SESSION
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class=" footer py-20 bg-background border-t border-t-footerbord/20">
+        <div class="container px-12 lg:px-3 flex flex-col gap-20  ">
+            <div class=" grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-13.25 md:gap-10 lg:gap-12">
+                <div class="col gap-6">
+                    <h5 class="font-bold tracking-[9px]">
+                        LUMERA
+                    </h5>
+                    <p class="w-[90%] italic text-xs md:text-sm leading-5 sm:leading-6.5">
+                        Crafting ethereal rituals for the
+                        conscious skin enthusiast.
+                    </p>
+                    <div class="row gap-3 sm:gap-4">
+                        <a href="#"><img class="hover:opacity-50 hover:scale-110 transition-all duration-500"
+                                src="./src/imgs/icons/language.webp" width="15px" alt="select your language" />
+                        </a>
+                        <a href="#"><img class="hover:opacity-50 hover:scale-110 transition-all duration-500"
+                                src="./src/imgs/icons/reviews.webp" width="15px" alt="customers ratings" />
+                        </a>
+                        <a href="#"><img class="hover:opacity-50 hover:scale-110 transition-all duration-500"
+                                src="./src/imgs/icons/live chat.webp" width="15px" alt="live chat with us" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col gap-4">
+                    <h6>
+                        Navigation
+                    </h6>
+                    <ul class="col gap-2">
+                        <li><a class="footer-nav" href=" #">Privacy Policy</a> </li>
+                        <li><a class="footer-nav" href=" #"> Shipping & Returns</a></li>
+                        <li><a class="footer-nav" href=" #">Contact</a> </li>
+                        <li><a class="footer-nav" href=" #"> Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col gap-4">
+                    <h6>
+                        Studio
+                    </h6>
+                    <p class="text-xs sm:text-sm leading-6 sm:leading-7">
+                        22 Rue de la Paix
+                        75002 Paris, France
+                        <span class="cursor-pointer hover:opacity-60 hover:underline hover:underline-offset-8
+                         transition-all duration-500">contact@lumeraskin.com</span>
+                    </p>
+                </div>
+                <div class="col gap-4">
+                    <h6>
+                        Newsletter
+                    </h6>
+                    <p class="text-xs sm:text-sm leading-5.5 sm:leading-5">
+                        Join our inner circle for exclusive
+                        rituals.
+                    </p>
+                    <form class="flex">
+                        <input class="w-[50%] sm:w-full border border-border rounded-l-lg px-1 sm:px-3 py-2.5
+                            placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm
+                             focus:border-sky-500 focus:outline focus:outline-sky-500" type="email" name="u_email"
+                            placeholder="Email Address">
+                        <button class="group button-hover rounded-r-lg
+                             shadow-md shrink-0 p-3 border-b border-b-border" type="submit">
+                            <img class="group-hover:translate-x-1 transition-all duration-75"
+                                src="./src/imgs/icons/arrow.webp" width="15px"
+                                alt="arrow icon submit your email" /></button>
+                    </form>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 justify-center sm:flex-row sm:justify-between">
+                <p class="text-xxs leading-3.5 tracking-[.188rem]">© 2024 LUMERA SKIN. THE ETHEREAL CURATOR.</p>
+                <div class="row gap-8">
+                    <a href="#"><img class="hover:scale-110 transition-all duration-100"
+                            src="./src/imgs/icons/location.webp" width="15px" alt="our navigation" /> </a>
+                    <a href="#"><img class="hover:scale-110 transition-all duration-100"
+                            src="./src/imgs/icons/website.webp" width="15px" alt="website" /> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
