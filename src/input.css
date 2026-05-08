@@ -69,11 +69,11 @@
 }
 
 @utility btn {
-    @apply font-normal py-5 px-5 lg:px-10 uppercase rounded-lg bg-primary text-whitetext button-hover;
+    @apply cursor-pointer font-normal py-5 px-5 lg:px-10 uppercase rounded-lg bg-primary text-whitetext button-hover;
 }
 
 @utility btn-noround {
-    @apply font-normal uppercase bg-primary text-whitetext button-hover;
+    @apply cursor-pointer font-normal uppercase bg-primary text-whitetext button-hover;
 }
 
 

@@ -259,10 +259,11 @@
                 </div>
             </div>
         </section>
-        <section class="pb-24 bg-[#FFF8F5]">
-            <div class="container grid grid-cols-2 gap-4">
-                <div class="relative group rounded-2xl overflow-hidden">
-                    <img class="w-fit group-hover group-hover:blur-xs" src="./src/imgs/order details/Background (3).webp" alt=""/>
+        <section class="py-24 bg-[#FFF8F5]">
+            <div class="container grid grid-cols-2 sm:grid-cols-4 grid-rows-6 sm:grid-rows-2 gap-4">
+                <div class="relative group rounded-2xl overflow-hidden row-span-2 col-span-2">
+                    <img class="w-fit h-full object-cover group-hover group-hover:blur-xs"
+                        src="./src/imgs/order details/Background (3).webp" alt="Close-up of a woman with radiant skin for The Glow Ritual skincare brand" />
                     <div class="absolute left-8 bottom-8">
                         <h3 class="mb-2 text-2xl md:text-3xl leading-8 md:leading-9 text-whitetext">
                             The Glow Ritual
@@ -275,19 +276,46 @@
                         </a>
                     </div>
                 </div>
-                <div>
-                    <div class="p-8 bg-forground col justify-center items-center rounded-2xl h-1/2">
-                        <h3 class="mb-2">
-                            Consult with Specialists
-                        </h3>
-                        <p class="mb-6">
-                            personalized regimens for your unique complexion.
-                        </p>
-                        <button class="py-3 px-5 lg:px-8 bg-primary text-whitetext font-semibold 
+                <div class="col-span-2 row-span-2 sm:row-span-1 p-8 bg-forground col justify-center items-center rounded-2xl ">
+                    <h3 class="mb-2 text-[#6C605C] text-xl md:text-2xl leading-7 md:leading-8">
+                        Consult with Specialists
+                    </h3>
+                    <p class="mb-6 text-secondary/70 text-xs md:text-sm leading-4 md:leading-5">
+                        personalized regimens for your unique complexion.
+                    </p>
+                    <button class="py-3 px-5 lg:px-8 bg-primary text-whitetext font-semibold 
                         small-text rounded-lg button-hover cursor-pointer">
-                            BOOK SESSION
-                        </button>
-                    </div>
+                        BOOK SESSION
+                    </button>
+                </div>
+                <div class="col-span-2 sm:col-span-1 row-span-1 p-6 text-center rounded-2xl bg-roseground text-whitetext
+                             col justify-center items-center">
+                    <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24.6056 10.2114L23.0191 6.69222L19.4999 5.1057L23.0191 3.51919L24.6056 0L26.1921 3.51919L29.7113 5.1057L26.1921 6.69222L24.6056 10.2114ZM24.6056 30.6344L23.0191 27.1153L19.4999 25.5287L23.0191 23.9422L24.6056 20.423L26.1921 23.9422L29.7113 25.5287L26.1921 27.1153L24.6056 30.6344ZM10.1826 25.4998L7.00952 18.4903L0 15.3172L7.00952 12.1442L10.1826 5.13466L13.3556 12.1442L20.3651 15.3172L13.3556 18.4903L10.1826 25.4998ZM10.1826 20.0422L11.6826 16.8172L14.9076 15.3172L11.6826 13.8172L10.1826 10.5922L8.68256 13.8172L5.45756 15.3172L8.68256 16.8172L10.1826 20.0422Z"
+                            fill="#FFFBFF" />
+                    </svg>
+                    <h4 class="text-whitetext mt-3 text-base md:text-lg leading-6 md:leading-7">
+                        Sustainability
+                    </h4>
+                    <p class="text-xxs leading-4.5 mt-1.75">
+                        Eco-conscious packaging & ethical
+                        sourcing.
+                    </p>
+                </div>
+                <div class="col-span-2 sm:col-span-1 row-span-1 rounded-2xl bg-[#EEE7E4] border border-primary/5
+                        p-6 col justify-center items-center text-center">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.36921 20.5954C2.31153 19.5329 1.48557 18.3112 0.891341 16.9302C0.297114 15.5493 0 14.1215 0 12.6469C0 11.1681 0.283172 9.70076 0.849516 8.245C1.41586 6.78924 2.33076 5.42963 3.59421 4.16617C4.50768 3.25271 5.65143 2.50031 7.02548 1.90896C8.39952 1.31762 9.95578 0.86714 11.6942 0.557529C13.4327 0.247917 15.3274 0.0676317 17.3783 0.0166719C19.4293 -0.0342878 21.5807 0.031576 23.8326 0.214263C23.9941 2.36423 24.0494 4.45314 23.9985 6.48101C23.9475 8.50888 23.7701 10.3997 23.4662 12.1536C23.1624 13.9074 22.7187 15.4868 22.135 16.8916C21.5513 18.2964 20.7999 19.4584 19.8807 20.3776C18.6422 21.6257 17.3177 22.5368 15.9071 23.1108C14.4966 23.6848 13.0679 23.9718 11.6212 23.9718C10.1045 23.9718 8.61438 23.6747 7.15093 23.0805C5.68747 22.4863 4.4269 21.6579 3.36921 20.5954ZM6.73261 20.3488C7.48646 20.8219 8.2831 21.169 9.12253 21.3902C9.96196 21.6113 10.7961 21.7219 11.6249 21.7219C12.7814 21.7219 13.9254 21.4931 15.0567 21.0354C16.1881 20.5777 17.2615 19.8315 18.2769 18.7969C18.7251 18.3469 19.1795 17.7157 19.6401 16.9032C20.1008 16.0907 20.4992 15.0282 20.8353 13.7157C21.1715 12.4032 21.4267 10.8157 21.601 8.95315C21.7753 7.09065 21.8096 4.87191 21.7038 2.29691C20.4788 2.24691 19.0927 2.23296 17.5456 2.25508C15.9985 2.2772 14.4552 2.40316 12.9158 2.63297C11.3764 2.86277 9.92158 3.22287 8.55138 3.71325C7.18119 4.20364 6.07302 4.8719 5.22687 5.71806C4.11149 6.83344 3.33649 7.96277 2.90187 9.10604C2.46725 10.2493 2.24995 11.3335 2.24995 12.3584C2.24995 13.7758 2.52639 15.0575 3.07927 16.2036C3.63215 17.3498 4.20764 18.2008 4.80573 18.7565C5.64418 16.8719 6.82253 15.0638 8.34078 13.332C9.85904 11.6003 11.7826 10.0893 14.1114 8.79887C12.3499 10.3354 10.8412 12.0229 9.58549 13.8614C8.32972 15.6998 7.37877 17.8623 6.73261 20.3488Z"
+                            fill="#77525C" />
+                    </svg>
+                    <h4 class="mt-3 text-base md:text-lg leading-6 md:leading-7">
+                        100% Vegan
+                    </h4>
+                    <p class="mt-1.75 text-xxs leading-4.5">
+                        Purely botanical ingredients, cruelty-free.
+                    </p>
                 </div>
             </div>
         </section>
@@ -296,7 +324,7 @@
         <div class="container px-12 lg:px-3 flex flex-col gap-20  ">
             <div class=" grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-13.25 md:gap-10 lg:gap-12">
                 <div class="col gap-6">
-                    <h5 class="font-bold tracking-[9px]">
+                    <h5 class="font-bold tracking-[0.563rem]">
                         LUMERA
                     </h5>
                     <p class="w-[90%] italic text-xs md:text-sm leading-5 sm:leading-6.5">
@@ -350,7 +378,7 @@
                             placeholder:text-placeholder placeholder:text-xs sm:placeholder:text-sm
                              focus:border-sky-500 focus:outline focus:outline-sky-500" type="email" name="u_email"
                             placeholder="Email Address">
-                        <button class="group button-hover rounded-r-lg
+                        <button class="cursor-pointer group button-hover rounded-r-lg
                              shadow-md shrink-0 p-3 border-b border-b-border" type="submit">
                             <img class="group-hover:translate-x-1 transition-all duration-75"
                                 src="./src/imgs/icons/arrow.webp" width="15px"
