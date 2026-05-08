@@ -65,7 +65,8 @@
 
 
 @utility quick-add {
-    @apply z-1 absolute w-full bottom-0 left-0 translate-y-full group-hover:opacity-80 group-hover:translate-y-0 ease-in-out transition-all duration-700;
+    @apply z-1 absolute w-full bottom-0 left-0 opacity-60 sm:translate-y-full group-hover:opacity-80
+     group-hover:translate-y-0 ease-in-out transition-all duration-700;
 }
 
 @utility btn {
@@ -82,7 +83,8 @@
 }
 
 @utility button-hover {
-    @apply hover:opacity-70 hover:scale-97 transition-all duration-700;
+    @apply hover:opacity-70 hover:scale-97 transition-all duration-700
+    active:opacity-70 active:scale-97;
 }
 
 @utility group-hover {
@@ -94,7 +96,7 @@
 }
 
 @utility link-hover {
-    @apply hover:scale-105 transition-all duration-150;
+    @apply hover:scale-105 transition-all duration-150 active:scale-110;
 }
 
 @utility row {
@@ -107,7 +109,7 @@
 }
 
 @utility nav-hover {
-    @apply hover:opacity-90 hover:scale-93 hover:underline hover:underline-offset-8 transition-all duration-300;
+    @apply hover:opacity-90 hover:scale-93 active:underline active:underline-offset-8 hover:underline hover:underline-offset-8 transition-all duration-300;
 }
 
 @utility col {
